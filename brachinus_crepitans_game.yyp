@@ -26,20 +26,22 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"placeholder.txt","CopyToMask":-1,"filePath":"datafiles","name":"placeholder.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.1.160",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"brachinus_crepitans_game",
   "resources":[
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"room_GameMain","path":"rooms/room_GameMain/room_GameMain.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"room_GameMain","path":"rooms/room_GameMain/room_GameMain.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
