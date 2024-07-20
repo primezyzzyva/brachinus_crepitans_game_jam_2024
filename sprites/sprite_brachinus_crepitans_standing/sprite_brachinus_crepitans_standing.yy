@@ -15,9 +15,53 @@
     {"$GMSpriteFrame":"","%Name":"8e10a0cc-3f6e-4830-a4a0-9c7ad59994b0","name":"8e10a0cc-3f6e-4830-a4a0-9c7ad59994b0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"9a2a60d1-103e-4f96-9be3-bc07a72b2e7d","name":"9a2a60d1-103e-4f96-9be3-bc07a72b2e7d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"8257fad7-f508-4641-b748-d6327db7b0e9","name":"8257fad7-f508-4641-b748-d6327db7b0e9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"25a4d98a-1712-4270-9f0c-f05651105f21","name":"25a4d98a-1712-4270-9f0c-f05651105f21","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"7d4821d9-a5cf-4daa-bc8f-f968463f5690","name":"7d4821d9-a5cf-4daa-bc8f-f968463f5690","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"f2dfc205-ad42-4eb4-8e14-fb887a9a681d","name":"f2dfc205-ad42-4eb4-8e14-fb887a9a681d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"9d7263cf-6f60-4e67-8be3-5078124d6352","name":"9d7263cf-6f60-4e67-8be3-5078124d6352","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"25a4d98a-1712-4270-9f0c-f05651105f21","name":"25a4d98a-1712-4270-9f0c-f05651105f21","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"07e2c202-b38a-42de-ada9-def806032913","name":"07e2c202-b38a-42de-ada9-def806032913","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"6ad009d1-7337-4b62-bb13-7885c62104f1","name":"6ad009d1-7337-4b62-bb13-7885c62104f1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"42b7b290-e97e-4476-950e-66513b0e2f3d","name":"42b7b290-e97e-4476-950e-66513b0e2f3d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e4a24fa1-c765-475c-9950-f223cdebb8f0","name":"e4a24fa1-c765-475c-9950-f223cdebb8f0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"0e940615-0198-4e62-adc5-fa76b3d39bee","name":"0e940615-0198-4e62-adc5-fa76b3d39bee","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"29d2f19c-67a2-4040-8f15-642df05a1bca","name":"29d2f19c-67a2-4040-8f15-642df05a1bca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"df2dae5d-1721-46a4-9426-9f686aa22cdd","name":"df2dae5d-1721-46a4-9426-9f686aa22cdd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e5cf9d0c-ca2c-47bd-b51c-e7f6cebcb23d","name":"e5cf9d0c-ca2c-47bd-b51c-e7f6cebcb23d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"93163ac5-a005-4ff6-94d1-a39108d9e20f","name":"93163ac5-a005-4ff6-94d1-a39108d9e20f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"210cd2fd-fe47-40ce-8667-d4dea30da347","name":"210cd2fd-fe47-40ce-8667-d4dea30da347","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e188d8ef-e6b2-478d-ae70-37feae218f38","name":"e188d8ef-e6b2-478d-ae70-37feae218f38","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"6db26579-258f-49ce-92bb-3c7ea3c8a067","name":"6db26579-258f-49ce-92bb-3c7ea3c8a067","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"d14a10ad-2590-47ed-a3a6-cd016b67828f","name":"d14a10ad-2590-47ed-a3a6-cd016b67828f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"68f4c6aa-d74e-48d1-9f89-4a7ce7fa1389","name":"68f4c6aa-d74e-48d1-9f89-4a7ce7fa1389","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"ed92d668-5e29-4caf-a834-db10aec15524","name":"ed92d668-5e29-4caf-a834-db10aec15524","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"3c06b395-0d7a-4461-89ab-bae70f29ee86","name":"3c06b395-0d7a-4461-89ab-bae70f29ee86","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"9df31431-99ba-4c33-b8db-285297a2669e","name":"9df31431-99ba-4c33-b8db-285297a2669e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"72684050-436a-4b00-987f-c05285c575d6","name":"72684050-436a-4b00-987f-c05285c575d6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e7bbd1f6-ad54-4f58-ad72-d3030d80df07","name":"e7bbd1f6-ad54-4f58-ad72-d3030d80df07","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"ff991923-49db-4ca8-857f-548cf3146b24","name":"ff991923-49db-4ca8-857f-548cf3146b24","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"af318a94-7beb-401b-b478-8d60e575f742","name":"af318a94-7beb-401b-b478-8d60e575f742","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"71be7d93-94e7-4c75-b580-db627496a40a","name":"71be7d93-94e7-4c75-b580-db627496a40a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"a84f511d-0d8a-42ae-9201-af2a82c10e3e","name":"a84f511d-0d8a-42ae-9201-af2a82c10e3e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"6bc18890-fc1c-4d41-8a27-7e8cb5574afc","name":"6bc18890-fc1c-4d41-8a27-7e8cb5574afc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"3dfd4d5d-589f-4769-a81d-63198e678011","name":"3dfd4d5d-589f-4769-a81d-63198e678011","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"4e768a8f-f17c-418d-8fb4-68d3dc298a66","name":"4e768a8f-f17c-418d-8fb4-68d3dc298a66","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"365de3cb-e371-404b-a1a0-f51b86a168fa","name":"365de3cb-e371-404b-a1a0-f51b86a168fa","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"9feb3931-05f8-4940-a62d-02e0e2ec13b1","name":"9feb3931-05f8-4940-a62d-02e0e2ec13b1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"cd8fd372-9654-4d1c-a349-25b9cd4bf5d7","name":"cd8fd372-9654-4d1c-a349-25b9cd4bf5d7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"50b55a4a-103c-4d9d-a93e-1449ee6048e0","name":"50b55a4a-103c-4d9d-a93e-1449ee6048e0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"458d7ea7-73a0-4112-b0a2-927824bfac74","name":"458d7ea7-73a0-4112-b0a2-927824bfac74","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"b3e67d7b-2b27-4ec4-866d-a59dcfb464b6","name":"b3e67d7b-2b27-4ec4-866d-a59dcfb464b6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"dc9fd268-a2ed-404b-a8e3-387ba28ec4ea","name":"dc9fd268-a2ed-404b-a8e3-387ba28ec4ea","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"0543100d-07c5-45a9-827a-0b38456a8360","name":"0543100d-07c5-45a9-827a-0b38456a8360","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"efeee3b0-1f42-4e2a-a6da-fb05fba2854b","name":"efeee3b0-1f42-4e2a-a6da-fb05fba2854b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"6c4335e2-8e02-4dd4-a393-89e32f9e2236","name":"6c4335e2-8e02-4dd4-a393-89e32f9e2236","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"80f8019c-f47b-42b7-807e-8041e3a7d5a4","name":"80f8019c-f47b-42b7-807e-8041e3a7d5a4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"565f651e-e4a8-43a8-a82f-27107d98d3a4","name":"565f651e-e4a8-43a8-a82f-27107d98d3a4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"97449439-cb3f-499f-8db9-fffe1b77ff01","name":"97449439-cb3f-499f-8db9-fffe1b77ff01","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"c165933c-b36a-4c6b-8b37-9b3a4cf70eac","name":"c165933c-b36a-4c6b-8b37-9b3a4cf70eac","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"9e8ff839-26bf-4d51-b1b9-ed248dd08025","name":"9e8ff839-26bf-4d51-b1b9-ed248dd08025","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"fdccfa14-8129-41a4-a0a8-a7e02835d367","name":"fdccfa14-8129-41a4-a0a8-a7e02835d367","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"d5301d1e-bd48-4285-a052-8c5409802bf3","name":"d5301d1e-bd48-4285-a052-8c5409802bf3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":128,
   "gridY":512,
@@ -54,7 +98,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":6.0,
+    "length":50.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -83,14 +127,146 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8257fad7-f508-4641-b748-d6327db7b0e9","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"fcb738cd-5d73-4ba2-a00a-af42e32e5fd8","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"25a4d98a-1712-4270-9f0c-f05651105f21","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3c26e897-f770-41e5-9b18-f1482535c338","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7d4821d9-a5cf-4daa-bc8f-f968463f5690","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8bdd1219-5ef6-480c-a4c7-4ced7a26136a","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f2dfc205-ad42-4eb4-8e14-fb887a9a681d","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"f2e7fde2-f98d-46ff-ba04-a6bbadac946e","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9d7263cf-6f60-4e67-8be3-5078124d6352","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"eef6bf42-f390-4af4-83a2-fb7ed78ce949","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"25a4d98a-1712-4270-9f0c-f05651105f21","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3c26e897-f770-41e5-9b18-f1482535c338","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"07e2c202-b38a-42de-ada9-def806032913","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d0bc486f-d203-4570-a2f8-080a57e25d30","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6ad009d1-7337-4b62-bb13-7885c62104f1","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b1de7a22-5b5c-4c88-a6eb-cf3bedb10508","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"42b7b290-e97e-4476-950e-66513b0e2f3d","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d09f0e52-015c-4cdf-a43c-9745828d198f","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e4a24fa1-c765-475c-9950-f223cdebb8f0","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"2ab6bec4-f5e8-47bc-9499-a6349ec788ac","IsCreationKey":false,"Key":10.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0e940615-0198-4e62-adc5-fa76b3d39bee","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b8e02034-067a-4abe-9c12-6025eb96eedf","IsCreationKey":false,"Key":11.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"29d2f19c-67a2-4040-8f15-642df05a1bca","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4ebce609-f5bd-4a07-961e-5b0b16389c36","IsCreationKey":false,"Key":12.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"df2dae5d-1721-46a4-9426-9f686aa22cdd","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c4eb674e-ae5b-4866-92ab-dda7b3e2db26","IsCreationKey":false,"Key":13.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e5cf9d0c-ca2c-47bd-b51c-e7f6cebcb23d","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d5d88553-3ae5-43d8-9290-0dadf87b28b0","IsCreationKey":false,"Key":14.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"93163ac5-a005-4ff6-94d1-a39108d9e20f","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"afce3461-1aeb-4313-be50-6bac8e27994c","IsCreationKey":false,"Key":15.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"210cd2fd-fe47-40ce-8667-d4dea30da347","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"99792b04-2343-4864-85d5-7725df104990","IsCreationKey":false,"Key":16.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e188d8ef-e6b2-478d-ae70-37feae218f38","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c6642ca0-e508-49ec-b641-a48ae8b6bc1c","IsCreationKey":false,"Key":17.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6db26579-258f-49ce-92bb-3c7ea3c8a067","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a33dfc62-4e33-4bbc-bc74-d688db5bbb86","IsCreationKey":false,"Key":18.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d14a10ad-2590-47ed-a3a6-cd016b67828f","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c5622c10-c7ec-47e1-8716-46838949e474","IsCreationKey":false,"Key":19.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"68f4c6aa-d74e-48d1-9f89-4a7ce7fa1389","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"dd35d7db-64e9-4879-98a8-f84d9b07f225","IsCreationKey":false,"Key":20.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ed92d668-5e29-4caf-a834-db10aec15524","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b30340e3-1302-4a2b-842b-50d35e2b2d75","IsCreationKey":false,"Key":21.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3c06b395-0d7a-4461-89ab-bae70f29ee86","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"46e86ccc-3894-46ff-bbf2-85a1d1b57db9","IsCreationKey":false,"Key":22.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9df31431-99ba-4c33-b8db-285297a2669e","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b5be01bc-7ac4-4ff0-9023-9555c649fc7c","IsCreationKey":false,"Key":23.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"72684050-436a-4b00-987f-c05285c575d6","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8ee40d72-1f18-4550-8999-d7414fd0149a","IsCreationKey":false,"Key":24.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e7bbd1f6-ad54-4f58-ad72-d3030d80df07","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"2747647c-27dd-4bdd-a6f5-d0803f9fa2d4","IsCreationKey":false,"Key":25.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ff991923-49db-4ca8-857f-548cf3146b24","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"147396d0-a97c-41ff-b9aa-e133082d76c1","IsCreationKey":false,"Key":26.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"af318a94-7beb-401b-b478-8d60e575f742","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"accf6166-7abd-4b0f-8398-45920381b300","IsCreationKey":false,"Key":27.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"71be7d93-94e7-4c75-b580-db627496a40a","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4374a883-bb8e-4a0e-aa53-bc76d05e6aad","IsCreationKey":false,"Key":28.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a84f511d-0d8a-42ae-9201-af2a82c10e3e","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"728eeef6-7dc4-42a1-b827-d43cd819defb","IsCreationKey":false,"Key":29.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6bc18890-fc1c-4d41-8a27-7e8cb5574afc","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a0f0178c-607a-417f-b471-989fa51c56a7","IsCreationKey":false,"Key":30.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3dfd4d5d-589f-4769-a81d-63198e678011","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"760c6d9a-bf5f-49f0-a32a-2745846832d5","IsCreationKey":false,"Key":31.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4e768a8f-f17c-418d-8fb4-68d3dc298a66","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f964dc6a-c68b-45ad-b645-609f67bfc46f","IsCreationKey":false,"Key":32.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"365de3cb-e371-404b-a1a0-f51b86a168fa","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"dc52a6f6-5def-4214-b9a6-6d5e22cdb4a3","IsCreationKey":false,"Key":33.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9feb3931-05f8-4940-a62d-02e0e2ec13b1","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"48559b2f-2035-40d8-bb75-4f3ae6377afe","IsCreationKey":false,"Key":34.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cd8fd372-9654-4d1c-a349-25b9cd4bf5d7","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"434acd33-b6a2-41da-8161-19c202854564","IsCreationKey":false,"Key":35.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"50b55a4a-103c-4d9d-a93e-1449ee6048e0","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"93d769a1-a1fc-4d45-82ce-433197c92435","IsCreationKey":false,"Key":36.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"458d7ea7-73a0-4112-b0a2-927824bfac74","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f72f61d9-c325-41b1-9602-2e8e758f3736","IsCreationKey":false,"Key":37.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b3e67d7b-2b27-4ec4-866d-a59dcfb464b6","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c6ba22d6-8671-4221-8771-66bd3d5b4fbd","IsCreationKey":false,"Key":38.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dc9fd268-a2ed-404b-a8e3-387ba28ec4ea","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a0ad82d2-bf4a-41eb-bb67-6ce80204f494","IsCreationKey":false,"Key":39.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0543100d-07c5-45a9-827a-0b38456a8360","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"cd799107-d4e5-4d9b-a014-164aa5ff385c","IsCreationKey":false,"Key":40.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"efeee3b0-1f42-4e2a-a6da-fb05fba2854b","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"51e59400-c4a8-4bda-ab71-ff42dc24476f","IsCreationKey":false,"Key":41.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6c4335e2-8e02-4dd4-a393-89e32f9e2236","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"18a1b438-99ed-4d76-af07-10e6f299f0ef","IsCreationKey":false,"Key":42.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"80f8019c-f47b-42b7-807e-8041e3a7d5a4","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"75de707f-39c9-4d89-b493-8b00a6cf0826","IsCreationKey":false,"Key":43.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"565f651e-e4a8-43a8-a82f-27107d98d3a4","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"50bab0a8-5cb2-46de-b371-4ef0b383129e","IsCreationKey":false,"Key":44.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"97449439-cb3f-499f-8db9-fffe1b77ff01","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"66b56301-ce8e-4714-b53b-a2429f657e5d","IsCreationKey":false,"Key":45.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c165933c-b36a-4c6b-8b37-9b3a4cf70eac","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"388627b4-322c-4ce5-b3ae-30eb8f743371","IsCreationKey":false,"Key":46.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9e8ff839-26bf-4d51-b1b9-ed248dd08025","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9e6a30c9-3e9d-4471-af1f-284c16aeaa76","IsCreationKey":false,"Key":47.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fdccfa14-8129-41a4-a0a8-a7e02835d367","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9099876f-fa52-4064-bcba-b3f3f225d057","IsCreationKey":false,"Key":48.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d5301d1e-bd48-4285-a052-8c5409802bf3","path":"sprites/sprite_brachinus_crepitans_standing/sprite_brachinus_crepitans_standing.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e47a6284-2ea3-41da-b879-135075240e23","IsCreationKey":false,"Key":49.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
