@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"object_ominous_shadow",
-  "eventList":[],
+  "%Name":"object_onimous_shadow",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"object_ominous_shadow",
+  "name":"object_onimous_shadow",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprite_ominous_shadow",
+    "path":"sprites/sprite_ominous_shadow/sprite_ominous_shadow.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

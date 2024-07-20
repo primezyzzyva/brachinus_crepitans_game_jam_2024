@@ -17,7 +17,7 @@ if (keyboard_check(vk_left) or keyboard_check(ord("A")))
 
 if (keyboard_check(vk_right) or keyboard_check(ord("D")))
 {
-	if !collision_point(x + steps, y, object_collision, true, true)
+	if (!collision_point(x + steps, y, object_collision, true, true))
 	{
 		x += steps;
 	}
@@ -25,7 +25,7 @@ if (keyboard_check(vk_right) or keyboard_check(ord("D")))
 }
 if (keyboard_check(vk_up) or keyboard_check(ord("W")))
 {
-	if !collision_point(x, y - steps, object_collision, true, true)
+	if (!collision_point(x, y - steps, object_collision, true, true))
 	{
 		y -= steps;
 	}
@@ -41,3 +41,4 @@ if (keyboard_check(vk_down) or keyboard_check(ord("S")))
 	sprite_index = sprite_brachinus_crepitans_down;
 	
 }
+
