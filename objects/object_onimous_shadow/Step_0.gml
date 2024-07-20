@@ -41,7 +41,12 @@ else
 	image_angle = 360 - direction;
 }
 
-show_debug_message("direction {0}", direction);
-show_debug_message("speed {0}", speed);
-show_debug_message("delta_X: {0}, delta_y {1}, sprite_height {2}", delta_x, delta_y, sprite_height)
-show_debug_message("current time {0}", current_second)
+
+if (debug_shadow)
+{
+	show_debug_message("image_angle: {0}", image_angle);
+	show_debug_message("direction: {0}", direction);
+	show_debug_message("speed: {0}", speed);
+	show_debug_message("delta_X: {0}, delta_y: {1}, sprite_height {2}", delta_x, delta_y, sprite_height)
+	show_debug_message("current time: {0}", current_second)
+}

@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"object_ingredient",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"object_ingredient",
   "overriddenProperties":[],
@@ -27,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprite_default_mushrom",
+    "path":"sprites/sprite_default_mushrom/sprite_default_mushrom.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
