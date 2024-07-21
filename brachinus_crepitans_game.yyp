@@ -126,6 +126,7 @@
     {"id":{"name":"sprite_mushroom_strinkhorn","path":"sprites/sprite_mushroom_strinkhorn/sprite_mushroom_strinkhorn.yy",},},
     {"id":{"name":"sprite_mushroom_truffle_potato_esque","path":"sprites/sprite_mushroom_truffle_potato_esque/sprite_mushroom_truffle_potato_esque.yy",},},
     {"id":{"name":"sprite_ominous_shadow","path":"sprites/sprite_ominous_shadow/sprite_ominous_shadow.yy",},},
+    {"id":{"name":"sprite_plants_1","path":"sprites/sprite_plants_1/sprite_plants_1.yy",},},
     {"id":{"name":"sprite_poop_bird","path":"sprites/sprite_poop_bird/sprite_poop_bird.yy",},},
     {"id":{"name":"sprite_poop_bug","path":"sprites/sprite_poop_bug/sprite_poop_bug.yy",},},
     {"id":{"name":"sprite_poop_mouse","path":"sprites/sprite_poop_mouse/sprite_poop_mouse.yy",},},
