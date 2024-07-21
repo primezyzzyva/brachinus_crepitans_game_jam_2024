@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-delta_x = abs(object_brachinus_crepitans.x - x);
-delta_y = abs(object_brachinus_crepitans.y - y);
+var delta_x = abs(object_brachinus_crepitans.x - x);
+var delta_y = abs(object_brachinus_crepitans.y - y);
 
 
 if (delta_x > sprite_height || delta_y > sprite_height)

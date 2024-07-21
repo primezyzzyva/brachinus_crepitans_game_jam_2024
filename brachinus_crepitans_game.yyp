@@ -46,6 +46,7 @@
   },
   "name":"brachinus_crepitans_game",
   "resources":[
+    {"id":{"name":"font_big","path":"fonts/font_big/font_big.yy",},},
     {"id":{"name":"object_brachinus_crepitans","path":"objects/object_brachinus_crepitans/object_brachinus_crepitans.yy",},},
     {"id":{"name":"object_collision","path":"objects/object_collision/object_collision.yy",},},
     {"id":{"name":"object_ingredient","path":"objects/object_ingredient/object_ingredient.yy",},},

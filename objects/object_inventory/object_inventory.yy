@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprite_inventory",
-    "path":"sprites/sprite_inventory/sprite_inventory.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
