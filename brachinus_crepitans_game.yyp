@@ -142,6 +142,7 @@
     {"id":{"name":"tiles_mud","path":"tilesets/tiles_mud/tiles_mud.yy",},},
     {"id":{"name":"tiles_village","path":"tilesets/tiles_village/tiles_village.yy",},},
     {"id":{"name":"tiles_water","path":"tilesets/tiles_water/tiles_water.yy",},},
+    {"id":{"name":"TileSet6","path":"tilesets/TileSet6/TileSet6.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
