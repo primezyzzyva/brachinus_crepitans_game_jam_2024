@@ -86,6 +86,8 @@
     {"id":{"name":"sprite_brachinus_crepitans_down_right","path":"sprites/sprite_brachinus_crepitans_down_right/sprite_brachinus_crepitans_down_right.yy",},},
     {"id":{"name":"sprite_brachinus_crepitans_down","path":"sprites/sprite_brachinus_crepitans_down/sprite_brachinus_crepitans_down.yy",},},
     {"id":{"name":"sprite_brachinus_crepitans_left","path":"sprites/sprite_brachinus_crepitans_left/sprite_brachinus_crepitans_left.yy",},},
+    {"id":{"name":"sprite_brachinus_crepitans_more_bombardier_reverse","path":"sprites/sprite_brachinus_crepitans_more_bombardier_reverse/sprite_brachinus_crepitans_more_bombardier_reverse.yy",},},
+    {"id":{"name":"sprite_brachinus_crepitans_more_bombardier","path":"sprites/sprite_brachinus_crepitans_more_bombardier/sprite_brachinus_crepitans_more_bombardier.yy",},},
     {"id":{"name":"sprite_brachinus_crepitans_right","path":"sprites/sprite_brachinus_crepitans_right/sprite_brachinus_crepitans_right.yy",},},
     {"id":{"name":"sprite_brachinus_crepitans_sheet_1","path":"sprites/sprite_brachinus_crepitans_sheet_1/sprite_brachinus_crepitans_sheet_1.yy",},},
     {"id":{"name":"sprite_brachinus_crepitans_sheet_2","path":"sprites/sprite_brachinus_crepitans_sheet_2/sprite_brachinus_crepitans_sheet_2.yy",},},
