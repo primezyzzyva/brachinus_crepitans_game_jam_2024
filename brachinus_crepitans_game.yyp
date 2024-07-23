@@ -149,6 +149,7 @@
     {"id":{"name":"sprite_tiles_sand","path":"sprites/sprite_tiles_sand/sprite_tiles_sand.yy",},},
     {"id":{"name":"sprite_tiles_village","path":"sprites/sprite_tiles_village/sprite_tiles_village.yy",},},
     {"id":{"name":"sprite_tiles_water","path":"sprites/sprite_tiles_water/sprite_tiles_water.yy",},},
+    {"id":{"name":"sprite_vial","path":"sprites/sprite_vial/sprite_vial.yy",},},
     {"id":{"name":"tiles_grass","path":"tilesets/tiles_grass/tiles_grass.yy",},},
     {"id":{"name":"tiles_gravel","path":"tilesets/tiles_gravel/tiles_gravel.yy",},},
     {"id":{"name":"tiles_mud","path":"tilesets/tiles_mud/tiles_mud.yy",},},
