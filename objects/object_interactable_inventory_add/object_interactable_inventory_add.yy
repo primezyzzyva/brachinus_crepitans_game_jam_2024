@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"object_ingredient",
+  "%Name":"object_interactable_inventory_add",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"object_ingredient",
+  "name":"object_interactable_inventory_add",
   "overriddenProperties":[],
   "parent":{
     "name":"interactable",
     "path":"folders/Objects/interactable.yy",
   },
-  "parentObjectId":{
-    "name":"object_interactable_inventory_add",
-    "path":"objects/object_interactable_inventory_add/object_interactable_inventory_add.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprite_default_mushrom",
-    "path":"sprites/sprite_default_mushrom/sprite_default_mushrom.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

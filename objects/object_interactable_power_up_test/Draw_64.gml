@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-base_steps = 20;
-steps = 20;
+if (can_collect == 1)
+{
+	draw_text(x, 2.5 * y, "Press 'E' to interact");
+}

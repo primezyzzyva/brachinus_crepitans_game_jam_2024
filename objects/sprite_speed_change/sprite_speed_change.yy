@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"object_ingredient",
+  "%Name":"sprite_speed_change",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"object_ingredient",
+  "name":"sprite_speed_change",
   "overriddenProperties":[],
   "parent":{
     "name":"interactable",
     "path":"folders/Objects/interactable.yy",
   },
   "parentObjectId":{
-    "name":"object_interactable_inventory_add",
-    "path":"objects/object_interactable_inventory_add/object_interactable_inventory_add.yy",
+    "name":"object_interactable_power_up_test",
+    "path":"objects/object_interactable_power_up_test/object_interactable_power_up_test.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprite_default_mushrom",
-    "path":"sprites/sprite_default_mushrom/sprite_default_mushrom.yy",
+    "name":"Sprite94",
+    "path":"sprites/Sprite94/Sprite94.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"object_interactable",
+  "%Name":"object_interactable_power_up_test",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"object_interactable",
+  "name":"object_interactable_power_up_test",
   "overriddenProperties":[],
   "parent":{
     "name":"interactable",
