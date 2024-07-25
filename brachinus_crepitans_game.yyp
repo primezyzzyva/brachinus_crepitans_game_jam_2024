@@ -152,6 +152,7 @@
     {"id":{"name":"sprite_poop_rabbit","path":"sprites/sprite_poop_rabbit/sprite_poop_rabbit.yy",},},
     {"id":{"name":"sprite_recipe_book","path":"sprites/sprite_recipe_book/sprite_recipe_book.yy",},},
     {"id":{"name":"sprite_temp_background","path":"sprites/sprite_temp_background/sprite_temp_background.yy",},},
+    {"id":{"name":"sprite_tiles_ants","path":"sprites/sprite_tiles_ants/sprite_tiles_ants.yy",},},
     {"id":{"name":"sprite_tiles_grass","path":"sprites/sprite_tiles_grass/sprite_tiles_grass.yy",},},
     {"id":{"name":"sprite_tiles_gravel","path":"sprites/sprite_tiles_gravel/sprite_tiles_gravel.yy",},},
     {"id":{"name":"sprite_tiles_ladybogue","path":"sprites/sprite_tiles_ladybogue/sprite_tiles_ladybogue.yy",},},
