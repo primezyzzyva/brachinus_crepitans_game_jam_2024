@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"script_draw_text_align",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"script_draw_text_align",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function script_crafting()
+function draw_reset()
 {
- 
+	draw_set(c_white, 1);
 }
