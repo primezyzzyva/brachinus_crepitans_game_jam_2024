@@ -1,46 +1,53 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var delta_x = abs(object_brachinus_crepitans.x - x);
-var delta_y = abs(object_brachinus_crepitans.y - y);
-
-
-if (delta_x > sprite_height || delta_y > sprite_height)
+if (keyboard_check(vk_backspace))
 {
+	debug_move = !debug_move;
+	script_movement(40, false, ["K", "H", "J", "L"]);
+}
+else
+{
+	var delta_x = abs(object_brachinus_crepitans.x - x);
+	var delta_y = abs(object_brachinus_crepitans.y - y);
 
-	if (collision_point(x + speed * direction, y + speed * direction, object_collision, false, true))
-	{
-		direction = (direction * 2) % 360;
-	}
 
-	if (current_second % 56 == 0)
+	if (delta_x > sprite_height || delta_y > sprite_height)
 	{
-		direction = random_range(0, 360);
+
+		if (collision_point(x + speed * direction, y + speed * direction, object_collision, false, true))
+		{
+			direction = (direction * 2) % 360;
+		}
+
+		if (current_second % 56 == 0)
+		{
+			direction = random_range(0, 360);
 		
+		}
 	}
-}
-else
-{
-	if (delta_x <= sprite_height)
+	else
 	{
-		direction = point_direction(x, y, object_brachinus_crepitans.x, object_brachinus_crepitans.y);
+		if (delta_x <= sprite_height)
+		{
+			direction = point_direction(x, y, object_brachinus_crepitans.x, object_brachinus_crepitans.y);
+		}
+
+		if (delta_y <= sprite_height)
+		{
+			direction = point_direction(x, y, object_brachinus_crepitans.x, object_brachinus_crepitans.y);
+		}
 	}
 
-	if (delta_y <= sprite_height)
+	if (direction >= 90)
 	{
-		direction = point_direction(x, y, object_brachinus_crepitans.x, object_brachinus_crepitans.y);
+		image_angle = direction - 90;
+	}
+	else
+	{
+		image_angle = 360 - direction;
 	}
 }
-
-if (direction >= 90)
-{
-	image_angle = direction - 90;
-}
-else
-{
-	image_angle = 360 - direction;
-}
-
 
 if (debug_shadow)
 {

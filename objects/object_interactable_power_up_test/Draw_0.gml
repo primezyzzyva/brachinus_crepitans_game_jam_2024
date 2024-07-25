@@ -21,14 +21,17 @@ if (distance_to_object(object_brachinus_crepitans) < 100)
 			case 0:
 			show_debug_message("case 0");
 			object_brachinus_crepitans.steps = object_brachinus_crepitans.steps * 1.5; break;
-			
+			show_debug_message("{0}", object_brachinus_crepitans.steps);
+
 			case 1:
 			show_debug_message("case 1");
 			object_brachinus_crepitans.steps = object_brachinus_crepitans.steps * 0.5; break;
+			show_debug_message("{0}", object_brachinus_crepitans.steps);
 
 			case 2:
 			show_debug_message("case 2");
 			object_brachinus_crepitans.steps = object_brachinus_crepitans.base_steps; break;
+			show_debug_message("{0}", object_brachinus_crepitans.steps);
 		}
 		instance_destroy();
 	}
@@ -40,5 +43,3 @@ if (distance_to_object(object_brachinus_crepitans) > 5 * room_get_viewport(room_
 {
 	instance_destroy();
 }
-
-show_debug_message("{0}", object_brachinus_crepitans.steps);

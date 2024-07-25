@@ -35,7 +35,7 @@ if (is_showing_inventory)
 				{
 					if (_items[i].hover)
 					{
-						instance_create_depth(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), depth - 1, object_to_call_tutorial)
+						instance_create_depth(device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), depth - 1, object_item_used_text_tutorial)
 						inventory.remove(i);
 					}
 					else
