@@ -60,6 +60,7 @@
     {"id":{"name":"object_inventory","path":"objects/object_inventory/object_inventory.yy",},},
     {"id":{"name":"object_item_used_text_tutorial","path":"objects/object_item_used_text_tutorial/object_item_used_text_tutorial.yy",},},
     {"id":{"name":"object_onimous_shadow","path":"objects/object_onimous_shadow/object_onimous_shadow.yy",},},
+    {"id":{"name":"object_waterstrider","path":"objects/object_waterstrider/object_waterstrider.yy",},},
     {"id":{"name":"sprite_speed_change","path":"objects/sprite_speed_change/sprite_speed_change.yy",},},
     {"id":{"name":"room_end_credits","path":"rooms/room_end_credits/room_end_credits.yy",},},
     {"id":{"name":"room_game_main","path":"rooms/room_game_main/room_game_main.yy",},},
