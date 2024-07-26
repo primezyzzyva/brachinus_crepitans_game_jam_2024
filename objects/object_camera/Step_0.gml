@@ -4,7 +4,7 @@
 if (keyboard_check(ord("C")))
 {
 	indicate_camera = true;
-	script_movement(steps, false, ["K", "H", "J", "L"]);
+	script_movement(following.steps, false, ["K", "H", "J", "L"]);
 }
 else
 {
