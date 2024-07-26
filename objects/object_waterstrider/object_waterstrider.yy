@@ -6,8 +6,8 @@
   "name":"object_waterstrider",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"npc",
+    "path":"folders/Objects/npc.yy",
   },
   "parentObjectId":{
     "name":"object_collision",

@@ -16,6 +16,7 @@
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"collidable","folderPath":"folders/Objects/collidable.yy","name":"collidable","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"npc","folderPath":"folders/Objects/npc.yy","name":"npc","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"gui","folderPath":"folders/Objects/gui.yy","name":"gui","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"interactable","folderPath":"folders/Objects/interactable.yy","name":"interactable","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -52,6 +53,7 @@
   "resources":[
     {"id":{"name":"font_big","path":"fonts/font_big/font_big.yy",},},
     {"id":{"name":"font_inventory_tutorial","path":"fonts/font_inventory_tutorial/font_inventory_tutorial.yy",},},
+    {"id":{"name":"npc_base","path":"objects/npc_base/npc_base.yy",},},
     {"id":{"name":"object_brachinus_crepitans","path":"objects/object_brachinus_crepitans/object_brachinus_crepitans.yy",},},
     {"id":{"name":"object_camera","path":"objects/object_camera/object_camera.yy",},},
     {"id":{"name":"object_collision","path":"objects/object_collision/object_collision.yy",},},
