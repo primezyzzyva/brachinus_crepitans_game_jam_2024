@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-
 // https://www.youtube.com/watch?v=qiz-wt7Mb9g
+
+if (global.paused) return;
 
 if (keyboard_check_released(ord(global.inventory1)) or (keyboard_check_released(ord(global.inventory2))))
 {

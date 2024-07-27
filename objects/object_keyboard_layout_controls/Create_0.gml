@@ -4,6 +4,8 @@
 
 global.craft = "C";
 global.interact = "E";
+global.pause = "P";
+
 
 global.up1 = "W";
 global.left1 = "A";

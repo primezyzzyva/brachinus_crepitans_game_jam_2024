@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (global.paused) return;
+
 if (keyboard_check(vk_backspace))
 {
 	debug_move = !debug_move;

@@ -165,8 +165,6 @@ if (is_showing_inventory)
 	if (keyboard_check_released(ord(global.interact)))
 	{
 		var item_index = array_get_index(selected, current_item)
-		show_debug_message(item_index);
-		show_debug_message(selected);
 		if (item_index == -1 and array_length(selected) < 5)
 		{
 			array_push(selected, current_item);
@@ -206,21 +204,20 @@ if (is_showing_inventory)
 					ui_padding_y + (ui_border_size * 4), ui_text);
 	}
 	
-	if (keyboard_check_released(ord("C")))
+	if (keyboard_check_released(ord(global.craft)))
 	{
-		var item_index = array_get_index(selected, current_item)
-		show_debug_message(item_index);
-		show_debug_message(selected);
-		if (item_index == -1 and array_length(selected) < 5)
+		if (array_length(selected) == 5)
 		{
-			array_push(selected, current_item);
-		}
-		else
-		{
-			if (-1 != array_get_index(selected, current_item))
+			for (var i = 0; i < array_length(selected); i++)
 			{
-				array_delete(selected, item_index, 1);
+				inventory.item_subtract(inventory_items[selected[i]].name, 1);
 			}
+			
+			instance_create_depth(ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 4,
+									  ui_padding_y * 1.5 + (ui_border_size * 4) + 4, depth - 1, object_item_used_text_tutorial);
+		
+			selected = [];
 		}
+		
 	}
 }
