@@ -67,6 +67,7 @@
     {"id":{"name":"object_inventory","path":"objects/object_inventory/object_inventory.yy",},},
     {"id":{"name":"object_item_used_text_tutorial","path":"objects/object_item_used_text_tutorial/object_item_used_text_tutorial.yy",},},
     {"id":{"name":"object_keyboard_layout_controls","path":"objects/object_keyboard_layout_controls/object_keyboard_layout_controls.yy",},},
+    {"id":{"name":"object_mud_wasp","path":"objects/object_mud_wasp/object_mud_wasp.yy",},},
     {"id":{"name":"object_onimous_shadow","path":"objects/object_onimous_shadow/object_onimous_shadow.yy",},},
     {"id":{"name":"object_scorpion","path":"objects/object_scorpion/object_scorpion.yy",},},
     {"id":{"name":"object_waterstrider","path":"objects/object_waterstrider/object_waterstrider.yy",},},
