@@ -39,6 +39,7 @@
     {"name":"inst_148BC45A","path":"rooms/room_game_main/room_game_main.yy",},
     {"name":"inst_2D9144C1","path":"rooms/room_game_main/room_game_main.yy",},
     {"name":"inst_6BDC5A5C","path":"rooms/room_game_main/room_game_main.yy",},
+    {"name":"inst_682AC52C","path":"rooms/room_game_main/room_game_main.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -76,6 +77,7 @@
         {"$GMRInstance":"v1","%Name":"inst_6494E086","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6494E086","objectId":{"name":"object_inventory_tutorial_two","path":"objects/object_inventory_tutorial_two/object_inventory_tutorial_two.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":37.417973,"scaleY":37.417973,"x":35325.625,"y":-697.8746,},
         {"$GMRInstance":"v1","%Name":"inst_2D9144C1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2D9144C1","objectId":{"name":"object_scorpion","path":"objects/object_scorpion/object_scorpion.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":29246.0,"y":11321.0,},
         {"$GMRInstance":"v1","%Name":"inst_6BDC5A5C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6BDC5A5C","objectId":{"name":"object_mud_wasp","path":"objects/object_mud_wasp/object_mud_wasp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":27272.0,"y":9301.0,},
+        {"$GMRInstance":"v1","%Name":"inst_682AC52C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_682AC52C","objectId":{"name":"object_ant","path":"objects/object_ant/object_ant.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":29225.0,"y":10240.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_plants_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_plants_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":480,"SerialiseWidth":1560,"TileCompressedData":[
           -154900,-2147483648,12,268436127,268436126,268436125,268436124,268436123,268436122,268436121,268436120,
