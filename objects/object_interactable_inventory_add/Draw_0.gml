@@ -10,7 +10,7 @@ if (distance_to_object(object_brachinus_crepitans) < 48)
 	draw_healthbar(x - (sprite_width / 3), y - 1 * (sprite_height / 100), x + (sprite_width * 1.5), y - (sprite_height * 0.25), 100, c_gray, c_gray, c_gray, 0, false, true);
 
 	// draw the text
-	draw_reset(-1);
+	draw_reset();
 	draw_set_font(font_big);
 	draw_set_halign(fa_left);
     draw_text(x - (sprite_width / 4), y - 1 * (sprite_height / 5), string("Press '{0}' to interact", global.interact));

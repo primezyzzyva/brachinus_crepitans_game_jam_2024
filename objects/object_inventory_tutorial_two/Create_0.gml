@@ -9,7 +9,7 @@ current_item = 0;
 highlight_row = 0;
 highlight_column = 0;
 
-inventory = new Inventory2();
+inventory = new Recipe(); // recipe inherits inventory, yay OOP
 
 inventory.item_add("0Moel Mushroom", 1, sprite_mushroom_morel_honeycomb_cone);
 inventory.item_add("1Mol Mushroom", 1, sprite_mushroom_morel_honeycomb_cone);
@@ -26,6 +26,9 @@ inventory.item_add("11h Tongue Mushroom", 11, sprite_mushroom_jelly);
 inventory.item_add("12ngue Mushroom", 12, sprite_mushroom_truffle_potato_esque);
 inventory.item_add("13ngue Mushrm", 13, sprite_mushroom_truffle_potato_esque);
 
+inventory.recipe_add("Love Potion Number 9", [{name: "12ngue Mushroom", quantity: 1}], [{name: "Pheromone", quantity: 1, sprite: sprite_vial}], sprite_vial);
+inventory.recipe_add("Dank Meme", [{name: "13ngue Mushrm", quantity: 1}, {name: "4e Mushroom", quantity: 1}], [{name: "Also pheromones?", quantity: 1, sprite: sprite_vial_urine}], sprite_vial_urine);
+
 
 
 
@@ -35,6 +38,7 @@ inventory.item_add("13ngue Mushrm", 13, sprite_mushroom_truffle_potato_esque);
 
 
 show_debug_message(inventory);
+show_debug_message(recipe_get);
 
 // UI Information
 display_set_gui_size(1280,720);
