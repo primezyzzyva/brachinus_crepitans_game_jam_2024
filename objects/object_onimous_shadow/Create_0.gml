@@ -3,6 +3,6 @@
 
 forward = 1;
 left = 1;
-speed = 5
+speed = 5;
 debug_shadow = false;
 debug_move = false;

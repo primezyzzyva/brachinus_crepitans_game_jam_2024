@@ -5,6 +5,7 @@
 global.craft = "C";
 global.interact = "E";
 global.pause = "P";
+global.open_recipe = "R";
 
 
 global.up1 = "W";

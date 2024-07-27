@@ -6,6 +6,9 @@ is_showing_inventory = false;
 
 selected = [];
 current_item = 0;
+current_recipe = 0;
+choose_recipe = false;
+
 highlight_row = 0;
 highlight_column = 0;
 
@@ -28,6 +31,7 @@ inventory.item_add("13ngue Mushrm", 13, sprite_mushroom_truffle_potato_esque);
 
 inventory.recipe_add("Love Potion Number 9", [{name: "12ngue Mushroom", quantity: 1}], [{name: "Pheromone", quantity: 1, sprite: sprite_vial}], sprite_vial);
 inventory.recipe_add("Dank Meme", [{name: "13ngue Mushrm", quantity: 1}, {name: "4e Mushroom", quantity: 1}], [{name: "Also pheromones?", quantity: 1, sprite: sprite_vial_urine}], sprite_vial_urine);
+inventory.recipe_add("Blood. It's just blood", [{name: "4e Mushroom", quantity: 2}], [{name: "Blood", quantity: 2, sprite: sprite_vial_blood}], sprite_vial_blood);
 
 
 
