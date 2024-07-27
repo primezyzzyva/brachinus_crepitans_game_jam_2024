@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"object_scorpion",
+  "%Name":"object_ladybogue",
   "eventList":[],
   "managed":true,
-  "name":"object_scorpion",
+  "name":"object_ladybogue",
   "overriddenProperties":[],
   "parent":{
     "name":"npc",
@@ -29,10 +29,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"sprite_scorpions_idle",
-    "path":"sprites/sprite_scorpions_idle/sprite_scorpions_idle.yy",
+    "name":"sprite_ladybogue_talking",
+    "path":"sprites/sprite_ladybogue_talking/sprite_ladybogue_talking.yy",
   },
   "spriteMaskId":null,
   "visible":true,

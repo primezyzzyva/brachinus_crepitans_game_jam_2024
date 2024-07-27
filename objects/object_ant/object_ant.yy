@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprite_ants_idle_front_talking",
-    "path":"sprites/sprite_ants_idle_front_talking/sprite_ants_idle_front_talking.yy",
+    "name":"sprite_ants_idle_talking_front",
+    "path":"sprites/sprite_ants_idle_talking_front/sprite_ants_idle_talking_front.yy",
   },
   "spriteMaskId":null,
   "visible":true,

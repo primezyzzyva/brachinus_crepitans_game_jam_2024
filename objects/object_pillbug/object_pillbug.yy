@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprite_tiles_pillbug_idle",
-    "path":"sprites/sprite_tiles_pillbug_idle/sprite_tiles_pillbug_idle.yy",
+    "name":"sprite_pillbug_idle",
+    "path":"sprites/sprite_pillbug_idle/sprite_pillbug_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

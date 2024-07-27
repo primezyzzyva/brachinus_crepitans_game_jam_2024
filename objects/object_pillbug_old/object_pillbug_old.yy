@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprite_tiles_pillbug_old",
-    "path":"sprites/sprite_tiles_pillbug_old/sprite_tiles_pillbug_old.yy",
+    "name":"sprite_pillbug_old",
+    "path":"sprites/sprite_pillbug_old/sprite_pillbug_old.yy",
   },
   "spriteMaskId":null,
   "visible":true,

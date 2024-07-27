@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"sprite_tiles_waterstrider",
-    "path":"sprites/sprite_tiles_waterstrider/sprite_tiles_waterstrider.yy",
+    "name":"sprite_waterstrider",
+    "path":"sprites/sprite_waterstrider/sprite_waterstrider.yy",
   },
   "spriteMaskId":null,
   "visible":true,
