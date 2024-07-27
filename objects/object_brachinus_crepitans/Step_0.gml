@@ -1,7 +1,7 @@
 ///// @description Insert description here
 //// You can write your code in this editor
 
-script_movement(steps, true, ["K", "H", "J", "L"]);
+script_movement(steps, true, global.movement1, global.movement2);
 
 if (mouse_check_button_released(mb_left))
 {

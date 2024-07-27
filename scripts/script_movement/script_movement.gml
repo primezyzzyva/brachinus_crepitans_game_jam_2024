@@ -1,11 +1,11 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function script_movement(steps, use_sprites = true, other_keys = ["W", "A", "S", "D"])
+function script_movement(steps, use_sprites = true, other_keys = ["W", "A", "S", "D"], other_keys2 = ["K", "H", "J", "L"])
 {
-	var left = (keyboard_check(vk_left) or keyboard_check(ord(other_keys[1])) or keyboard_check(ord("A")));
-	var right = (keyboard_check(vk_right) or keyboard_check(ord(other_keys[3])) or keyboard_check(ord("D")));
-	var up = (keyboard_check(vk_up) or keyboard_check(ord(other_keys[0])) or keyboard_check(ord("W")));
-	var down = (keyboard_check(vk_down) or keyboard_check(ord(other_keys[2])) or keyboard_check(ord("S")));
+	var left = (keyboard_check(vk_left) or keyboard_check(ord(other_keys[1])) or keyboard_check(ord(other_keys2[1])));
+	var right = (keyboard_check(vk_right) or keyboard_check(ord(other_keys[3])) or keyboard_check(ord(other_keys2[3])));
+	var up = (keyboard_check(vk_up) or keyboard_check(ord(other_keys[0])) or keyboard_check(ord(other_keys2[0])));
+	var down = (keyboard_check(vk_down) or keyboard_check(ord(other_keys[2])) or keyboard_check(ord(other_keys2[2])));
 
 	var horizontal_speed = right - left;
 	var vertical_speed = down - up;

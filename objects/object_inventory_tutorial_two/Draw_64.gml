@@ -30,22 +30,12 @@ if (is_showing_inventory)
 	text_align(fa_left, fa_top);
 
 	// text shadow
-	draw_set(c_black, 0.5);
+	draw_set(c_teal, 0.15);
 	draw_text(ui_padding_x + (ui_border_size * 3) + 4, ui_padding_y + (ui_border_size * 4) + 4, "Stats");
 
 	// text 
-	draw_set(c_white, 1);
+	draw_set(c_navy, 1);
 	draw_text(ui_padding_x + (ui_border_size * 3), ui_padding_y + (ui_border_size * 4), "Stats");
-
-	// text shadow
-	draw_set(c_black, 0.5);
-	draw_text(ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 4,
-			  ui_padding_y + (ui_border_size * 4) + 4, "Inventory");
-
-	// text 
-	draw_set(c_white, 1);
-	draw_text(ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 4,
-			  ui_padding_y + (ui_border_size * 4), "Inventory");
 
 	// boxes
 	var inventory_items = inventory.item_get();
@@ -80,8 +70,6 @@ if (is_showing_inventory)
 				text_align(fa_center, fa_middle);
 				draw_set_font(-1);
 				
-				
-				
 				// quantity text
 				draw_text(position_x + ui_inventory_box - 10, position_y + ui_inventory_box - 10, inventory_items[inventory_index].quantity);
 			}
@@ -89,7 +77,7 @@ if (is_showing_inventory)
 	}
 	
 	// forgive me, for things are about to get "clever"
-	if (keyboard_check_released(vk_left) or keyboard_check_released(ord("H")) or keyboard_check_released(ord("A")))
+	if (keyboard_check_released(vk_left) or keyboard_check_released(ord(global.left1)) or keyboard_check_released(ord(global.left2)))
 	{
 		if (current_item > 0)
 		{
@@ -101,7 +89,7 @@ if (is_showing_inventory)
 		}
 	}
 				
-	if (keyboard_check_released(vk_right) or keyboard_check_released(ord("L")) or keyboard_check_released(ord("D")))
+	if (keyboard_check_released(vk_right) or keyboard_check_released(ord(global.right1)) or keyboard_check_released(ord(global.right2)))
 	{
 		if (current_item < array_length(inventory_items) - 1)
 		{
@@ -113,7 +101,7 @@ if (is_showing_inventory)
 		}
 	}
 				
-	if (keyboard_check_released(vk_up) or keyboard_check_released(ord("K")) or keyboard_check_released(ord("W")))
+	if (keyboard_check_released(vk_up) or keyboard_check_released(ord(global.up1)) or keyboard_check_released(ord(global.up2)))
 	{
 		if (floor(current_item / inventory_columns) == 0)
 		{
@@ -130,7 +118,7 @@ if (is_showing_inventory)
 		}
 	}
 					
-	if (keyboard_check_released(vk_down) or keyboard_check_released(ord("J")) or keyboard_check_released(ord("S")))
+	if (keyboard_check_released(vk_down) or keyboard_check_released(ord(global.down1)) or keyboard_check_released(ord(global.down2)))
 	{
 		if (floor(current_item / inventory_columns) == floor((array_length(inventory_items)) / inventory_columns))
 		{
@@ -152,11 +140,87 @@ if (is_showing_inventory)
 
 	highlight_row = floor(current_item / inventory_columns);
 	highlight_column =  current_item % inventory_columns;
-				
+	
+	// draw "hovering over" box
 	draw_set(color_highlight, 0.1);
 	var highlight_x = ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_padding + (highlight_column * (ui_inventory_margin + ui_inventory_box));
 	var highlight_y = ui_padding_y + (ui_border_size * 13) + (highlight_row * (ui_inventory_margin + ui_inventory_box));
 	draw_rectangle(highlight_x, highlight_y, highlight_x + ui_inventory_box, highlight_y + ui_inventory_box, false);
-	show_debug_message("row: {0}, col: {1}, index: {2}, array: {3}",highlight_row, highlight_column, current_item, array_length(inventory_items));
 	draw_reset(-1);
+	
+	for (var i = 0; i < array_length(selected); i++)
+	{
+		selected_row = floor(selected[i] / inventory_columns);
+		selected_column =  selected[i] % inventory_columns;
+				
+		draw_set(c_black, 1);
+		var selected_x = ui_padding_x * 1.5 + ui_panel_left + ui_border_size + ui_inventory_padding + (selected_column * (ui_inventory_margin + ui_inventory_box));
+		var selected_y = ui_padding_y * 1.5 + (ui_border_size * 13) + (selected_row * (ui_inventory_margin + ui_inventory_box));
+	
+		draw_set_font(font_big);
+		text_align(fa_center, fa_middle);
+		draw_text(selected_x,  selected_y, i + 1);
+	}
+	
+	if (keyboard_check_released(ord(global.interact)))
+	{
+		var item_index = array_get_index(selected, current_item)
+		show_debug_message(item_index);
+		show_debug_message(selected);
+		if (item_index == -1 and array_length(selected) < 5)
+		{
+			array_push(selected, current_item);
+		}
+		else
+		{
+			if (-1 != array_get_index(selected, current_item))
+			{
+				array_delete(selected, item_index, 1);
+			}
+		}
+	}
+	else
+	{
+		var ui_text = "";
+		
+		if (array_length(selected) < 5)
+		{
+			ui_text = string("Inventory - Pres '{0}' to (de)select", global.interact);
+		}
+		else
+		{
+			ui_text = string("Inventory - Press '{0}' to craft; '{1}' to deselect", global.craft, global.interact);
+		}
+		
+		draw_set_font(font_inventory_tutorial);
+		text_align(fa_left, fa_top);
+		
+		// text shadow
+		draw_set(c_teal, 0.15);
+		draw_text(ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 4,
+					ui_padding_y + (ui_border_size * 4) + 4, ui_text);
+
+		// text 
+		draw_set(c_navy, 1);
+		draw_text(ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 4,
+					ui_padding_y + (ui_border_size * 4), ui_text);
+	}
+	
+	if (keyboard_check_released(ord("C")))
+	{
+		var item_index = array_get_index(selected, current_item)
+		show_debug_message(item_index);
+		show_debug_message(selected);
+		if (item_index == -1 and array_length(selected) < 5)
+		{
+			array_push(selected, current_item);
+		}
+		else
+		{
+			if (-1 != array_get_index(selected, current_item))
+			{
+				array_delete(selected, item_index, 1);
+			}
+		}
+	}
 }

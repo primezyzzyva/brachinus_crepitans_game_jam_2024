@@ -4,6 +4,7 @@
 
 is_showing_inventory = false;
 
+selected = [];
 current_item = 0;
 highlight_row = 0;
 highlight_column = 0;
@@ -41,7 +42,7 @@ display_set_gui_size(1280,720);
 color_background = #FDC789;
 color_border = #A0410D;
 color_box = #DD995E;
-color_highlight = #ffffff; //#6b0a66;
+color_highlight = #ff00ff; //#6b0a66;
 
 inventory_columns = 9;
 inventory_rows = 6;

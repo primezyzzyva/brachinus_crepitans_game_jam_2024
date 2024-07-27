@@ -12,13 +12,13 @@ if (distance_to_object(object_brachinus_crepitans) < 48)
 	// draw the text		
 	draw_set_font(font_big);
 	draw_set_halign(fa_left);
-    draw_text(x - (sprite_width / 4), y - 1 * (sprite_height / 5), "Press 'E' to interact");
+    draw_text(x - (sprite_width / 4), y - 1 * (sprite_height / 5), string("Press '{0}' to interact", global.interact));
 		
 	// press 'E' to pick up the item and put it into the inventory
-	if (keyboard_check_released(ord("E")))
+	if (keyboard_check_released(ord(global.interact)))
 	{
 		//array_push(object_inventory.inventory, sprite_index);
-		object_inventory_tutorial.inventory.add(sprite_index, "TBD", object_inventory_tutorial)
+		object_inventory_tutorial_two.inventory.item_add(name_from_sprite_index(sprite_index), 1, sprite_index);
 		instance_destroy();
 	}
 }

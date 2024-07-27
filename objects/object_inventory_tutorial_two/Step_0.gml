@@ -6,7 +6,7 @@
 
 // https://www.youtube.com/watch?v=qiz-wt7Mb9g
 
-if (keyboard_check_released(ord("I")))
+if (keyboard_check_released(ord(global.inventory1)) or (keyboard_check_released(ord(global.inventory2))))
 {
 	is_showing_inventory = !is_showing_inventory;
 	instance_deactivate_all(true);
