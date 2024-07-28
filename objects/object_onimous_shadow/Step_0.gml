@@ -20,7 +20,7 @@ if !audio_playing {
 }
 
 
-if (keyboard_check(vk_backspace))
+if (keyboard_check_released(vk_backspace))
 {
 	debug_move = !debug_move;
 	script_movement(40, false, ["K", "H", "J", "L"]);

@@ -46,7 +46,7 @@ if (is_showing_inventory)
 			// draw sprite
 			if (inventory_index <= array_length(inventory_items) - 1)
 			{
-				draw_sprite_ext(inventory_items[inventory_index].sprite, 0, position_x + (ui_inventory_box / 2), position_y + 2 * (ui_inventory_box / 3),
+				draw_sprite_ext(inventory_items[inventory_index].sprite, 0, position_x + (ui_inventory_box / 2), position_y + (ui_inventory_box * 0.6),
 								sprite_get_height(sprite_inventory_background) / sprite_get_height(inventory_items[inventory_index].sprite) - 0.10,
 								sprite_get_height(sprite_inventory_background) / sprite_get_height(inventory_items[inventory_index].sprite) - 0.10, 0,
 								c_white, 1);
@@ -56,7 +56,7 @@ if (is_showing_inventory)
 			{
 				// quantity circle
 				draw_set(#232323, 1);
-				draw_circle(position_x + ui_inventory_box - 10, position_y + ui_inventory_box - 10, 14, false);
+				draw_circle(position_x + ui_inventory_box - 10, position_y + ui_inventory_box - 10, 12, false);
 		
 				draw_set(c_white, 1);
 				text_align(fa_center, fa_middle);
@@ -74,12 +74,12 @@ if (is_showing_inventory)
 
 	for (var recipe_index = 0; recipe_index < array_length(_recipes); recipe_index++)
 	{
-		var pos_y = ui_padding_y + (ui_border_size * 13) + (recipe_index * (ui_inventory_margin + 0.75 * ui_inventory_box));
+		var pos_y = ui_padding_y + (ui_border_size * 13) + (recipe_index * (ui_inventory_margin + 0.50 * ui_inventory_box));
 	
-		draw_sprite_ext(sprite_inventory_recipe_box, 0, pos_x, pos_y, 1, 1, 0, c_grey, 1);
-		draw_sprite(_recipes[recipe_index].sprite, 0, pos_x, pos_y);
+		draw_sprite_ext(sprite_inventory_recipe_box, 0, pos_x + 3, pos_y + 3, 282 / 288, 36 / 64, 0, c_grey, 1);
+		draw_sprite(_recipes[recipe_index].sprite, 0, pos_x + 8, pos_y + sprite_get_height(_recipes[recipe_index].sprite));
 		draw_set_halign(fa_left);
-		draw_text(pos_x +56, pos_y +16, _recipes[recipe_index].name);
+		draw_text(pos_x +56, pos_y + 10, _recipes[recipe_index].name);
 		
 		
 		// NOTE: this commented out section is to display item names instead of sprites
@@ -98,11 +98,13 @@ if (is_showing_inventory)
 			if (_recipes[recipe_index].discovered)
 			{
 				draw_sprite_ext(_recipes[recipe_index].requirements[requirement_index].sprite, 0,
-								pos_x + 48 + (32 * requirement_index), pos_y + 32, 0.75, 0.75, 0, c_white, 1);
+								pos_x + 48 + (32 * requirement_index), pos_y + 36,
+								15 / sprite_get_height(_recipes[recipe_index].requirements[requirement_index].sprite), 
+								15 / sprite_get_height(_recipes[recipe_index].requirements[requirement_index].sprite), 0, c_white, 1);
 			}
 			else
 			{
-				draw_sprite_ext(sprite_unknown_2, 0, pos_x + 48 + (32 * requirement_index), pos_y + 32, 0.75, 0.75, 0, c_white, 1);
+				draw_sprite_ext(sprite_unknown_2, 0, pos_x + 48 + (32 * requirement_index), pos_y + 36, 0.75, 0.75, 0, c_white, 1);
 			}
 		}
 		
@@ -221,9 +223,9 @@ if (is_showing_inventory)
 	
 	// draw "hovering over" box for recipe
 	var pos_x = ui_padding_x + (ui_border_size *  3) + 4;
-	var pos_y = ui_padding_y + (ui_border_size * 13) + (current_recipe * (ui_inventory_margin + 0.75 * ui_inventory_box));
+	var pos_y = ui_padding_y + (ui_border_size * 13) + (current_recipe * (ui_inventory_margin + 0.50 * ui_inventory_box));
 	draw_set(color_highlight, 0.1);
-	draw_rectangle(pos_x, pos_y, pos_x + ui_panel_left  - 32, pos_y + ui_inventory_box, false);
+	draw_rectangle(pos_x - 4, pos_y - 4, pos_x + ui_panel_left  - 28, pos_y + (40), false);
 	draw_reset();
 	
 	// draw selection numbers over the selected ingredients
@@ -290,27 +292,33 @@ if (is_showing_inventory)
 			draw_set(c_navy, 1);
 			draw_text(ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 4,
 					  ui_padding_y + (ui_border_size * 4), ui_text);
+					  
+			draw_set_font(font_inventory_recipe);
+			draw_text(ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 4,
+					  ui_padding_y + (ui_border_size * 4) + 34, inventory_items[current_item].name);
 		}
 	
 		if (keyboard_check_released(ord(global.craft)))
 		{
 			if (array_length(selected) == 5)
 			{
-				//for (var i = 0; i < array_length(selected); i++)
-				//{
-				//	inventory.item_subtract(inventory_items[selected[i]].name, 1);
-				//}
+				var attempt_recipe = [];
+				for (var i = 0; i < array_length(selected); i++)
+				{
+					array_push(attempt_recipe, inventory_items[selected[i]])
+				}
 				
-				inventory.recipe_craft_from_ingredients(selected);
-
-			
-				instance_create_depth(ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 4,
-									  ui_padding_y * 1.5 + (ui_border_size * 4) + 4, depth - 1, object_item_used_text_tutorial);
+				
+				if (!inventory.recipe_craft_from_ingredients(attempt_recipe))
+				{
+					instance_create_depth(ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 4,
+										  ui_padding_y * 1.5 + (ui_border_size * 4) + 4, depth - 1, object_item_used_text_tutorial);
+				}
 		
 				selected = [];
 			}
 		}
-		
+		draw_set_font(font_inventory_tutorial);
 		var inventory_recipe_ui = string("Recipes - Press '{0}'", global.open_recipe)
 	
 		// text shadow
@@ -338,7 +346,7 @@ if (is_showing_inventory)
 		draw_text(ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 4,
 				  ui_padding_y + (ui_border_size * 4), ui_text);
 	
-		var inventory_recipe_ui = string("{0}", _recipes[current_recipe].name);
+		var inventory_recipe_ui = string("{0}", _recipes[current_recipe].description);
 		draw_set_font(font_inventory_recipe);
 
 		// text shadow
@@ -351,6 +359,8 @@ if (is_showing_inventory)
 		
 		if (keyboard_check_released(ord(global.craft)))
 		{
+			draw_set_font(font_inventory_tutorial);
+			
 			if (inventory.recipe_has(_recipes[current_recipe].name))
 			{
 				inventory.recipe_craft(_recipes[current_recipe].name);

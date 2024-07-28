@@ -12,8 +12,12 @@ function script_movement(steps, use_sprites = true, other_keys = ["W", "A", "S",
 	
     var dir = point_direction(0, 0, horizontal_speed, vertical_speed);
     var length = steps * (horizontal_speed != 0 || vertical_speed != 0);
-    x += lengthdir_x(length, dir);
-    y += lengthdir_y(length, dir);
+	
+	if (!collision_point(x + lengthdir_x(length, dir), y + lengthdir_y(length, dir), object_collision, true, false))
+    {
+		x += lengthdir_x(length, dir);
+		y += lengthdir_y(length, dir);
+	}
 
 	if (!keyboard_check(vk_nokey))
     {

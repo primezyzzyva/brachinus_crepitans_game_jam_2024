@@ -16,9 +16,9 @@ function Recipe(): Inventory2() constructor
 		}
 	}
 	
-	recipe_add = function (_name, _requirement, _products, _sprite, _discovered = false)
+	recipe_add = function (_name, _requirement, _products, _sprite, _discovered = false, _description = "A potion. It must do something")
 	{
-		array_push(_recipes, {name: _name, requirements: _requirement, products: _products, sprite: _sprite, discovered : _discovered});
+		array_push(_recipes, {name: _name, requirements: _requirement, products: _products, sprite: _sprite, discovered : _discovered, description: _description});
 	}
 	
 	recipe_has = function(_name)
