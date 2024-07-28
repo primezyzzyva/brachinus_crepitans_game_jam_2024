@@ -91,6 +91,7 @@
     {"id":{"name":"script_name_from_sprite_index","path":"scripts/script_name_from_sprite_index/script_name_from_sprite_index.yy",},},
     {"id":{"name":"script_Recipe","path":"scripts/script_Recipe/script_Recipe.yy",},},
     {"id":{"name":"sequence_main_title","path":"sequences/sequence_main_title/sequence_main_title.yy",},},
+    {"id":{"name":"sound_heavy_crunch","path":"sounds/sound_heavy_crunch/sound_heavy_crunch.yy",},},
     {"id":{"name":"spite_collision_boundary","path":"sprites/spite_collision_boundary/spite_collision_boundary.yy",},},
     {"id":{"name":"sprite_anthro_battery","path":"sprites/sprite_anthro_battery/sprite_anthro_battery.yy",},},
     {"id":{"name":"sprite_anthro_candle","path":"sprites/sprite_anthro_candle/sprite_anthro_candle.yy",},},
