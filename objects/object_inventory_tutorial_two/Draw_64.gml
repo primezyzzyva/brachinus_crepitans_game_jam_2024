@@ -77,6 +77,8 @@ if (is_showing_inventory)
 		draw_set_halign(fa_left);
 		draw_text(pos_x +56, pos_y +16, _recipes[recipe_index].name);
 		
+		
+		// NOTE: this commented out section is to display item names instead of sprites
 		//var requirement_string = "";
 		//for (var requirement_index = 0; requirement_index < array_length(_recipes[recipe_index].requirements); requirement_index++)
 		//{
@@ -85,11 +87,19 @@ if (is_showing_inventory)
 		
 		//draw_text(pos_x + 56, pos_y + 32 + 16, $"REQ: {requirement_string}");
 		
+		
+		// display the required ingredients
 		for (var requirement_index = 0; requirement_index < array_length(_recipes[recipe_index].requirements); requirement_index++)
 		{
-			show_debug_message("{0}",(_recipes[recipe_index].requirements[requirement_index].sprite))
-			draw_sprite_ext(_recipes[recipe_index].requirements[requirement_index].sprite, 0,
-							pos_x + 48 + (32 * requirement_index), pos_y + 32, 0.75, 0.75, 0, c_white, 1);
+			if (_recipes[recipe_index].discovered)
+			{
+				draw_sprite_ext(_recipes[recipe_index].requirements[requirement_index].sprite, 0,
+								pos_x + 48 + (32 * requirement_index), pos_y + 32, 0.75, 0.75, 0, c_white, 1);
+			}
+			else
+			{
+				draw_sprite_ext(sprite_unknown_2, 0, pos_x + 48 + (32 * requirement_index), pos_y + 32, 0.75, 0.75, 0, c_white, 1);
+			}
 		}
 		
 	}
@@ -129,64 +139,67 @@ if (is_showing_inventory)
 	}
 	else // move the box around the ingredient side
 	{
-		// forgive me, for things are about to get "clever"
-		if (keyboard_check_released(vk_left) or keyboard_check_released(ord(global.left1)) or keyboard_check_released(ord(global.left2)))
+		if (array_length(inventory_items) != 0)
 		{
-			if (current_item > 0)
+			// forgive me, for things are about to get "clever"
+			if (keyboard_check_released(vk_left) or keyboard_check_released(ord(global.left1)) or keyboard_check_released(ord(global.left2)))
 			{
-				current_item--;
-			}
-			else
-			{
-				current_item = array_length(inventory_items) - 1;
-			}
-		}
-				
-		if (keyboard_check_released(vk_right) or keyboard_check_released(ord(global.right1)) or keyboard_check_released(ord(global.right2)))
-		{
-			if (current_item < array_length(inventory_items) - 1)
-			{
-				current_item++;
-			}
-			else
-			{
-				current_item = 0;
-			}
-		}
-				
-		if (keyboard_check_released(vk_up) or keyboard_check_released(ord(global.up1)) or keyboard_check_released(ord(global.up2)))
-		{
-			if (floor(current_item / inventory_columns) == 0)
-			{
-				adjust = current_item + (floor((array_length(inventory_items) - 1) / inventory_columns) * inventory_columns);
-			
-				if ((adjust) < array_length(inventory_items))
+				if (current_item > 0)
 				{
-					current_item = adjust;
+					current_item--;
+				}
+				else
+				{
+					current_item = array_length(inventory_items) - 1;
 				}
 			}
-			else
+				
+			if (keyboard_check_released(vk_right) or keyboard_check_released(ord(global.right1)) or keyboard_check_released(ord(global.right2)))
 			{
-				current_item -= inventory_columns;
+				if (current_item < array_length(inventory_items) - 1)
+				{
+					current_item++;
+				}
+				else
+				{
+					current_item = 0;
+				}
 			}
-		}
+				
+			if (keyboard_check_released(vk_up) or keyboard_check_released(ord(global.up1)) or keyboard_check_released(ord(global.up2)))
+			{
+				if (floor(current_item / inventory_columns) == 0)
+				{
+					adjust = current_item + (floor((array_length(inventory_items) - 1) / inventory_columns) * inventory_columns);
+			
+					if ((adjust) < array_length(inventory_items))
+					{
+						current_item = adjust;
+					}
+				}
+				else
+				{
+					current_item -= inventory_columns;
+				}
+			}
 					
-		if (keyboard_check_released(vk_down) or keyboard_check_released(ord(global.down1)) or keyboard_check_released(ord(global.down2)))
-		{
-			if (floor(current_item / inventory_columns) == floor((array_length(inventory_items)) / inventory_columns))
+			if (keyboard_check_released(vk_down) or keyboard_check_released(ord(global.down1)) or keyboard_check_released(ord(global.down2)))
 			{
-				adjust = current_item - (floor((array_length(inventory_items) - 1) / inventory_columns) * inventory_columns);
+				if (floor(current_item / inventory_columns) == floor((array_length(inventory_items)) / inventory_columns))
+				{
+					adjust = current_item - (floor((array_length(inventory_items) - 1) / inventory_columns) * inventory_columns);
 			
-				if (adjust < array_length(inventory_items) and adjust >= 0)
-				{
-					current_item = adjust;
+					if (adjust < array_length(inventory_items) and adjust >= 0)
+					{
+						current_item = adjust;
+					}
 				}
-			}
-			else
-			{
-				if (current_item + inventory_columns < array_length(inventory_items))
+				else
 				{
-					current_item += inventory_columns;
+					if (current_item + inventory_columns < array_length(inventory_items))
+					{
+						current_item += inventory_columns;
+					}
 				}
 			}
 		}
@@ -206,7 +219,7 @@ if (is_showing_inventory)
 	var pos_x = ui_padding_x + (ui_border_size *  3) + 4;
 	var pos_y = ui_padding_y + (ui_border_size * 13) + (current_recipe * (ui_inventory_margin + 0.75 * ui_inventory_box));
 	draw_set(color_highlight, 0.1);
-	draw_rectangle(pos_x, pos_y, pos_x + ui_panel_left  - 64, pos_y + ui_inventory_box, false);
+	draw_rectangle(pos_x, pos_y, pos_x + ui_panel_left  - 32, pos_y + ui_inventory_box, false);
 	draw_reset();
 	
 	// draw selection numbers over the selected ingredients
@@ -226,7 +239,7 @@ if (is_showing_inventory)
 	
 	if (!choose_recipe)
 	{
-		if (keyboard_check_released(ord(global.interact)))
+		if (keyboard_check_released(ord(global.interact)) and array_length(inventory_items) != 0)
 		{
 			var item_index = array_get_index(selected, current_item)
 			if (item_index == -1 and array_length(selected) < 5)
@@ -245,13 +258,20 @@ if (is_showing_inventory)
 		{
 			var ui_text = "";
 		
-			if (array_length(selected) < 5)
+			if (array_length(inventory_items) == 0)
 			{
-				ui_text = string("Inventory - Pres '{0}' to (de)select", global.interact);
+				ui_text = "Your inventory is empty, go explore! :)"
 			}
 			else
 			{
-				ui_text = string("Inventory - Press '{0}' to craft; '{1}' to deselect", global.craft, global.interact);
+				if (array_length(selected) < 5)
+				{
+					ui_text = string("Inventory - Pres '{0}' to (de)select", global.interact);
+				}
+				else
+				{
+					ui_text = string("Inventory - Press '{0}' to craft; '{1}' to deselect", global.craft, global.interact);
+				}
 			}
 		
 			draw_set_font(font_inventory_tutorial);
@@ -272,10 +292,13 @@ if (is_showing_inventory)
 		{
 			if (array_length(selected) == 5)
 			{
-				for (var i = 0; i < array_length(selected); i++)
-				{
-					inventory.item_subtract(inventory_items[selected[i]].name, 1);
-				}
+				//for (var i = 0; i < array_length(selected); i++)
+				//{
+				//	inventory.item_subtract(inventory_items[selected[i]].name, 1);
+				//}
+				
+				inventory.recipe_craft_from_ingredients(selected);
+
 			
 				instance_create_depth(ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 4,
 									  ui_padding_y * 1.5 + (ui_border_size * 4) + 4, depth - 1, object_item_used_text_tutorial);

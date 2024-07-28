@@ -56,8 +56,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"ingredients",
-    "path":"folders/Sprites/ingredients.yy",
+    "name":"master_sheets",
+    "path":"folders/Sprites/ingredients/kates_sprites/master_sheets.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

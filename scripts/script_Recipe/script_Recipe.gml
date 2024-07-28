@@ -16,9 +16,9 @@ function Recipe(): Inventory2() constructor
 		}
 	}
 	
-	recipe_add = function (_name, _requirement, _products, _sprite)
+	recipe_add = function (_name, _requirement, _products, _sprite, _discovered = false)
 	{
-		array_push(_recipes, {name: _name, requirements: _requirement, products: _products, sprite: _sprite});
+		array_push(_recipes, {name: _name, requirements: _requirement, products: _products, sprite: _sprite, discovered : _discovered});
 	}
 	
 	recipe_has = function(_name)
@@ -64,6 +64,47 @@ function Recipe(): Inventory2() constructor
 							 _recipes[index].products[product_index].sprite);
 				}
 			}
+		}
+	}
+	
+	recipe_craft_from_ingredients = function(_ingredient_list)
+	{
+		for (var recipe_index = 0; recipe_index < array_length(_recipes); recipe_index++)
+		{
+			// search for ingredients in the order they appear in the recipe
+			var matching = 0;
+			
+			for (var requirement_index = 0; requirement_index < array_length(_recipes[recipe_index].requirements); requirement_index++)
+			{
+				// to convert from permutations to combinations, add another loop here
+				if (_recipes[recipe_index].requirements[requirement_index].name == _ingredient_list[requirement_index].name)
+				{
+					matching++;
+				}
+				else
+				{
+					continue;
+				}
+				
+				if (matching == 5)
+				{
+					recipe_craft(_recipes[recipe_index].name);
+					_recipes[recipe_index].discovered = true;
+					break;
+				}
+			}
+			
+			if (matching == 5)
+			{
+				break;
+			}
+			
+		}
+		
+		// made it through all the recipes without finding a match. Shame about your ingredients
+		for (var i = 0; i < array_length(_ingredient_list); i ++)
+		{
+		    item_subtract(_ingredient_list[i], 1);
 		}
 	}
 	

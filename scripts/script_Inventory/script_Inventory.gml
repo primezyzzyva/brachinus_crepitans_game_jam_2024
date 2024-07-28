@@ -33,6 +33,19 @@ function Inventory2() constructor
 			item_set(_name, _quantity, _sprite);
 		}
 	}
+	item_add_from_struct = function(_ingredient_struc)
+	{
+		var index = item_find(_ingredient_struc.name);
+		
+		if (index >= 0)
+		{
+			_inventory_items[index].quantity += _ingredient_struc.quantity;
+		}
+		else
+		{
+			item_set(_ingredient_struc.name, _ingredient_struc.quantity, _ingredient_struc.sprite);
+		}
+	}
 	
 	item_has = function(_name, _quantity)
 	{
