@@ -46,7 +46,7 @@ if (is_showing_inventory)
 			// draw sprite
 			if (inventory_index <= array_length(inventory_items) - 1)
 			{
-				draw_sprite_ext(inventory_items[inventory_index].sprite, 0, position_x + (ui_inventory_box / 2), position_y + (ui_inventory_box * 0.6),
+				draw_sprite_ext(inventory_items[inventory_index].sprite, 0, position_x + (ui_inventory_box * 0.45), position_y + (ui_inventory_box * 0.55),
 								sprite_get_height(sprite_inventory_background) / sprite_get_height(inventory_items[inventory_index].sprite) - 0.10,
 								sprite_get_height(sprite_inventory_background) / sprite_get_height(inventory_items[inventory_index].sprite) - 0.10, 0,
 								c_white, 1);
@@ -56,14 +56,14 @@ if (is_showing_inventory)
 			{
 				// quantity circle
 				draw_set(#232323, 1);
-				draw_circle(position_x + ui_inventory_box - 10, position_y + ui_inventory_box - 10, 12, false);
+				draw_circle(position_x + ui_inventory_box - 5, position_y + ui_inventory_box - 5, 10, false);
 		
 				draw_set(c_white, 1);
 				text_align(fa_center, fa_middle);
 				draw_set_font(-1);
 				
 				// quantity text
-				draw_text(position_x + ui_inventory_box - 10, position_y + ui_inventory_box - 10, inventory_items[inventory_index].quantity);
+				draw_text(position_x + ui_inventory_box - 5, position_y + ui_inventory_box - 5, inventory_items[inventory_index].quantity);
 			}
 		}
 	}
@@ -245,6 +245,7 @@ if (is_showing_inventory)
 	
 	if (!choose_recipe)
 	{
+		// select ingredients
 		if (keyboard_check_released(ord(global.interact)) and array_length(inventory_items) != 0)
 		{
 			var item_index = array_get_index(selected, current_item)
@@ -262,6 +263,7 @@ if (is_showing_inventory)
 		}
 		else
 		{
+			// draw text above inventory
 			var ui_text = "";
 		
 			if (array_length(inventory_items) == 0)
@@ -298,6 +300,7 @@ if (is_showing_inventory)
 					  ui_padding_y + (ui_border_size * 4) + 34, inventory_items[current_item].name);
 		}
 	
+		// craft from ingredients
 		if (keyboard_check_released(ord(global.craft)))
 		{
 			if (array_length(selected) == 5)
@@ -353,7 +356,7 @@ if (is_showing_inventory)
 		draw_set(c_teal, 0.15);
 		draw_text(ui_padding_x + (ui_border_size * 3) + 4, ui_padding_y + (ui_border_size * 4) + 4, inventory_recipe_ui);
 
-		// text 
+		// text  aboove recipe
 		draw_set(c_navy, 1);
 		draw_text(ui_padding_x + (ui_border_size * 3), ui_padding_y + (ui_border_size * 4), inventory_recipe_ui);
 		

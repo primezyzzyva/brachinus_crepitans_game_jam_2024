@@ -69,6 +69,8 @@ function Recipe(): Inventory2() constructor
 	
 	recipe_craft_from_ingredients = function(_ingredient_list)
 	{
+		var crafted = false;
+		
 		for (var recipe_index = 0; recipe_index < array_length(_recipes); recipe_index++)
 		{
 			// search for ingredients in the order they appear in the recipe
@@ -90,6 +92,8 @@ function Recipe(): Inventory2() constructor
 				{
 					recipe_craft(_recipes[recipe_index].name);
 					_recipes[recipe_index].discovered = true;
+					
+					crafted = true;
 					break;
 				}
 			}
@@ -98,14 +102,16 @@ function Recipe(): Inventory2() constructor
 			{
 				break;
 			}
-			
 		}
 		
 		// made it through all the recipes without finding a match. Shame about your ingredients
 		for (var i = 0; i < array_length(_ingredient_list); i ++)
 		{
-		    item_subtract(_ingredient_list[i], 1);
+		    item_subtract(_ingredient_list[i].name, 1);
 		}
+		
+		
+		return crafted;
 	}
 	
 	recipe_get = function()

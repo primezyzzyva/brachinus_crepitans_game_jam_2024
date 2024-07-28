@@ -71,7 +71,7 @@ var scorpian_stinger = struct_from_sprite_index(sprite_bug_scorpian_stinger);
 var speech_ant = {name: "Ant Speech 101", quantity: 1, sprite: sprite_vial_blood};
 
 inventory.recipe_add("Discover Me", [unknown, unknown, unknown, unknown, unknown], [unknown], unknown.sprite, false);
-inventory.recipe_add("Ant Speech 101", [mushroom_amanita_muscaria, leaf_fragment, honey, flower_white_petals, bug_ant_antenna], [speech_ant], speech_ant.sprite, false);
+inventory.recipe_add("Ant Speech 101", [mushroom_amanita_muscaria, leaf_fragment, honey, flower_white_petals, bug_ant_antenna], [speech_ant], speech_ant.sprite, false, "Let's ask them about bridges");
 
 inventory.recipe_add("Love Potion Number 9", [{name: "12ngue Mushroom", quantity: 1}], [{name: "Pheromone", quantity: 1, sprite: sprite_vial}], sprite_vial);
 inventory.recipe_add("Dank Meme", [{name: "13ngue Mushrm", quantity: 1, sprite: sprite_mushroom_truffle_potato_esque}, {name: "4e Mushroom", quantity: 1, sprite: sprite_vial_blood}], [{name: "Also pheromones?", quantity: 1, sprite: sprite_vial_urine}], sprite_vial_urine);
