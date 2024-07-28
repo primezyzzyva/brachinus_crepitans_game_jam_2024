@@ -77,13 +77,21 @@ if (is_showing_inventory)
 		draw_set_halign(fa_left);
 		draw_text(pos_x +56, pos_y +16, _recipes[recipe_index].name);
 		
-		var requirement_string = "";
+		//var requirement_string = "";
+		//for (var requirement_index = 0; requirement_index < array_length(_recipes[recipe_index].requirements); requirement_index++)
+		//{
+		//	requirement_string += $"{_recipes[recipe_index].requirements[requirement_index].name}: {_recipes[recipe_index].requirements[requirement_index].quantity} ";
+		//}
+		
+		//draw_text(pos_x + 56, pos_y + 32 + 16, $"REQ: {requirement_string}");
+		
 		for (var requirement_index = 0; requirement_index < array_length(_recipes[recipe_index].requirements); requirement_index++)
 		{
-			requirement_string += $"{_recipes[recipe_index].requirements[requirement_index].name}: {_recipes[recipe_index].requirements[requirement_index].quantity} ";
+			show_debug_message("{0}",(_recipes[recipe_index].requirements[requirement_index].sprite))
+			draw_sprite_ext(_recipes[recipe_index].requirements[requirement_index].sprite, 0,
+							pos_x + 48 + (32 * requirement_index), pos_y + 32, 0.75, 0.75, 0, c_white, 1);
 		}
 		
-		draw_text(pos_x + 56, pos_y + 32 + 16, $"REQ: {requirement_string}");
 	}
 	
 	
