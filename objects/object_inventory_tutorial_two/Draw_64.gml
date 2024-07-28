@@ -313,6 +313,21 @@ if (is_showing_inventory)
 		// text 
 		draw_set(c_navy, 1);
 		draw_text(ui_padding_x + (ui_border_size * 3), ui_padding_y + (ui_border_size * 4), inventory_recipe_ui);
+		
+		if (keyboard_check_released(ord(global.craft)))
+		{
+			if (inventory.recipe_has(_recipes[current_recipe].name))
+			{
+				inventory.recipe_craft(_recipes[current_recipe].name);
+				show_debug_message("{0}", _recipes[current_recipe].name);
+			}
+			else
+			{
+				var pos_x = ui_padding_x + (ui_border_size *  3) + 4;
+				var pos_y = ui_padding_y + (ui_border_size * 13) + (current_recipe * (ui_inventory_margin + 0.75 * ui_inventory_box));
+				instance_create_depth(pos_x, pos_y, depth - 1, object_item_used_text_tutorial);
+			}
+		}
 	}
 }
 

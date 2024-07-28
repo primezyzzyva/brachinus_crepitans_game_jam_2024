@@ -21,7 +21,7 @@ function Recipe(): Inventory2() constructor
 		array_push(_recipes, {name: _name, requirements: _requirement, products: _products, sprite: _sprite});
 	}
 	
-	recipes_has = function(_name)
+	recipe_has = function(_name)
 	{
 		var index = recipe_find(_name);
 		var can_craft = false;
@@ -32,7 +32,7 @@ function Recipe(): Inventory2() constructor
 			
 			for (var requirement_index = 0; requirement_index < array_length(_recipes[index].requirements); requirement_index++)
 			{
-				if (item_has(_recipes[index].requirements[requirement_index].name, _recipes[index].requirements[requirement_index].quantity))
+				if (!item_has(_recipes[index].requirements[requirement_index].name, _recipes[index].requirements[requirement_index].quantity))
 				{
 					can_craft = false;
 					break;
@@ -53,12 +53,15 @@ function Recipe(): Inventory2() constructor
 			{
 				for (var requirement_index = 0; requirement_index < array_length(_recipes[index].requirements); requirement_index++)
 				{
-					item_subtract(_recipes[index].requirements[requirement_index].name, _recipes[index].requirements[requirement_index].quantity);
+					item_subtract(_recipes[index].requirements[requirement_index].name,
+								  _recipes[index].requirements[requirement_index].quantity);
 				}	
 				
 				for (var product_index = 0; product_index < array_length(_recipes[index].products); product_index++)
 				{
-					item_add(_recipes[index].products[prodcut_index].name, _recipes[index].products[prodcut_index].quantity, _recipes[index].products[prodcut_index].sprite);
+					item_add(_recipes[index].products[product_index].name,
+							 _recipes[index].products[product_index].quantity,
+							 _recipes[index].products[product_index].sprite);
 				}
 			}
 		}

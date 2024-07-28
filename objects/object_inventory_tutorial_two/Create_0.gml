@@ -42,7 +42,6 @@ inventory.recipe_add("Blood. It's just blood", [{name: "4e Mushroom", quantity: 
 
 
 show_debug_message(inventory);
-show_debug_message(recipe_get);
 
 // UI Information
 display_set_gui_size(1280,720);
