@@ -43,9 +43,13 @@ if (is_showing_inventory)
 	
 			var inventory_index = (row * inventory_columns) + column;
 		
+			// draw sprite
 			if (inventory_index <= array_length(inventory_items) - 1)
 			{
-				draw_sprite(inventory_items[inventory_index].sprite, 0, position_x, position_y);
+				draw_sprite_ext(inventory_items[inventory_index].sprite, 0, position_x + (ui_inventory_box / 2), position_y + 2 * (ui_inventory_box / 3),
+								sprite_get_height(sprite_inventory_background) / sprite_get_height(inventory_items[inventory_index].sprite) - 0.10,
+								sprite_get_height(sprite_inventory_background) / sprite_get_height(inventory_items[inventory_index].sprite) - 0.10, 0,
+								c_white, 1);
 			}
 		
 			if (inventory_index <= array_length(inventory_items) - 1)

@@ -3,6 +3,7 @@
 // https://www.youtube.com/watch?v=3FGMKQ_8bIc
 
 is_showing_inventory = false;
+debug_inventory = true; 
 
 selected = [];
 current_item = 0;
@@ -87,11 +88,63 @@ inventory.item_add_from_struct(flower_white_petals);
 inventory.item_add_from_struct(bug_ant_antenna);
 inventory.item_add_from_struct(bug_ant_antenna);
 
+if (debug_inventory)
+{
+	inventory.item_add_from_struct(unknown);
+	inventory.item_add_from_struct(foxtail);
+	inventory.item_add_from_struct(star_thistle);
+	inventory.item_add_from_struct(small_twig);
+	inventory.item_add_from_struct(seed_sunflower);
+	inventory.item_add_from_struct(seed_dandelion);
+	inventory.item_add_from_struct(sea_plantain);
+	inventory.item_add_from_struct(pinecone_fragment);
+	inventory.item_add_from_struct(pine_needle);
+	inventory.item_add_from_struct(acorn_top);
+	inventory.item_add_from_struct(mote_of_sunglight);
+	inventory.item_add_from_struct(leaf_dandelion);
+	inventory.item_add_from_struct(leaf_oak);
+	inventory.item_add_from_struct(water_droplet);
+	inventory.item_add_from_struct(sand_grass);
+	inventory.item_add_from_struct(pollen);
+	inventory.item_add_from_struct(mud);
+	inventory.item_add_from_struct(leaf_fragment);
+	inventory.item_add_from_struct(honey);
+	inventory.item_add_from_struct(gravel);
+	inventory.item_add_from_struct(grass);
+	inventory.item_add_from_struct(berry_blue);
+	inventory.item_add_from_struct(berry_red);
+	inventory.item_add_from_struct(mushroom_pink_bonnet);
+	inventory.item_add_from_struct(mushroom_pig_ear);
+	inventory.item_add_from_struct(mushroom_peziza_ammophilia);
+	inventory.item_add_from_struct(mushroom_pale_brittlestem);
+	inventory.item_add_from_struct(mushroom_morel);
+	inventory.item_add_from_struct(mushroom_marasmius_haematocephalus);
+	inventory.item_add_from_struct(mushroom_hericium_erinsceus);
+	inventory.item_add_from_struct(mushroom_favolaschia_calocera);
+	inventory.item_add_from_struct(mushroom_entoloma_hochstetteri);
+	inventory.item_add_from_struct(mushroom_straw);
+	inventory.item_add_from_struct(mushroom_veiled_lady);
+	inventory.item_add_from_struct(mushroom_amanita_muscaria);
+	inventory.item_add_from_struct(vial);
+	inventory.item_add_from_struct(vial_blood);
+	inventory.item_add_from_struct(vial_urine);
+	inventory.item_add_from_struct(vial_water);
+	inventory.item_add_from_struct(flower_yellow_petals);
+	inventory.item_add_from_struct(flower_white_petals);
+	inventory.item_add_from_struct(flower_red_petals);
+	inventory.item_add_from_struct(flower_purple_petals);
+	inventory.item_add_from_struct(flower_blue_petals);
+	inventory.item_add_from_struct(bug_pill_shell_fragment );
+	inventory.item_add_from_struct(bug_ant_antenna );
+	inventory.item_add_from_struct(water_strider_leg);
+	inventory.item_add_from_struct(mud_wasp_wing );
+	inventory.item_add_from_struct(scorpian_stinger);
+}
 
 //inventory.item_subtract("Morel Mushroom", 1);
 //inventory.item_subtract("Earth Tongue Mushroom", 100);
-inventory.item_add("3Mushroom mycelium", 3, sprite_mushroom_mycelium);
-inventory.item_add("4e Mushroom", 4, sprite_vial_blood);
+//inventory.item_add("3Mushroom mycelium", 3, sprite_mushroom_mycelium);
+//inventory.item_add("4e Mushroom", 4, sprite_vial_blood);
 
 
 // UI Information
