@@ -11,6 +11,15 @@ else
 	speed = 5;
 }
 
+// Set the position of the listener
+// audio_listener_position(x, y, 0);
+// Play the sound of crunching on loop centered at this object
+if !audio_playing {
+	audio_play_sound_on(sound_emitter, sound_heavy_crunch_pair, true, 1);
+	audio_playing = true;
+}
+
+
 if (keyboard_check(vk_backspace))
 {
 	debug_move = !debug_move;
@@ -67,3 +76,6 @@ else
 		show_debug_message("current time: {0}", current_second);
 	}
 }
+
+// after calculating movement, set the new position of the sound emitter
+audio_emitter_position(sound_emitter, x, y, 0);
