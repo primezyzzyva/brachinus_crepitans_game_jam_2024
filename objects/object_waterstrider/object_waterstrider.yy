@@ -10,8 +10,8 @@
     "path":"folders/Objects/npc.yy",
   },
   "parentObjectId":{
-    "name":"object_collision",
-    "path":"objects/object_collision/object_collision.yy",
+    "name":"npc_base",
+    "path":"objects/npc_base/npc_base.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
