@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"kates_sprites",
-    "path":"folders/Sprites/ingredients/kates_sprites.yy",
+    "name":"plants",
+    "path":"folders/Sprites/ingredients/kates_sprites/plants.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

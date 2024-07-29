@@ -26,6 +26,11 @@ function name_from_sprite_index(sprite_index)
 		case sprite_mushroom_smut_dusty: thy_name_is = "Dusty Smut isnt a Mushroom"; break;
 		case sprite_mushroom_strinkhorn: thy_name_is = "Stink Horn Mushroom"; break;
 		case sprite_mushroom_truffle_potato_esque: thy_name_is = "Truffle Mushroom"; break;
+		case sprite_vial: thy_name_is = "Empty Vial"; break;
+		case sprite_vial_blood: thy_name_is = "Vial of Blood"; break;
+		case sprite_vial_urine: thy_name_is = "Vial of Urine"; break;
+		case sprite_vial_water: thy_name_is = "Vial of Water"; break;
+		case sprite_unknown: thy_name_is = "Unknown"; break;
 		
 		// Kate's sprites
 		case sprite_plants_foxtail: thy_name_is = "Foxtail"; break;
@@ -62,12 +67,7 @@ function name_from_sprite_index(sprite_index)
 		case sprite_mushroom_straw: thy_name_is = "Staw Mushroom"; break;
 		case sprite_mushroom_veiled_lady: thy_name_is = "Veiled Lady Mushroom"; break;
 		case sprite_mushroom_amanita_muscaria: thy_name_is = "Amanita muscaria Mushroom"; break;
-		case sprite_vial: thy_name_is = "Empty Vial"; break;
-		case sprite_vial_blood: thy_name_is = "Vial of Blood"; break;
-		case sprite_vial_urine: thy_name_is = "Vial of Urine"; break;
-		case sprite_vial_water: thy_name_is = "Vial of Water"; break;
-		case sprite_unknown: thy_name_is = "Unknown"; break;
-		case sprite_flower_yellow_petals: thy_name_is = "Yellow Flower Petals"; break;
+				case sprite_flower_yellow_petals: thy_name_is = "Yellow Flower Petals"; break;
 		case sprite_flower_white_petals: thy_name_is = "White Flower Petals"; break;
 		case sprite_flower_red_petals: thy_name_is = "Red Flower Petals"; break;
 		case sprite_flower_purple_petals: thy_name_is = "Purple Flower Petals"; break;
@@ -77,6 +77,8 @@ function name_from_sprite_index(sprite_index)
 		case sprite_bug_water_strider_leg: thy_name_is = "Water Strider Leg"; break;
 		case sprite_bug_mud_wasp_wing: thy_name_is = "Mud Wasp Wing"; break;
 		case sprite_bug_scorpian_stinger: thy_name_is = "Scoprian Stinger"; break;
+		
+		// potion sprites
 	}
 	
 	return thy_name_is;

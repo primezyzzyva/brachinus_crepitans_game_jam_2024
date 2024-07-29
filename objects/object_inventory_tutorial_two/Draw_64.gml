@@ -248,16 +248,27 @@ if (is_showing_inventory)
 		// select ingredients
 		if (keyboard_check_released(ord(global.interact)) and array_length(inventory_items) != 0)
 		{
-			var item_index = array_get_index(selected, current_item)
-			if (item_index == -1 and array_length(selected) < 5)
+			if (inventory_items[current_item].usable)
 			{
-				array_push(selected, current_item);
+				inventory.item_use(inventory_items[current_item].sprite);
+				if (current_item == array_length(inventory_items))
+				{
+					current_item--;
+				}
 			}
 			else
 			{
-				if (-1 != array_get_index(selected, current_item))
+				var item_index = array_get_index(selected, current_item)
+				if (item_index == -1 and array_length(selected) < 5)
 				{
-					array_delete(selected, item_index, 1);
+					array_push(selected, current_item);
+				}
+				else
+				{
+					if (-1 != array_get_index(selected, current_item))
+					{
+						array_delete(selected, item_index, 1);
+					}
 				}
 			}
 		}
@@ -274,11 +285,11 @@ if (is_showing_inventory)
 			{
 				if (array_length(selected) < 5)
 				{
-					ui_text = string("Inventory - Pres '{0}' to (de)select", global.interact);
+					ui_text = string("Inventory - Pres '{0}' to (de)select or use", global.interact);
 				}
 				else
 				{
-					ui_text = string("Inventory - Press '{0}' to craft; '{1}' to deselect", global.craft, global.interact);
+					ui_text = string("Inventory - Press '{0}' to craft; '{1}' to deselect or use", global.craft, global.interact);
 				}
 			}
 		
@@ -294,10 +305,17 @@ if (is_showing_inventory)
 			draw_set(c_navy, 1);
 			draw_text(ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 4,
 					  ui_padding_y + (ui_border_size * 4), ui_text);
-					  
+			
 			draw_set_font(font_inventory_recipe);
+			var usable_string = "";
+			if (inventory_items[current_item].usable)
+			{
+				usable_string = string(" - Press {0} to drink me!", global.interact);
+			}
+			
+			var name_usable = string("{0}{1}", inventory_items[current_item].name, usable_string);
 			draw_text(ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 4,
-					  ui_padding_y + (ui_border_size * 4) + 34, inventory_items[current_item].name);
+					  ui_padding_y + (ui_border_size * 4) + 34, name_usable);
 		}
 	
 		// craft from ingredients
@@ -334,7 +352,7 @@ if (is_showing_inventory)
 	}
 	else
 	{
-		var ui_text = string("Press '{0}' to craft recipe; '{1}' to switch back", global.craft, global.open_recipe);
+		var ui_text = string("Press '{0}' to craft known recipe; '{1}' to switch back", global.craft, global.open_recipe);
 		
 		draw_set_font(font_inventory_tutorial);
 		text_align(fa_left, fa_top);
@@ -349,7 +367,15 @@ if (is_showing_inventory)
 		draw_text(ui_padding_x + ui_panel_left + ui_border_size + ui_inventory_margin + 4,
 				  ui_padding_y + (ui_border_size * 4), ui_text);
 	
-		var inventory_recipe_ui = string("{0}", _recipes[current_recipe].description);
+		var inventory_recipe_ui = "";
+		if (!_recipes[current_recipe].discovered)
+		{
+			inventory_recipe_ui = string("{0}", _recipes[current_recipe].description);
+		}
+		else
+		{
+			inventory_recipe_ui = string("{0}", _recipes[current_recipe].pre_discovery_description);
+		}
 		draw_set_font(font_inventory_recipe);
 
 		// text shadow
@@ -367,7 +393,6 @@ if (is_showing_inventory)
 			if (inventory.recipe_has(_recipes[current_recipe].name))
 			{
 				inventory.recipe_craft(_recipes[current_recipe].name);
-				show_debug_message("{0}", _recipes[current_recipe].name);
 			}
 			else
 			{

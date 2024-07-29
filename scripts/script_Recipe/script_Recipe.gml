@@ -4,6 +4,7 @@ function Recipe(): Inventory2() constructor
 {
 	_recipes = [];
 	
+	_recipe_description_default = "A potion. It must do something";
 	
 	recipe_find = function(_name)
 	{
@@ -16,9 +17,9 @@ function Recipe(): Inventory2() constructor
 		}
 	}
 	
-	recipe_add = function (_name, _requirement, _products, _sprite, _discovered = false, _description = "A potion. It must do something")
+	recipe_add = function (_name, _requirement, _products, _sprite, _discovered = false, _description = _recipe_description_default, _pre_discovery_description = _recipe_description_default)
 	{
-		array_push(_recipes, {name: _name, requirements: _requirement, products: _products, sprite: _sprite, discovered : _discovered, description: _description});
+		array_push(_recipes, {name: _name, requirements: _requirement, products: _products, sprite: _sprite, discovered : _discovered, description: _description, pre_discovery_description: _pre_discovery_description});
 	}
 	
 	recipe_has = function(_name)
@@ -61,7 +62,8 @@ function Recipe(): Inventory2() constructor
 				{
 					item_add(_recipes[index].products[product_index].name,
 							 _recipes[index].products[product_index].quantity,
-							 _recipes[index].products[product_index].sprite);
+							 _recipes[index].products[product_index].sprite,
+							 _recipes[index].products[product_index].usable);
 				}
 			}
 		}

@@ -6,7 +6,7 @@ function Inventory2() constructor
 	
 	item_set = function (_name, _quantity, _sprite, _usable = false)
 	{
-		array_push(_inventory_items,{name : _name, quantity: _quantity, sprite: _sprite, _usable});
+		array_push(_inventory_items,{name : _name, quantity: _quantity, sprite: _sprite, usable: _usable});
 	}
 	
 	item_find = function(_name) 
@@ -43,10 +43,6 @@ function Inventory2() constructor
 		}
 		else
 		{
-			// this dumb line of code is to prevent usable from being null
-			// not sure if this is needed, but don't want to find out
-			if (!_ingredient_struc.usable) {_ingredient_struc.usable = true;}
-			
 			item_set(_ingredient_struc.name, _ingredient_struc.quantity, _ingredient_struc.sprite, _ingredient_struc.usable);
 		}
 	}
@@ -89,6 +85,16 @@ function Inventory2() constructor
 	item_get = function ()
 	{
 		return _inventory_items;
+	}
+	
+	item_use = function(_sprite)
+	{
+		switch (_sprite)
+		{
+			case sprite_vial_blood: show_debug_message("Set a game state. Another global object?"); break;
+		}
+				
+		item_subtract(name_from_sprite_index(_sprite), 1);
 	}
 	
 	to_string = function()
