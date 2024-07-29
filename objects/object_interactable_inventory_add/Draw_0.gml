@@ -19,7 +19,7 @@ if (distance_to_object(object_brachinus_crepitans) < 48)
 	if (keyboard_check_released(ord(global.interact)))
 	{
 		//array_push(object_inventory.inventory, sprite_index);
-		object_inventory_tutorial_two.inventory.item_add(name_from_sprite_index(sprite_index), 1, sprite_index);
+		object_inventory_tutorial_two.inventory.item_add_from_struct(struct_from_sprite_index(sprite_index));
 		instance_destroy();
 	}
 }

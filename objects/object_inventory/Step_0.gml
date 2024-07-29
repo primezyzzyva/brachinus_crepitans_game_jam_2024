@@ -4,5 +4,5 @@ if (global.paused) return;
 
 if (keyboard_check_released(ord("I")) or keyboard_check_released(ord("B")))
 {
-	showInventory = !showInventory;
+	show_inventory = !show_inventory;
 }

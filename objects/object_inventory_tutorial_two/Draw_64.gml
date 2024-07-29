@@ -47,7 +47,7 @@ if (is_showing_inventory)
 			if (inventory_index <= array_length(inventory_items) - 1)
 			{
 				draw_sprite_ext(inventory_items[inventory_index].sprite, 0, position_x + (ui_inventory_box * 0.45), position_y + (ui_inventory_box * 0.55),
-								sprite_get_height(sprite_inventory_background) / sprite_get_height(inventory_items[inventory_index].sprite) - 0.10,
+								sprite_get_width(sprite_inventory_background) / sprite_get_width(inventory_items[inventory_index].sprite) - 0.10,
 								sprite_get_height(sprite_inventory_background) / sprite_get_height(inventory_items[inventory_index].sprite) - 0.10, 0,
 								c_white, 1);
 			}
@@ -77,7 +77,9 @@ if (is_showing_inventory)
 		var pos_y = ui_padding_y + (ui_border_size * 13) + (recipe_index * (ui_inventory_margin + 0.50 * ui_inventory_box));
 	
 		draw_sprite_ext(sprite_inventory_recipe_box, 0, pos_x + 3, pos_y + 3, 282 / 288, 36 / 64, 0, c_grey, 1);
-		draw_sprite(_recipes[recipe_index].sprite, 0, pos_x + 8, pos_y + sprite_get_height(_recipes[recipe_index].sprite));
+		draw_sprite_ext(_recipes[recipe_index].sprite, 0, pos_x + 8, pos_y + 16,
+						20 / sprite_get_width(_recipes[recipe_index].sprite),
+						20 / sprite_get_height(_recipes[recipe_index].sprite), 0, c_white, 1);
 		draw_set_halign(fa_left);
 		draw_text(pos_x +56, pos_y + 10, _recipes[recipe_index].name);
 		
@@ -99,7 +101,7 @@ if (is_showing_inventory)
 			{
 				draw_sprite_ext(_recipes[recipe_index].requirements[requirement_index].sprite, 0,
 								pos_x + 48 + (32 * requirement_index), pos_y + 36,
-								15 / sprite_get_height(_recipes[recipe_index].requirements[requirement_index].sprite), 
+								15 / sprite_get_width(_recipes[recipe_index].requirements[requirement_index].sprite), 
 								15 / sprite_get_height(_recipes[recipe_index].requirements[requirement_index].sprite), 0, c_white, 1);
 			}
 			else
@@ -107,7 +109,6 @@ if (is_showing_inventory)
 				draw_sprite_ext(sprite_unknown_2, 0, pos_x + 48 + (32 * requirement_index), pos_y + 36, 0.75, 0.75, 0, c_white, 1);
 			}
 		}
-		
 	}
 	
 	
@@ -251,9 +252,16 @@ if (is_showing_inventory)
 			if (inventory_items[current_item].usable)
 			{
 				inventory.item_use(inventory_items[current_item].sprite);
-				if (current_item == array_length(inventory_items))
+				if (current_item >= array_length(inventory_items))
 				{
-					current_item--;
+					if (array_length(inventory_items) != 0)
+					{
+						current_item = array_length(inventory_items) -1 ;
+					}
+					else
+					{
+						current_item = 0;
+					}
 				}
 			}
 			else
@@ -337,6 +345,18 @@ if (is_showing_inventory)
 				}
 		
 				selected = [];
+				
+				if (current_item >= array_length(inventory_items))
+				{
+					if (array_length(inventory_items) != 0)
+					{
+						current_item = array_length(inventory_items) - 1;
+					}
+					else
+					{
+						current_item = 0;
+					}
+				}
 			}
 		}
 		draw_set_font(font_inventory_tutorial);
@@ -382,7 +402,7 @@ if (is_showing_inventory)
 		draw_set(c_teal, 0.15);
 		draw_text(ui_padding_x + (ui_border_size * 3) + 4, ui_padding_y + (ui_border_size * 4) + 4, inventory_recipe_ui);
 
-		// text  aboove recipe
+		// text  above recipe
 		draw_set(c_navy, 1);
 		draw_text(ui_padding_x + (ui_border_size * 3), ui_padding_y + (ui_border_size * 4), inventory_recipe_ui);
 		
@@ -392,6 +412,18 @@ if (is_showing_inventory)
 			if (inventory.recipe_has(_recipes[current_recipe].name) and _recipes[current_recipe].discovered)
 			{
 				inventory.recipe_craft(_recipes[current_recipe].name);
+				
+				if (current_item >= array_length(inventory_items))
+				{
+					if (array_length(inventory_items) != 0)
+					{
+						current_item = array_length(inventory_items) - 1;
+					}
+					else
+					{
+						current_item = 0;
+					}
+				}
 			}
 			else
 			{
