@@ -61,6 +61,7 @@
   "resources":[
     {"id":{"name":"font_big","path":"fonts/font_big/font_big.yy",},},
     {"id":{"name":"font_inventory_recipe","path":"fonts/font_inventory_recipe/font_inventory_recipe.yy",},},
+    {"id":{"name":"font_inventory_small","path":"fonts/font_inventory_small/font_inventory_small.yy",},},
     {"id":{"name":"font_inventory_tutorial","path":"fonts/font_inventory_tutorial/font_inventory_tutorial.yy",},},
     {"id":{"name":"npc_base","path":"objects/npc_base/npc_base.yy",},},
     {"id":{"name":"object_ant","path":"objects/object_ant/object_ant.yy",},},

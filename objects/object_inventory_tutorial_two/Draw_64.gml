@@ -74,24 +74,29 @@ if (is_showing_inventory)
 
 	for (var recipe_index = 0; recipe_index < array_length(_recipes); recipe_index++)
 	{
+		
 		var pos_y = ui_padding_y + (ui_border_size * 13) + (recipe_index * (ui_inventory_margin + 0.50 * ui_inventory_box));
 	
+		// draw recipe box
 		draw_sprite_ext(sprite_inventory_recipe_box, 0, pos_x + 3, pos_y + 3, 282 / 288, 36 / 64, 0, c_grey, 1);
 		draw_sprite_ext(_recipes[recipe_index].sprite, 0, pos_x + 8, pos_y + 16,
 						20 / sprite_get_width(_recipes[recipe_index].sprite),
 						20 / sprite_get_height(_recipes[recipe_index].sprite), 0, c_white, 1);
 		draw_set_halign(fa_left);
-		draw_text(pos_x +56, pos_y + 10, _recipes[recipe_index].name);
+		draw_text(pos_x + 56, pos_y + 10, _recipes[recipe_index].name);
 		
-		
-		// NOTE: this commented out section is to display item names instead of sprites
-		//var requirement_string = "";
-		//for (var requirement_index = 0; requirement_index < array_length(_recipes[recipe_index].requirements); requirement_index++)
-		//{
-		//	requirement_string += $"{_recipes[recipe_index].requirements[requirement_index].name}: {_recipes[recipe_index].requirements[requirement_index].quantity} ";
-		//}
-		
-		//draw_text(pos_x + 56, pos_y + 32 + 16, $"REQ: {requirement_string}");
+		draw_set_halign(fa_right);
+		draw_set_font(font_inventory_small);
+		if (inventory.recipe_has((_recipes[recipe_index].name)))
+		{
+			draw_text_transformed_color(pos_x + 282, pos_y + 33, "Craftable", 0.75, 0.75, 0, #02360f, #02360f, #02360f, #02360f , 1);
+		}
+		else
+		{
+			draw_text_transformed_color(pos_x + 282, pos_y + 27, "Missing\nIngredients", 0.75, 0.65, 0, c_maroon, c_maroon, c_maroon, c_maroon , 1);
+		}
+		draw_set_font(-1);
+
 		
 		
 		// display the required ingredients
