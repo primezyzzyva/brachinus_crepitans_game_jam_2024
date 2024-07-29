@@ -67,7 +67,7 @@ function name_from_sprite_index(sprite_index)
 		case sprite_mushroom_straw: thy_name_is = "Staw Mushroom"; break;
 		case sprite_mushroom_veiled_lady: thy_name_is = "Veiled Lady Mushroom"; break;
 		case sprite_mushroom_amanita_muscaria: thy_name_is = "Amanita muscaria Mushroom"; break;
-				case sprite_flower_yellow_petals: thy_name_is = "Yellow Flower Petals"; break;
+		case sprite_flower_yellow_petals: thy_name_is = "Yellow Flower Petals"; break;
 		case sprite_flower_white_petals: thy_name_is = "White Flower Petals"; break;
 		case sprite_flower_red_petals: thy_name_is = "Red Flower Petals"; break;
 		case sprite_flower_purple_petals: thy_name_is = "Purple Flower Petals"; break;
@@ -79,6 +79,47 @@ function name_from_sprite_index(sprite_index)
 		case sprite_bug_scorpian_stinger: thy_name_is = "Scoprian Stinger"; break;
 		
 		// potion sprites
+		case sprite_vial_white_cylinder: thy_name_is = "Ant Speech 101"; break;
+		case sprite_vial_white_round: thy_name_is = ""; break;
+		case sprite_vial_white_round_long: thy_name_is = ""; break;
+		case sprite_vial_white_tear: thy_name_is = ""; break;
+		case sprite_vial_white_triangle: thy_name_is = ""; break;
+		
+		case sprite_vial_blue_cylinder: thy_name_is = "Pill Bug Opera"; break;
+		case sprite_vial_blue_round: thy_name_is = ""; break;
+		case sprite_vial_blue_round_long: thy_name_is = ""; break;
+		case sprite_vial_blue_tear: thy_name_is = ""; break;
+		case sprite_vial_blue_triangle: thy_name_is = ""; break;
+		
+		case sprite_vial_red_cylinder: thy_name_is = "Discourse With Striders"; break;
+		case sprite_vial_red_round: thy_name_is = ""; break;
+		case sprite_vial_red_round_long: thy_name_is = ""; break;
+		case sprite_vial_red_tear: thy_name_is = ""; break;
+		case sprite_vial_red_triangle: thy_name_is = ""; break;
+		
+		case sprite_vial_yellow_cylinder: thy_name_is = "Bee Dances and Wasp Nods"; break;
+		case sprite_vial_yellow_round: thy_name_is = ""; break;
+		case sprite_vial_yellow_round_long: thy_name_is = ""; break;
+		case sprite_vial_yellow_tear: thy_name_is = ""; break;
+		case sprite_vial_yellow_triangle: thy_name_is = ""; break;
+		
+		case sprite_vial_purple_cylinder: thy_name_is = "Popular Scorpian Insults"; break;
+		case sprite_vial_purple_round: thy_name_is = ""; break;
+		case sprite_vial_purple_round_long: thy_name_is = ""; break;
+		case sprite_vial_purple_tear: thy_name_is = ""; break;
+		case sprite_vial_purple_triangle: thy_name_is = ""; break;
+		
+		case sprite_vial_green_cylinder: thy_name_is = ""; break;
+		case sprite_vial_green_round: thy_name_is = ""; break;
+		case sprite_vial_green_round_long: thy_name_is = ""; break;
+		case sprite_vial_green_tear: thy_name_is = ""; break;
+		case sprite_vial_green_trianlge: thy_name_is = ""; break;
+		
+		case sprite_vial_orange_cylinder: thy_name_is = ""; break;
+		case sprite_vial_orange_round: thy_name_is = ""; break;
+		case sprite_vial_orange_round_long: thy_name_is = ""; break;
+		case sprite_vial_orange_tear: thy_name_is = ""; break;
+		case sprite_vial_orange_triangle: thy_name_is = ""; break;
 	}
 	
 	return thy_name_is;

@@ -389,8 +389,7 @@ if (is_showing_inventory)
 		if (keyboard_check_released(ord(global.craft)))
 		{
 			draw_set_font(font_inventory_tutorial);
-			
-			if (inventory.recipe_has(_recipes[current_recipe].name))
+			if (inventory.recipe_has(_recipes[current_recipe].name) and _recipes[current_recipe].discovered)
 			{
 				inventory.recipe_craft(_recipes[current_recipe].name);
 			}

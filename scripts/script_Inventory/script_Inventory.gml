@@ -91,7 +91,11 @@ function Inventory2() constructor
 	{
 		switch (_sprite)
 		{
-			case sprite_vial_blood: show_debug_message("Set a game state. Another global object?"); break;
+			case sprite_vial_white_cylinder: global.friends_with_ants = true; break;
+			case sprite_vial_blue_cylinder: global.friends_with_pill_bugs = true; break;
+			case sprite_vial_red_cylinder: global.friends_with_water_striders = true; break;
+			case sprite_vial_yellow_cylinder: global.friends_with_wasps = true; break;
+			case sprite_vial_purple_cylinder: global.friends_with_scorpians = true; break;
 		}
 				
 		item_subtract(name_from_sprite_index(_sprite), 1);

@@ -73,11 +73,11 @@ var mushroom_earth_tongue = struct_from_sprite_index(sprite_mushroom_earth_tongu
 
 
 // resultant potions
-var speech_ant = {name: "Ant Speech 101", quantity: 1, sprite: sprite_vial_blood, usable: true};
-var speech_pill_bug = {name: "Pill Bug Opera", quantity: 1, sprite: sprite_vial_blood, usable: true};
-var speech_water_strider = {name: "Discourse With Striders", quantity: 1, sprite: sprite_vial_blood, usable: true};
-var speech_wasp = {name: "Bee Dances and Wasp Nods", quantity: 1, sprite: sprite_vial_blood, usable: true};
-var speech_scorpian = {name: "Popular Scorpian Insults", quantity: 1, sprite: sprite_vial_blood, usable: true};
+var speech_ant = struct_from_sprite_index(sprite_vial_white_cylinder, true);
+var speech_pill_bug = struct_from_sprite_index(sprite_vial_blue_cylinder, true);
+var speech_water_strider = struct_from_sprite_index(sprite_vial_red_cylinder, true);
+var speech_wasp = struct_from_sprite_index(sprite_vial_yellow_cylinder, true);
+var speech_scorpian = struct_from_sprite_index(sprite_vial_purple_cylinder,true);
 
 inventory.recipe_add("Discover Me", [unknown, unknown, unknown, unknown, unknown], [unknown], unknown.sprite, false, , "You discvoered me. Cheater.");
 inventory.recipe_add(speech_ant.name, [mushroom_earth_tongue, grass, berry_red, flower_white_petals, bug_ant_antenna], [speech_ant], speech_ant.sprite, show_recipe_ingredients, "Red, white, and ... green?\nClose enough. At least the\nhoney should help", "I wonder if they're some sort\nof hive mind?");
