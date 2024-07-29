@@ -4,9 +4,9 @@ function Inventory2() constructor
 {
 	_inventory_items = [];
 	
-	item_set = function (_name, _quantity, _sprite)
+	item_set = function (_name, _quantity, _sprite, _usable = false)
 	{
-		array_push(_inventory_items,{name : _name, quantity: _quantity, sprite: _sprite});
+		array_push(_inventory_items,{name : _name, quantity: _quantity, sprite: _sprite, _usable});
 	}
 	
 	item_find = function(_name) 
@@ -20,7 +20,7 @@ function Inventory2() constructor
 		}
 	}
 	
-	item_add = function(_name, _quantity, _sprite)
+	item_add = function(_name, _quantity, _sprite, _usable)
 	{
 		var index = item_find(_name);
 		
@@ -30,7 +30,7 @@ function Inventory2() constructor
 		}
 		else
 		{
-			item_set(_name, _quantity, _sprite);
+			item_set(_name, _quantity, _sprite, _usable);
 		}
 	}
 	item_add_from_struct = function(_ingredient_struc)
@@ -43,7 +43,11 @@ function Inventory2() constructor
 		}
 		else
 		{
-			item_set(_ingredient_struc.name, _ingredient_struc.quantity, _ingredient_struc.sprite);
+			// this dumb line of code is to prevent usable from being null
+			// not sure if this is needed, but don't want to find out
+			if (!_ingredient_struc.usable) {_ingredient_struc.usable = true;}
+			
+			item_set(_ingredient_struc.name, _ingredient_struc.quantity, _ingredient_struc.sprite, _ingredient_struc.usable);
 		}
 	}
 	

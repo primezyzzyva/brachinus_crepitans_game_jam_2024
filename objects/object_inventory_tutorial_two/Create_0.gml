@@ -16,7 +16,7 @@ highlight_column = 0;
 inventory = new Recipe(); // recipe inherits inventory, yay OOP
 
 
-// ingredients
+// ingredients drawn by Kate
 var unknown = struct_from_sprite_index(sprite_unknown_2);
 var foxtail = struct_from_sprite_index(sprite_plants_foxtail);
 var star_thistle = struct_from_sprite_index(sprite_plant_star_thistle);
@@ -67,15 +67,18 @@ var water_strider_leg = struct_from_sprite_index(sprite_bug_water_strider_leg);
 var mud_wasp_wing  = struct_from_sprite_index(sprite_bug_mud_wasp_wing);
 var scorpian_stinger = struct_from_sprite_index(sprite_bug_scorpian_stinger);
 
+// other items drawn by Max, hopefully we can replace these with Kate's art
+var mushroom_earth_tongue = struct_from_sprite_index(sprite_mushroom_earth_tongue);
+
 // resultant potions
-var speech_ant = {name: "Ant Speech 101", quantity: 1, sprite: sprite_vial_blood};
+var speech_ant = {name: "Ant Speech 101", quantity: 1, sprite: sprite_vial_blood, usable: true};
 
 inventory.recipe_add("Discover Me", [unknown, unknown, unknown, unknown, unknown], [unknown], unknown.sprite, false);
-inventory.recipe_add("Ant Speech 101", [mushroom_amanita_muscaria, leaf_fragment, honey, flower_white_petals, bug_ant_antenna], [speech_ant], speech_ant.sprite, false, "Let's ask them about bridges");
+inventory.recipe_add("Ant Speech 101", [mushroom_amanita_muscaria, leaf_fragment, honey, flower_white_petals, bug_ant_antenna], [speech_ant], speech_ant.sprite, false, "Let's ask the ants about bridges \n ...and picnics.");
 
-inventory.recipe_add("Love Potion Number 9", [{name: "12ngue Mushroom", quantity: 1}], [{name: "Pheromone", quantity: 1, sprite: sprite_vial}], sprite_vial);
-inventory.recipe_add("Dank Meme", [{name: "13ngue Mushrm", quantity: 1, sprite: sprite_mushroom_truffle_potato_esque}, {name: "4e Mushroom", quantity: 1, sprite: sprite_vial_blood}], [{name: "Also pheromones?", quantity: 1, sprite: sprite_vial_urine}], sprite_vial_urine);
-inventory.recipe_add("Blood. It's just blood", [{name: "4e Mushroom", quantity: 2, sprite: sprite_vial_blood}], [{name: "Blood", quantity: 2, sprite: sprite_vial_blood}], sprite_vial_blood);
+//inventory.recipe_add("Love Potion Number 9", [{name: "12ngue Mushroom", quantity: 1}], [{name: "Pheromone", quantity: 1, sprite: sprite_vial}], sprite_vial);
+//inventory.recipe_add("Dank Meme", [{name: "13ngue Mushrm", quantity: 1, sprite: sprite_mushroom_truffle_potato_esque}, {name: "4e Mushroom", quantity: 1, sprite: sprite_vial_blood}], [{name: "Also pheromones?", quantity: 1, sprite: sprite_vial_urine}], sprite_vial_urine);
+//inventory.recipe_add("Blood. It's just blood", [{name: "4e Mushroom", quantity: 2, sprite: sprite_vial_blood}], [{name: "Blood", quantity: 2, sprite: sprite_vial_blood}], sprite_vial_blood);
 
 inventory.item_add_from_struct(mushroom_amanita_muscaria);
 inventory.item_add_from_struct(mushroom_amanita_muscaria);
