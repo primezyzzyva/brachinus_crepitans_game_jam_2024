@@ -87,6 +87,7 @@
     {"id":{"name":"object_pillbug_old","path":"objects/object_pillbug_old/object_pillbug_old.yy",},},
     {"id":{"name":"object_pillbug","path":"objects/object_pillbug/object_pillbug.yy",},},
     {"id":{"name":"object_scorpion","path":"objects/object_scorpion/object_scorpion.yy",},},
+    {"id":{"name":"object_transition_animation","path":"objects/object_transition_animation/object_transition_animation.yy",},},
     {"id":{"name":"object_waterstrider","path":"objects/object_waterstrider/object_waterstrider.yy",},},
     {"id":{"name":"sprite_speed_change","path":"objects/sprite_speed_change/sprite_speed_change.yy",},},
     {"id":{"name":"room_end_credits","path":"rooms/room_end_credits/room_end_credits.yy",},},
