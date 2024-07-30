@@ -88,6 +88,7 @@
     {"id":{"name":"object_scorpion","path":"objects/object_scorpion/object_scorpion.yy",},},
     {"id":{"name":"object_waterstrider","path":"objects/object_waterstrider/object_waterstrider.yy",},},
     {"id":{"name":"sprite_speed_change","path":"objects/sprite_speed_change/sprite_speed_change.yy",},},
+    {"id":{"name":"room_chicken_gif","path":"rooms/room_chicken_gif/room_chicken_gif.yy",},},
     {"id":{"name":"room_end_credits","path":"rooms/room_end_credits/room_end_credits.yy",},},
     {"id":{"name":"room_game_main_kates_copy","path":"rooms/room_game_main_kates_copy/room_game_main_kates_copy.yy",},},
     {"id":{"name":"room_game_main","path":"rooms/room_game_main/room_game_main.yy",},},
@@ -165,6 +166,7 @@
     {"id":{"name":"sprite_bug_wing","path":"sprites/sprite_bug_wing/sprite_bug_wing.yy",},},
     {"id":{"name":"sprite_cactus_spine","path":"sprites/sprite_cactus_spine/sprite_cactus_spine.yy",},},
     {"id":{"name":"sprite_cactus_whole","path":"sprites/sprite_cactus_whole/sprite_cactus_whole.yy",},},
+    {"id":{"name":"sprite_chicken_gif","path":"sprites/sprite_chicken_gif/sprite_chicken_gif.yy",},},
     {"id":{"name":"sprite_default_mushrom","path":"sprites/sprite_default_mushrom/sprite_default_mushrom.yy",},},
     {"id":{"name":"sprite_flower_blue_petals","path":"sprites/sprite_flower_blue_petals/sprite_flower_blue_petals.yy",},},
     {"id":{"name":"sprite_flower_purple_petals","path":"sprites/sprite_flower_purple_petals/sprite_flower_purple_petals.yy",},},
@@ -340,6 +342,7 @@
     {"roomId":{"name":"room_main_title_screen","path":"rooms/room_main_title_screen/room_main_title_screen.yy",},},
     {"roomId":{"name":"room_end_credits","path":"rooms/room_end_credits/room_end_credits.yy",},},
     {"roomId":{"name":"room_game_main_kates_copy","path":"rooms/room_game_main_kates_copy/room_game_main_kates_copy.yy",},},
+    {"roomId":{"name":"room_chicken_gif","path":"rooms/room_chicken_gif/room_chicken_gif.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
