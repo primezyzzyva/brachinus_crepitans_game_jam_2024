@@ -1,11 +1,11 @@
-/// @description Proceed to animation transition
+/// @description Proceed to game exit
 
-// Press Enter to play
+// Press Space to Continue...
 // Including commented code below if we want to add some specialized game start functionality for the game control object
-if (room == room_main_title_screen) {
+if (room == room_game_main) {
 	//if (global.gameStart == false) {
 		audio_stop_all();  // for stopping title page music before transitioning to game play with its own music
 	//	global.gameStart = true;
-		room_goto(room_transition_title_to_game);
+		game_restart();
 	//}
 }
