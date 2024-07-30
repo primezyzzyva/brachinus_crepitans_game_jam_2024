@@ -69,14 +69,14 @@ if (is_showing_inventory)
 	}
 	
 	// recipe time
-	var _recipes = inventory.recipe_get();
+	//var _recipes = inventory.recipe_get(); // moved to create event
 
 	// draw recipe tabs
 	var tab_y = (ui_border_size * 13) + 0.65 * ui_inventory_box;
 	for (var tab_index = 0; tab_index < number_of_tabs; tab_index++)
 	{
 		var tab_x =  ui_padding_x + (ui_border_size *  3) + 4 + (64 * tab_index);
-		draw_sprite_ext(sprite_recipe_tab, 0, tab_x + 3, tab_y + 3, 64 / 64, 16 / 16, 0, c_grey, 1);
+		draw_sprite_ext(sprite_recipe_tab, 0, tab_x + 3, tab_y + 3, 48 / 64, 16 / 16, 0, c_grey, 1);
 	}
 
 	// clear out the recipe tab if the tab is changed
@@ -316,7 +316,7 @@ if (is_showing_inventory)
 	// draw "hovering over" for recipe tab
 	var highlight_tab_y = (ui_border_size * 13) + 0.65 * ui_inventory_box;
 	var highlight_tab_x =  ui_padding_x + (ui_border_size *  3) + 4 + (64 * tab_when_recipes_collected);
-	draw_sprite_ext(sprite_recipe_tab, 0, highlight_tab_x + 3, highlight_tab_y + 3, 64 / 64, 16 / 16, 0, c_fuchsia, 1);
+	draw_sprite_ext(sprite_recipe_tab, 0, highlight_tab_x + 3, highlight_tab_y + 3, 48 / 64, 16 / 16, 0, c_fuchsia, 1);
 	
 	// draw selection numbers over the selected ingredients
 	for (var i = 0; i < array_length(selected); i++)

@@ -10,7 +10,6 @@ selected = [];
 current_item = 0;
 current_recipe = 0;
 current_tab = 0;
-number_of_tabs = 2;
 recipes_in_tab = [];
 tab_when_recipes_collected = 0;
 
@@ -23,7 +22,6 @@ inventory = new Recipe(); // recipe inherits inventory, yay OOP
 
 
 // ingredients drawn by Kate
-var unknown = struct_from_sprite_index(sprite_unknown_2, false);
 var foxtail = struct_from_sprite_index(sprite_plants_foxtail, false);
 var star_thistle = struct_from_sprite_index(sprite_plant_star_thistle, false);
 var small_twig = struct_from_sprite_index(sprite_plant_small_twig, false);
@@ -70,6 +68,7 @@ var mud_wasp_wing  = struct_from_sprite_index(sprite_bug_mud_wasp_wing, false);
 var scorpian_stinger = struct_from_sprite_index(sprite_bug_scorpian_stinger, false);
 
 // other items drawn by Max, hopefully we can replace these with Kate's art
+var unknown = struct_from_sprite_index(sprite_unknown_2, false);
 var mushroom_earth_tongue = struct_from_sprite_index(sprite_mushroom_earth_tongue, false);
 
 
@@ -96,26 +95,32 @@ inventory.recipe_add(quest_sweetest_mead.name, [honey, mushroom_marasmius_haemat
 inventory.recipe_add(quest_berry_fertiliser.name, [mud, grass, sand_grass, leaf_dandelion, leaf_fragment], [quest_berry_fertiliser], quest_berry_fertiliser.sprite, show_recipe_ingredients, "Pill bugs love berries. I'm\nsure some compost would win\ntheir favor.", "Solid ingredients turned\ninto a liquid potion? Wow,\nI'm good.", 1);
 inventory.recipe_add(quest_lily_pads_herbicide.name, [mushroom_amanita_muscaria, scorpian_stinger, mushroom_favolaschia_calocera, mushroom_pink_bonnet, mushroom_peziza_ammophilia], [quest_lily_pads_herbicide], quest_lily_pads_herbicide.sprite, show_recipe_ingredients, "Everyone knows that water\nstriders hate traffic jams.", "Lazy devs probably won't\neven implement dynamic lily\npad removal for this quest.", 1);
 inventory.recipe_add(quest_parasite_larva_feed.name, [star_thistle, sea_plantain, berry_blue, pollen, seed_sunflower], [quest_parasite_larva_feed], quest_parasite_larva_feed.sprite, show_recipe_ingredients, "Nasty little buggers. Make\nan excellent snack. Full of\nnutrients rich ingredients.", "They grow up so fast :')", 1);
-inventory.recipe_add(quest_desert_relief.name, [water_droplet, mushroom_veiled_lady, mushroom_pale_brittlestem, leaf_oak, acorn_top], [quest_desert_relief], quest_desert_relief.sprite, show_recipe_ingredients, "It's so hot in the desrt.\nSomething to drink and a\nlittle shade would be nice.", "A dessert [sic] treat so\nnice I'll have it twice...\nbut you craft the next one.", 1);
+inventory.recipe_add(quest_desert_relief.name, [water_droplet, mushroom_veiled_lady, mushroom_pale_brittlestem, leaf_oak, acorn_top], [quest_desert_relief], quest_desert_relief.sprite, show_recipe_ingredients, "It's so hot in the desert.\nSomething to drink and a\nlittle shade would be nice.", "A dessert [sic] treat so\nnice I'll have it twice...\nbut you craft the next one.", 1);
+
+// win conidtion pre-cursors
+// berry fertilizer -> very dark compost -> peaceful (good) ending: camoflague so the chicken doesn't see you
+// herbicide -> very
+// sweet mead -> very powerful animal pheromone -> neutral ending: summon a bigger fish (literally? a fox or ferret maybe)
+// parasite feed -> very cute little parasite -> bad ending: kill the chicken with a parsite
+// desert relief -> very
+var compost = struct_from_sprite_index(sprite_unknown, false);
+var pheromone = struct_from_sprite_index(sprite_unknown, false);
+var parasite = struct_from_sprite_index(sprite_unknown, false);
 
 
-
-var test = struct_from_sprite_index(sprite_vial_purple_triangle, true);
-var test = struct_from_sprite_index(sprite_vial_purple_triangle, true);
-var test = struct_from_sprite_index(sprite_vial_purple_triangle, true);
-var test = struct_from_sprite_index(sprite_vial_purple_triangle, true);
-var test = struct_from_sprite_index(sprite_vial_purple_triangle, true);
-
-// win condition potions
-var test = struct_from_sprite_index(sprite_vial_purple_tear, true);
-var test = struct_from_sprite_index(sprite_vial_purple_tear, true);
-var test = struct_from_sprite_index(sprite_vial_purple_tear, true);
-var test = struct_from_sprite_index(sprite_vial_purple_tear, true);
-var test = struct_from_sprite_index(sprite_vial_purple_tear, true);
+// final win condition potions
+var win_good_camouflage = struct_from_sprite_index(sprite_vial_green_round_long, true);
+var win_neutral_scare = struct_from_sprite_index(sprite_vial_yellow_round_long, true);
+var win_bad_kill = struct_from_sprite_index(sprite_vial_red_round_long, true);
+inventory.recipe_add(win_good_camouflage.name, [compost, mud, pine_needle, pinecone_fragment, grass], [win_good_camouflage], win_good_camouflage.sprite, show_recipe_ingredients, "It's how you win. Probably\ndon't have any hints hiding\nhere then.", "'Hiding' get it? Yes, we're\nall terribly clever here.", 2);
+inventory.recipe_add(win_neutral_scare.name, [pheromone, bug_ant_antenna, mud_wasp_wing, small_twig, water_strider_leg], [win_neutral_scare], win_neutral_scare.sprite, show_recipe_ingredients, "It's like the opposite of a\nscarecrow. Something will\ncome for this.", "*Shudder* There's always a\nbigger fish it seems.", 2);
+inventory.recipe_add(win_bad_kill.name, [parasite, mushroom_veiled_lady, mushroom_pale_brittlestem, leaf_oak, acorn_top], [win_bad_kill], win_bad_kill.sprite, show_recipe_ingredients, "I have a bad feeling about\nthis. Violence is fine in\nvideo games though, right?", "Best not to think about it.", 2);
 
 
 // other
 var perfume_for_lady_bogue = struct_from_sprite_index(sprite_vial_purple_tear, true);
+inventory.recipe_add(perfume_for_lady_bogue.name, [flower_blue_petals, flower_purple_petals, flower_red_petals, flower_white_petals, flower_yellow_petals], [perfume_for_lady_bogue], perfume_for_lady_bogue.sprite, show_recipe_ingredients, "A little something nice for\nthe fairest Lady.", "It was just all the flowers\nin alphabetical order. Easy..", 3);
+
 
 
 
@@ -212,3 +217,5 @@ ui_inventory_padding = 48;
 ui_inventory_box = 64;
 ui_inventory_margin = 16;
 
+_recipes = inventory.recipe_get();
+number_of_tabs = array_last(_recipes).tab + 1;

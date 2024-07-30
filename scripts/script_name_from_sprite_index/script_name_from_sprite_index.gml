@@ -93,25 +93,25 @@ function name_from_sprite_index(sprite_index)
 		
 		case sprite_vial_red_cylinder: thy_name_is = "Discourse With Striders"; break;
 		case sprite_vial_red_round: thy_name_is = ""; break;
-		case sprite_vial_red_round_long: thy_name_is = ""; break;
+		case sprite_vial_red_round_long: thy_name_is = "Something Vial Indeed"; break;
 		case sprite_vial_red_tear: thy_name_is = ""; break;
 		case sprite_vial_red_triangle: thy_name_is = "Berry Fertilizer"; break;
 		
 		case sprite_vial_yellow_cylinder: thy_name_is = "Bee Dances and Wasp Nods"; break;
 		case sprite_vial_yellow_round: thy_name_is = ""; break;
-		case sprite_vial_yellow_round_long: thy_name_is = ""; break;
+		case sprite_vial_yellow_round_long: thy_name_is = "Something That Reeks!"; break;
 		case sprite_vial_yellow_tear: thy_name_is = ""; break;
 		case sprite_vial_yellow_triangle: thy_name_is = "Sweetest Mead"; break;
 		
 		case sprite_vial_purple_cylinder: thy_name_is = "Popular Scorpian Insults"; break;
 		case sprite_vial_purple_round: thy_name_is = ""; break;
 		case sprite_vial_purple_round_long: thy_name_is = ""; break;
-		case sprite_vial_purple_tear: thy_name_is = ""; break;
+		case sprite_vial_purple_tear: thy_name_is = "Perfume for Lady Bogue"; break;
 		case sprite_vial_purple_triangle: thy_name_is = ""; break;
 		
 		case sprite_vial_green_cylinder: thy_name_is = ""; break;
 		case sprite_vial_green_round: thy_name_is = ""; break;
-		case sprite_vial_green_round_long: thy_name_is = ""; break;
+		case sprite_vial_green_round_long: thy_name_is = "Something Mysterious"; break;
 		case sprite_vial_green_tear: thy_name_is = ""; break;
 		case sprite_vial_green_trianlge: thy_name_is = ""; break;
 		
