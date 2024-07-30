@@ -166,17 +166,18 @@ if (is_showing_inventory)
 				current_tab = number_of_tabs - 1;
 			}
 				
-			if (current_recipe >= array_length(recipes_in_tab))
-			{
-				if (array_length(recipes_in_tab) != 0)
-				{
-					current_recipe = array_length(recipes_in_tab) - 1;
-				}
-				else
-				{
-					current_recipe = 0;
-				}
-			}
+			//if (current_recipe >= array_length(recipes_in_tab))
+			//{
+			//	if (array_length(recipes_in_tab) != 0)
+			//	{
+			//		current_recipe = array_length(recipes_in_tab) - 1;
+			//	}
+			//	else
+			//	{
+			//		current_recipe = 0;
+			//	}
+			//}
+			current_recipe = 0;
 		}
 				
 		if (keyboard_check_released(vk_right) or keyboard_check_released(ord(global.right1)) or keyboard_check_released(ord(global.right2)))
@@ -190,17 +191,18 @@ if (is_showing_inventory)
 				current_tab = 0;
 			}
 				
-			if (current_recipe >= array_length(recipes_in_tab))
-			{
-				if (array_length(recipes_in_tab) != 0)
-				{
-					current_recipe = array_length(recipes_in_tab) - 1;
-				}
-				else
-				{
-					current_recipe = 0;
-				}
-			}
+			//if (current_recipe >= array_length(recipes_in_tab))
+			//{
+			//	if (array_length(recipes_in_tab) != 0)
+			//	{
+			//		current_recipe = array_length(recipes_in_tab) - 1;
+			//	}
+			//	else
+			//	{
+			//		current_recipe = 0;
+			//	}
+			//}
+			current_recipe = 0;
 		}
 		if (keyboard_check_released(vk_up) or keyboard_check_released(ord(global.up1)) or keyboard_check_released(ord(global.up2)))
 		{

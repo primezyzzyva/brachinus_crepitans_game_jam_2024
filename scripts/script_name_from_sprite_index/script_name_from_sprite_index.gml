@@ -83,25 +83,25 @@ function name_from_sprite_index(sprite_index)
 		case sprite_vial_white_round: thy_name_is = ""; break;
 		case sprite_vial_white_round_long: thy_name_is = ""; break;
 		case sprite_vial_white_tear: thy_name_is = ""; break;
-		case sprite_vial_white_triangle: thy_name_is = ""; break;
+		case sprite_vial_white_triangle: thy_name_is = "Parasite Larva Feed"; break;
 		
 		case sprite_vial_blue_cylinder: thy_name_is = "Pill Bug Opera"; break;
 		case sprite_vial_blue_round: thy_name_is = ""; break;
 		case sprite_vial_blue_round_long: thy_name_is = ""; break;
 		case sprite_vial_blue_tear: thy_name_is = ""; break;
-		case sprite_vial_blue_triangle: thy_name_is = ""; break;
+		case sprite_vial_blue_triangle: thy_name_is = "Desert Hydration"; break;
 		
 		case sprite_vial_red_cylinder: thy_name_is = "Discourse With Striders"; break;
 		case sprite_vial_red_round: thy_name_is = ""; break;
 		case sprite_vial_red_round_long: thy_name_is = ""; break;
 		case sprite_vial_red_tear: thy_name_is = ""; break;
-		case sprite_vial_red_triangle: thy_name_is = ""; break;
+		case sprite_vial_red_triangle: thy_name_is = "Berry Fertilizer"; break;
 		
 		case sprite_vial_yellow_cylinder: thy_name_is = "Bee Dances and Wasp Nods"; break;
 		case sprite_vial_yellow_round: thy_name_is = ""; break;
 		case sprite_vial_yellow_round_long: thy_name_is = ""; break;
 		case sprite_vial_yellow_tear: thy_name_is = ""; break;
-		case sprite_vial_yellow_triangle: thy_name_is = ""; break;
+		case sprite_vial_yellow_triangle: thy_name_is = "Sweetest Mead"; break;
 		
 		case sprite_vial_purple_cylinder: thy_name_is = "Popular Scorpian Insults"; break;
 		case sprite_vial_purple_round: thy_name_is = ""; break;
@@ -119,7 +119,7 @@ function name_from_sprite_index(sprite_index)
 		case sprite_vial_orange_round: thy_name_is = ""; break;
 		case sprite_vial_orange_round_long: thy_name_is = ""; break;
 		case sprite_vial_orange_tear: thy_name_is = ""; break;
-		case sprite_vial_orange_triangle: thy_name_is = ""; break;
+		case sprite_vial_orange_triangle: thy_name_is = "Lily Pad Herbicide"; break;
 	}
 	
 	return thy_name_is;
