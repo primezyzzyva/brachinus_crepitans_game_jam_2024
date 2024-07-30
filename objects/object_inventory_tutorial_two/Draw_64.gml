@@ -70,30 +70,57 @@ if (is_showing_inventory)
 	
 	// recipe time
 	var _recipes = inventory.recipe_get();
-	var pos_x = ui_padding_x + (ui_border_size *  3) + 4;
 
-	
-	//var tab_x = ""
-	//var tab_y = ui_padding_y + (ui_border_size * 13) + 0.50 * ui_inventory_box));
-	//draw_sprite_ext(sprite_recipe_tab, 0, pos_x + 3, pos_y + 3, 64 / 64, 16 / 16, 0, c_grey, 1);
-	
-	for (var recipe_index = 0; recipe_index < array_length(_recipes); recipe_index++)
+	// draw recipe tabs
+	var tab_y = (ui_border_size * 13) + 0.65 * ui_inventory_box;
+	for (var tab_index = 0; tab_index < number_of_tabs; tab_index++)
 	{
+		var tab_x =  ui_padding_x + (ui_border_size *  3) + 4 + (64 * tab_index);
+		draw_sprite_ext(sprite_recipe_tab, 0, tab_x + 3, tab_y + 3, 64 / 64, 16 / 16, 0, c_grey, 1);
+	}
+
+	// clear out the recipe tab if the tab is changed
+	//if (choose_recipe and (
+	//	(keyboard_check_released(vk_left) or keyboard_check_released(ord(global.left1)) or keyboard_check_released(ord(global.left2))) or
+	//	(keyboard_check_released(vk_right) or keyboard_check_released(ord(global.right1)) or keyboard_check_released(ord(global.right2)))))
+	//{
+	if (tab_when_recipes_collected != current_tab)
+	{
+		recipes_in_tab = [];
+	}
+	
+	// fill up the recipe tab
+	if (array_length(recipes_in_tab) == 0)
+	{
+		for (var recipe_index = 0; recipe_index < array_length(_recipes); recipe_index++)
+		{
+			if (_recipes[recipe_index].tab == current_tab)
+			{
+				array_push(recipes_in_tab, _recipes[recipe_index]);
+			}
+			show_debug_message("recipe tab: {0}, current tab: {1}", _recipes[recipe_index].tab, current_tab);
+		}
 		
+		tab_when_recipes_collected = current_tab;
+	}
+	
+	// draw recipes	
+	var pos_x = ui_padding_x + (ui_border_size *  3) + 4;
+	for (var recipe_index = 0; recipe_index < array_length(recipes_in_tab); recipe_index++)
+	{
 		var pos_y = ui_padding_y + (ui_border_size * 13) + (recipe_index * (ui_inventory_margin + 0.50 * ui_inventory_box));
 	
 		// draw recipe box
-		
 		draw_sprite_ext(sprite_inventory_recipe_box, 0, pos_x + 3, pos_y + 3, 282 / 288, 36 / 64, 0, c_grey, 1);
-		draw_sprite_ext(_recipes[recipe_index].sprite, 0, pos_x + 8, pos_y + 16,
-						20 / sprite_get_width(_recipes[recipe_index].sprite),
-						20 / sprite_get_height(_recipes[recipe_index].sprite), 0, c_white, 1);
+		draw_sprite_ext(recipes_in_tab[recipe_index].sprite, 0, pos_x + 8, pos_y + 16,
+						20 / sprite_get_width(recipes_in_tab[recipe_index].sprite),
+						20 / sprite_get_height(recipes_in_tab[recipe_index].sprite), 0, c_white, 1);
 		draw_set_halign(fa_left);
-		draw_text(pos_x + 56, pos_y + 10, _recipes[recipe_index].name);
+		draw_text(pos_x + 56, pos_y + 10, recipes_in_tab[recipe_index].name);
 		
 		draw_set_halign(fa_right);
 		draw_set_font(font_inventory_small);
-		if (inventory.recipe_has((_recipes[recipe_index].name)))
+		if (inventory.recipe_has((recipes_in_tab[recipe_index].name)))
 		{
 			draw_text_transformed_color(pos_x + 282, pos_y + 33, "Craftable", 0.75, 0.75, 0, #02360f, #02360f, #02360f, #02360f , 1);
 		}
@@ -102,18 +129,16 @@ if (is_showing_inventory)
 			draw_text_transformed_color(pos_x + 282, pos_y + 27, "Missing\nIngredients", 0.75, 0.65, 0, c_maroon, c_maroon, c_maroon, c_maroon , 1);
 		}
 		draw_set_font(-1);
-
-		
-		
+	
 		// display the required ingredients
-		for (var requirement_index = 0; requirement_index < array_length(_recipes[recipe_index].requirements); requirement_index++)
+		for (var requirement_index = 0; requirement_index < array_length(recipes_in_tab[recipe_index].requirements); requirement_index++)
 		{
-			if (_recipes[recipe_index].discovered)
+			if (recipes_in_tab[recipe_index].discovered)
 			{
-				draw_sprite_ext(_recipes[recipe_index].requirements[requirement_index].sprite, 0,
+				draw_sprite_ext(recipes_in_tab[recipe_index].requirements[requirement_index].sprite, 0,
 								pos_x + 48 + (32 * requirement_index), pos_y + 36,
-								15 / sprite_get_width(_recipes[recipe_index].requirements[requirement_index].sprite), 
-								15 / sprite_get_height(_recipes[recipe_index].requirements[requirement_index].sprite), 0, c_white, 1);
+								15 / sprite_get_width(recipes_in_tab[recipe_index].requirements[requirement_index].sprite), 
+								15 / sprite_get_height(recipes_in_tab[recipe_index].requirements[requirement_index].sprite), 0, c_white, 1);
 			}
 			else
 			{
@@ -121,7 +146,6 @@ if (is_showing_inventory)
 			}
 		}
 	}
-	
 	
 	if (keyboard_check_released(ord(global.open_recipe)))
 	{
@@ -131,11 +155,58 @@ if (is_showing_inventory)
 	// keyboard the highlight box around the recipe side
 	if (choose_recipe)
 	{
+		if (keyboard_check_released(vk_left) or keyboard_check_released(ord(global.left1)) or keyboard_check_released(ord(global.left2)))
+		{
+			if (current_tab > 0)
+			{
+				current_tab--;
+			}
+			else
+			{
+				current_tab = number_of_tabs - 1;
+			}
+				
+			if (current_recipe >= array_length(recipes_in_tab))
+			{
+				if (array_length(recipes_in_tab) != 0)
+				{
+					current_recipe = array_length(recipes_in_tab) - 1;
+				}
+				else
+				{
+					current_recipe = 0;
+				}
+			}
+		}
+				
+		if (keyboard_check_released(vk_right) or keyboard_check_released(ord(global.right1)) or keyboard_check_released(ord(global.right2)))
+		{
+			if (current_tab < number_of_tabs - 1)
+			{
+				current_tab++;
+			}
+			else
+			{
+				current_tab = 0;
+			}
+				
+			if (current_recipe >= array_length(recipes_in_tab))
+			{
+				if (array_length(recipes_in_tab) != 0)
+				{
+					current_recipe = array_length(recipes_in_tab) - 1;
+				}
+				else
+				{
+					current_recipe = 0;
+				}
+			}
+		}
 		if (keyboard_check_released(vk_up) or keyboard_check_released(ord(global.up1)) or keyboard_check_released(ord(global.up2)))
 		{
 			if (current_recipe == 0)
 			{
-				current_recipe = array_length(_recipes) - 1;
+				current_recipe = array_length(recipes_in_tab) - 1;
 			}
 			else
 			{
@@ -145,7 +216,7 @@ if (is_showing_inventory)
 					
 		if (keyboard_check_released(vk_down) or keyboard_check_released(ord(global.down1)) or keyboard_check_released(ord(global.down2)))
 		{
-			if (current_recipe == array_length(_recipes) - 1)
+			if (current_recipe == array_length(recipes_in_tab) - 1)
 			{
 				current_recipe = 0;
 			}
@@ -239,6 +310,11 @@ if (is_showing_inventory)
 	draw_set(color_highlight, 0.1);
 	draw_rectangle(pos_x - 4, pos_y - 4, pos_x + ui_panel_left  - 28, pos_y + (40), false);
 	draw_reset();
+	
+	// draw "hovering over" for recipe tab
+	var highlight_tab_y = (ui_border_size * 13) + 0.65 * ui_inventory_box;
+	var highlight_tab_x =  ui_padding_x + (ui_border_size *  3) + 4 + (64 * tab_when_recipes_collected);
+	draw_sprite_ext(sprite_recipe_tab, 0, highlight_tab_x + 3, highlight_tab_y + 3, 64 / 64, 16 / 16, 0, c_fuchsia, 1);
 	
 	// draw selection numbers over the selected ingredients
 	for (var i = 0; i < array_length(selected); i++)
@@ -399,13 +475,13 @@ if (is_showing_inventory)
 				  ui_padding_y + (ui_border_size * 4), ui_text);
 	
 		var inventory_recipe_ui = "";
-		if (!_recipes[current_recipe].discovered)
+		if (!recipes_in_tab[current_recipe].discovered)
 		{
-			inventory_recipe_ui = string("{0}", _recipes[current_recipe].description);
+			inventory_recipe_ui = string("{0}", recipes_in_tab[current_recipe].description);
 		}
 		else
 		{
-			inventory_recipe_ui = string("{0}", _recipes[current_recipe].pre_discovery_description);
+			inventory_recipe_ui = string("{0}", recipes_in_tab[current_recipe].pre_discovery_description);
 		}
 		draw_set_font(font_inventory_recipe);
 
@@ -420,9 +496,9 @@ if (is_showing_inventory)
 		if (keyboard_check_released(ord(global.craft)))
 		{
 			draw_set_font(font_inventory_tutorial);
-			if (inventory.recipe_has(_recipes[current_recipe].name) and _recipes[current_recipe].discovered)
+			if (inventory.recipe_has(recipes_in_tab[current_recipe].name) and recipes_in_tab[current_recipe].discovered)
 			{
-				inventory.recipe_craft(_recipes[current_recipe].name);
+				inventory.recipe_craft(recipes_in_tab[current_recipe].name);
 				
 				if (current_item >= array_length(inventory_items))
 				{

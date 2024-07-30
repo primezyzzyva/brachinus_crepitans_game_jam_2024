@@ -10,6 +10,10 @@ selected = [];
 current_item = 0;
 current_recipe = 0;
 current_tab = 0;
+number_of_tabs = 2;
+recipes_in_tab = [];
+tab_when_recipes_collected = 0;
+
 choose_recipe = false;
 
 highlight_row = 0;
@@ -84,7 +88,7 @@ var test = struct_from_sprite_index(sprite_vial_orange_cylinder,true);
 
 
 inventory.recipe_add("Discover Me", [unknown, unknown, unknown, unknown, unknown], [unknown], unknown.sprite, false, , "You discvoered me. Cheater.");
-inventory.recipe_add(speech_ant.name, [mushroom_earth_tongue, grass, honey, flower_white_petals, bug_ant_antenna], [speech_ant], speech_ant.sprite, show_recipe_ingredients, "Red, white, and ... green?\nClose enough. At least the\nhoney should help", "I wonder if they're some sort\nof hive mind?", 0);
+inventory.recipe_add(speech_ant.name, [mushroom_earth_tongue, grass, honey, flower_white_petals, bug_ant_antenna], [speech_ant], speech_ant.sprite, show_recipe_ingredients, "I wonder if they're some sort\nof hive mind?", "Red, white, and ... green?\nClose enough. At least the\nhoney should help", 0);
 inventory.recipe_add(speech_pill_bug.name, [mushroom_earth_tongue, gravel, berry_red, flower_blue_petals, bug_pill_shell_fragment], [speech_pill_bug], speech_pill_bug.sprite, show_recipe_ingredients, "Pill bugs are pretty small...\nWill I even be able to hear them?", "They're pretty cute. So cute I\ncould probably eat one. Or two\n...I probably shouldn't.", 0);
 inventory.recipe_add(speech_water_strider.name, [mushroom_earth_tongue, water_droplet, berry_blue, flower_red_petals, water_strider_leg], [speech_water_strider], speech_water_strider.sprite, show_recipe_ingredients, "Talking is the easy part.\nWhat should I do about all that\nwater though?", "I kind of like the lily pads.\nHopefully they keep at least a\nfew around.", 0);
 inventory.recipe_add(speech_wasp.name, [mushroom_earth_tongue, mud, pollen, flower_yellow_petals, mud_wasp_wing], [speech_wasp], speech_wasp.sprite, show_recipe_ingredients, "I wonder why they spend so much\ntime in the mud when they can\nfly? I'll have to ask.", "They're pretty good cooks. I\nshould have asked them for a\na recipe book.", 0);
