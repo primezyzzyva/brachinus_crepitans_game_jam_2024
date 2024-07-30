@@ -17,9 +17,9 @@ function Recipe(): Inventory2() constructor
 		}
 	}
 	
-	recipe_add = function (_name, _requirement, _products, _sprite, _discovered = false, _description = _recipe_description_default, _pre_discovery_description = _recipe_description_default)
+	recipe_add = function (_name, _requirement, _products, _sprite, _discovered = false, _description = _recipe_description_default, _pre_discovery_description = _recipe_description_default, _tab = 0)
 	{
-		array_push(_recipes, {name: _name, requirements: _requirement, products: _products, sprite: _sprite, discovered : _discovered, description: _description, pre_discovery_description: _pre_discovery_description});
+		array_push(_recipes, {name: _name, requirements: _requirement, products: _products, sprite: _sprite, discovered : _discovered, description: _description, pre_discovery_description: _pre_discovery_description, tab: _tab});
 	}
 	
 	recipe_has = function(_name)

@@ -89,6 +89,7 @@
     {"id":{"name":"object_waterstrider","path":"objects/object_waterstrider/object_waterstrider.yy",},},
     {"id":{"name":"sprite_speed_change","path":"objects/sprite_speed_change/sprite_speed_change.yy",},},
     {"id":{"name":"room_end_credits","path":"rooms/room_end_credits/room_end_credits.yy",},},
+    {"id":{"name":"room_game_main_kates_copy","path":"rooms/room_game_main_kates_copy/room_game_main_kates_copy.yy",},},
     {"id":{"name":"room_game_main","path":"rooms/room_game_main/room_game_main.yy",},},
     {"id":{"name":"room_main_title_screen","path":"rooms/room_main_title_screen/room_main_title_screen.yy",},},
     {"id":{"name":"script_crafting","path":"scripts/script_crafting/script_crafting.yy",},},
@@ -338,6 +339,7 @@
     {"roomId":{"name":"room_game_main","path":"rooms/room_game_main/room_game_main.yy",},},
     {"roomId":{"name":"room_main_title_screen","path":"rooms/room_main_title_screen/room_main_title_screen.yy",},},
     {"roomId":{"name":"room_end_credits","path":"rooms/room_end_credits/room_end_credits.yy",},},
+    {"roomId":{"name":"room_game_main_kates_copy","path":"rooms/room_game_main_kates_copy/room_game_main_kates_copy.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

@@ -72,12 +72,18 @@ if (is_showing_inventory)
 	var _recipes = inventory.recipe_get();
 	var pos_x = ui_padding_x + (ui_border_size *  3) + 4;
 
+	
+	//var tab_x = ""
+	//var tab_y = ui_padding_y + (ui_border_size * 13) + 0.50 * ui_inventory_box));
+	//draw_sprite_ext(sprite_recipe_tab, 0, pos_x + 3, pos_y + 3, 64 / 64, 16 / 16, 0, c_grey, 1);
+	
 	for (var recipe_index = 0; recipe_index < array_length(_recipes); recipe_index++)
 	{
 		
 		var pos_y = ui_padding_y + (ui_border_size * 13) + (recipe_index * (ui_inventory_margin + 0.50 * ui_inventory_box));
 	
 		// draw recipe box
+		
 		draw_sprite_ext(sprite_inventory_recipe_box, 0, pos_x + 3, pos_y + 3, 282 / 288, 36 / 64, 0, c_grey, 1);
 		draw_sprite_ext(_recipes[recipe_index].sprite, 0, pos_x + 8, pos_y + 16,
 						20 / sprite_get_width(_recipes[recipe_index].sprite),
