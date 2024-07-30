@@ -261,6 +261,7 @@
     {"id":{"name":"sprite_poop_mouse","path":"sprites/sprite_poop_mouse/sprite_poop_mouse.yy",},},
     {"id":{"name":"sprite_poop_rabbit","path":"sprites/sprite_poop_rabbit/sprite_poop_rabbit.yy",},},
     {"id":{"name":"sprite_recipe_book","path":"sprites/sprite_recipe_book/sprite_recipe_book.yy",},},
+    {"id":{"name":"sprite_recipe_tab","path":"sprites/sprite_recipe_tab/sprite_recipe_tab.yy",},},
     {"id":{"name":"sprite_scorpions_base","path":"sprites/sprite_scorpions_base/sprite_scorpions_base.yy",},},
     {"id":{"name":"sprite_scorpions_idle","path":"sprites/sprite_scorpions_idle/sprite_scorpions_idle.yy",},},
     {"id":{"name":"sprite_scorpions_talking","path":"sprites/sprite_scorpions_talking/sprite_scorpions_talking.yy",},},
