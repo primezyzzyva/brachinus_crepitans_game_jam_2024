@@ -14,5 +14,6 @@ _max_height_of_dialog = _window_height * 0.2;
 _dialog_padding = 8;
 
 // npc dialog loaded
-dialog_loaded = false;
-dialog_message = string("");
+dialog_message_list = [];
+current_message_counter = 0;
+interaction_distance = 48;

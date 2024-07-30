@@ -4,7 +4,7 @@
 draw_self();  //Ensure that the sprite still gets drawn
 
 // prompt the player when close to the object
-if (distance_to_object(object_brachinus_crepitans) < 48)
+if (distance_to_object(object_brachinus_crepitans) < interaction_distance)
 {
 	
 	// Compute how large the dialog text will be
