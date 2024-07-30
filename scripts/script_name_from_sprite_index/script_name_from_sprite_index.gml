@@ -89,7 +89,7 @@ function name_from_sprite_index(sprite_index)
 		case sprite_vial_blue_round: thy_name_is = ""; break;
 		case sprite_vial_blue_round_long: thy_name_is = ""; break;
 		case sprite_vial_blue_tear: thy_name_is = ""; break;
-		case sprite_vial_blue_triangle: thy_name_is = "Desert Hydration"; break;
+		case sprite_vial_blue_triangle: thy_name_is = "Desert Relief"; break;
 		
 		case sprite_vial_red_cylinder: thy_name_is = "Discourse With Striders"; break;
 		case sprite_vial_red_round: thy_name_is = ""; break;

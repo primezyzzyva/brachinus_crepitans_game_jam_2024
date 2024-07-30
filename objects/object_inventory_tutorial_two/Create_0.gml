@@ -44,20 +44,20 @@ var leaf_fragment = struct_from_sprite_index(sprite_misc_leaf_fragment, false);
 var honey = struct_from_sprite_index(sprite_misc_honey, false);
 var gravel = struct_from_sprite_index(sprite_misc_gravel, false);
 var grass = struct_from_sprite_index( sprite_misc_grass, false);
-var berry_blue = struct_from_sprite_index(sprite_misc_berry_red, false);
-var berry_red = struct_from_sprite_index(sprite_misc_berry_blue, false);
-var mushroom_pink_bonnet = struct_from_sprite_index(sprite_mushroom_pink_bonnet, false);
-var mushroom_pig_ear = struct_from_sprite_index(sprite_mushroom_pig_ear, false);
-var mushroom_peziza_ammophilia = struct_from_sprite_index(sprite_mushroom_peziza_ammophilia, false);
-var mushroom_pale_brittlestem = struct_from_sprite_index( sprite_mushroom_pale_brittlestem, false);
-var mushroom_morel = struct_from_sprite_index(sprite_mushroom_morel, false);
-var mushroom_marasmius_haematocephalus = struct_from_sprite_index(sprite_mushroom_marasmius_haematocephalus, false);
-var mushroom_hericium_erinsceus = struct_from_sprite_index(sprite_mushroom_hericium_erinsceus, false);
-var mushroom_favolaschia_calocera = struct_from_sprite_index(sprite_mushroom_favolaschia_calocera, false);
-var mushroom_entoloma_hochstetteri = struct_from_sprite_index(sprite_mushroom_entoloma_hochstetteri, false);
-var mushroom_straw = struct_from_sprite_index(sprite_mushroom_straw, false);
-var mushroom_veiled_lady = struct_from_sprite_index(sprite_mushroom_veiled_lady, false);
-var mushroom_amanita_muscaria = struct_from_sprite_index(sprite_mushroom_amanita_muscaria, false);
+var berry_blue = struct_from_sprite_index(sprite_misc_berry_blue, false);
+var berry_red = struct_from_sprite_index(sprite_misc_berry_red, false);
+var mushroom_pink_bonnet = struct_from_sprite_index(sprite_mushroom_pink_bonnet, false); // inedible, poisonous
+var mushroom_pig_ear = struct_from_sprite_index(sprite_mushroom_pig_ear, false); // edible.  earthy with meaty texture
+var mushroom_peziza_ammophilia = struct_from_sprite_index(sprite_mushroom_peziza_ammophilia, false); // sand covered cup mushroom, poisonous
+var mushroom_pale_brittlestem = struct_from_sprite_index( sprite_mushroom_pale_brittlestem, false); // edible
+var mushroom_morel = struct_from_sprite_index(sprite_mushroom_morel, false); // edible
+var mushroom_marasmius_haematocephalus = struct_from_sprite_index(sprite_mushroom_marasmius_haematocephalus, false); // edible, sweet
+var mushroom_hericium_erinsceus = struct_from_sprite_index(sprite_mushroom_hericium_erinsceus, false); // lions mane, mildly sweet
+var mushroom_favolaschia_calocera = struct_from_sprite_index(sprite_mushroom_favolaschia_calocera, false); // inedible
+var mushroom_entoloma_hochstetteri = struct_from_sprite_index(sprite_mushroom_entoloma_hochstetteri, false); // Werewere-kokako, not edible
+var mushroom_straw = struct_from_sprite_index(sprite_mushroom_straw, false); // edible 
+var mushroom_veiled_lady = struct_from_sprite_index(sprite_mushroom_veiled_lady, false); // savory sweetnees
+var mushroom_amanita_muscaria = struct_from_sprite_index(sprite_mushroom_amanita_muscaria, false); // poisonous,
 var flower_yellow_petals = struct_from_sprite_index(sprite_flower_yellow_petals, false);
 var flower_white_petals = struct_from_sprite_index(sprite_flower_white_petals, false);
 var flower_red_petals = struct_from_sprite_index(sprite_flower_red_petals, false);
@@ -79,13 +79,25 @@ var speech_pill_bug = struct_from_sprite_index(sprite_vial_blue_cylinder, true);
 var speech_water_strider = struct_from_sprite_index(sprite_vial_red_cylinder, true);
 var speech_wasp = struct_from_sprite_index(sprite_vial_yellow_cylinder, true);
 var speech_scorpian = struct_from_sprite_index(sprite_vial_purple_cylinder,true);
+inventory.recipe_add("Discover Me", [unknown, unknown, unknown, unknown, unknown], [unknown], unknown.sprite, false, , "You discvoered me. Cheater.");
+inventory.recipe_add(speech_ant.name, [mushroom_earth_tongue, grass, honey, flower_white_petals, bug_ant_antenna], [speech_ant], speech_ant.sprite, show_recipe_ingredients, "I wonder if they're some sort\nof hive mind?", "Red, white, and ... yellow?\nClose enough. At least the\nhoney tastes nice.", 0);
+inventory.recipe_add(speech_pill_bug.name, [mushroom_earth_tongue, gravel, berry_red, flower_blue_petals, bug_pill_shell_fragment], [speech_pill_bug], speech_pill_bug.sprite, show_recipe_ingredients, "Pill bugs are pretty small...\nWill I even be able to hear them?", "They're pretty cute. So cute I\ncould probably eat one. Or two\n...I probably shouldn't.", 0);
+inventory.recipe_add(speech_water_strider.name, [mushroom_earth_tongue, water_droplet, berry_blue, flower_red_petals, water_strider_leg], [speech_water_strider], speech_water_strider.sprite, show_recipe_ingredients, "Talking is the easy part.\nWhat should I do about all that\nwater though?", "I kind of like the lily pads.\nHopefully they keep at least a\nfew around.", 0);
+inventory.recipe_add(speech_wasp.name, [mushroom_earth_tongue, mud, pollen, flower_yellow_petals, mud_wasp_wing], [speech_wasp], speech_wasp.sprite, show_recipe_ingredients, "I wonder why they spend so much\ntime in the mud when they can\nfly? I'll have to ask.", "They're pretty good cooks. I\nshould have asked them for a\na recipe book.", 0);
+inventory.recipe_add(speech_scorpian.name, [mushroom_earth_tongue, sand_grass, leaf_fragment, flower_purple_petals, scorpian_stinger], [speech_scorpian], speech_scorpian.sprite, show_recipe_ingredients, "Scorpians always get a bad rep.\nIt must the be heat, right?", "*Blush* I don't think I'd want\nto start a conversation with\nthat.", 0);
 
 // quest potions
 var quest_sweetest_mead = struct_from_sprite_index(sprite_vial_yellow_triangle, true);
 var quest_berry_fertiliser = struct_from_sprite_index(sprite_vial_red_triangle, true);
 var quest_lily_pads_herbicide = struct_from_sprite_index(sprite_vial_orange_triangle, true);
 var quest_parasite_larva_feed = struct_from_sprite_index(sprite_vial_white_triangle, true);
-var quest_desert_hydration = struct_from_sprite_index(sprite_vial_blue_triangle, true);
+var quest_desert_relief = struct_from_sprite_index(sprite_vial_blue_triangle, true);
+inventory.recipe_add(quest_sweetest_mead.name, [honey, mushroom_marasmius_haematocephalus, water_droplet, flower_yellow_petals,mushroom_hericium_erinsceus], [quest_sweetest_mead], quest_sweetest_mead.sprite, show_recipe_ingredients, "Ancient ant legend tells of\ntells of mead so sweet and \nso good you'll cry", "Well... it makes you cry.", 1);
+inventory.recipe_add(quest_berry_fertiliser.name, [mud, grass, sand_grass, leaf_dandelion, leaf_fragment], [quest_berry_fertiliser], quest_berry_fertiliser.sprite, show_recipe_ingredients, "Pill bugs love berries. I'm\nsure some compost would win\ntheir favor.", "Solid ingredients turned\ninto a liquid potion? Wow,\nI'm good.", 1);
+inventory.recipe_add(quest_lily_pads_herbicide.name, [mushroom_amanita_muscaria, scorpian_stinger, mushroom_favolaschia_calocera, mushroom_pink_bonnet, mushroom_peziza_ammophilia], [quest_lily_pads_herbicide], quest_lily_pads_herbicide.sprite, show_recipe_ingredients, "Everyone knows that water\nstriders hate traffic jams.", "Lazy devs probably won't\neven implement dynamic lily\npad removal for this quest.", 1);
+inventory.recipe_add(quest_parasite_larva_feed.name, [star_thistle, sea_plantain, berry_blue, pollen, seed_sunflower], [quest_parasite_larva_feed], quest_parasite_larva_feed.sprite, show_recipe_ingredients, "Nasty little buggers. Make\nan excellent snack. Full of\nnutrients rich ingredients.", "They grow up so fast :')", 1);
+inventory.recipe_add(quest_desert_relief.name, [water_droplet, mushroom_veiled_lady, mushroom_pale_brittlestem, leaf_oak, acorn_top], [quest_desert_relief], quest_desert_relief.sprite, show_recipe_ingredients, "It's so hot in the desrt.\nSomething to drink and a\nlittle shade would be nice.", "A dessert [sic] treat so\nnice I'll have it twice...\nbut you craft the next one.", 1);
+
 
 
 var test = struct_from_sprite_index(sprite_vial_purple_triangle, true);
@@ -106,20 +118,7 @@ var test = struct_from_sprite_index(sprite_vial_purple_tear, true);
 var perfume_for_lady_bogue = struct_from_sprite_index(sprite_vial_purple_tear, true);
 
 
-inventory.recipe_add("Discover Me", [unknown, unknown, unknown, unknown, unknown], [unknown], unknown.sprite, false, , "You discvoered me. Cheater.");
-inventory.recipe_add(speech_ant.name, [mushroom_earth_tongue, grass, honey, flower_white_petals, bug_ant_antenna], [speech_ant], speech_ant.sprite, show_recipe_ingredients, "I wonder if they're some sort\nof hive mind?", "Red, white, and ... yellow?\nClose enough. At least the\nhoney help tastes nice.", 0);
-inventory.recipe_add(speech_pill_bug.name, [mushroom_earth_tongue, gravel, berry_red, flower_blue_petals, bug_pill_shell_fragment], [speech_pill_bug], speech_pill_bug.sprite, show_recipe_ingredients, "Pill bugs are pretty small...\nWill I even be able to hear them?", "They're pretty cute. So cute I\ncould probably eat one. Or two\n...I probably shouldn't.", 0);
-inventory.recipe_add(speech_water_strider.name, [mushroom_earth_tongue, water_droplet, berry_blue, flower_red_petals, water_strider_leg], [speech_water_strider], speech_water_strider.sprite, show_recipe_ingredients, "Talking is the easy part.\nWhat should I do about all that\nwater though?", "I kind of like the lily pads.\nHopefully they keep at least a\nfew around.", 0);
-inventory.recipe_add(speech_wasp.name, [mushroom_earth_tongue, mud, pollen, flower_yellow_petals, mud_wasp_wing], [speech_wasp], speech_wasp.sprite, show_recipe_ingredients, "I wonder why they spend so much\ntime in the mud when they can\nfly? I'll have to ask.", "They're pretty good cooks. I\nshould have asked them for a\na recipe book.", 0);
-inventory.recipe_add(speech_scorpian.name, [mushroom_earth_tongue, sand_grass, leaf_fragment, flower_purple_petals, scorpian_stinger], [speech_scorpian], speech_scorpian.sprite, show_recipe_ingredients, "Scorpians always get a bad rep.\nIt must the be heat, right?", "*Blush* I don't think I'd want\nto start a conversation with\nthat.", 0);
 
-inventory.recipe_add(test.name, [mushroom_earth_tongue, sand_grass, leaf_fragment, flower_purple_petals, scorpian_stinger], [speech_scorpian], speech_scorpian.sprite, show_recipe_ingredients, "Scorpians always get a bad rep.\nIt must the be heat, right?", "*Blush* I don't think I'd want\nto start a conversation with\nthat.", 1);
-inventory.recipe_add(test.name, [mushroom_earth_tongue, sand_grass, leaf_fragment, flower_purple_petals, scorpian_stinger], [speech_scorpian], speech_scorpian.sprite, show_recipe_ingredients, "Scorpians always get a bad rep.\nIt must the be heat, right?", "*Blush* I don't think I'd want\nto start a conversation with\nthat.", 1);
-inventory.recipe_add(test.name, [mushroom_earth_tongue, sand_grass, leaf_fragment, flower_purple_petals, scorpian_stinger], [speech_scorpian], speech_scorpian.sprite, show_recipe_ingredients, "Scorpians always get a bad rep.\nIt must the be heat, right?", "*Blush* I don't think I'd want\nto start a conversation with\nthat.", 1);
-inventory.recipe_add(test.name, [mushroom_earth_tongue, sand_grass, leaf_fragment, flower_purple_petals, scorpian_stinger], [speech_scorpian], speech_scorpian.sprite, show_recipe_ingredients, "Scorpians always get a bad rep.\nIt must the be heat, right?", "*Blush* I don't think I'd want\nto start a conversation with\nthat.", 1);
-inventory.recipe_add(test.name, [mushroom_earth_tongue, sand_grass, leaf_fragment, flower_purple_petals, scorpian_stinger], [speech_scorpian], speech_scorpian.sprite, show_recipe_ingredients, "Scorpians always get a bad rep.\nIt must the be heat, right?", "*Blush* I don't think I'd want\nto start a conversation with\nthat.", 1);
-inventory.recipe_add(test.name, [mushroom_earth_tongue, sand_grass, leaf_fragment, flower_purple_petals, scorpian_stinger], [speech_scorpian], speech_scorpian.sprite, show_recipe_ingredients, "Scorpians always get a bad rep.\nIt must the be heat, right?", "*Blush* I don't think I'd want\nto start a conversation with\nthat.", 1);
-inventory.recipe_add(test.name, [mushroom_earth_tongue, sand_grass, leaf_fragment, flower_purple_petals, scorpian_stinger], [speech_scorpian], speech_scorpian.sprite, show_recipe_ingredients, "Scorpians always get a bad rep.\nIt must the be heat, right?", "*Blush* I don't think I'd want\nto start a conversation with\nthat.", 1);
 
 
 if (debug_inventory)
@@ -142,7 +141,6 @@ if (debug_inventory)
 	inventory.item_add_from_struct(mushroom_earth_tongue);
 
 	// all items
-	inventory.item_add_from_struct(unknown);
 	inventory.item_add_from_struct(foxtail);
 	inventory.item_add_from_struct(star_thistle);
 	inventory.item_add_from_struct(small_twig);
