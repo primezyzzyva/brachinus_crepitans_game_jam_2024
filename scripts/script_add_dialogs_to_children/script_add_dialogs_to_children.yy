@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"script_add_dialogs_to_children",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"script_add_dialogs_to_children",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

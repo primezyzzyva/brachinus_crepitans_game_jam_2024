@@ -93,6 +93,7 @@
     {"id":{"name":"room_game_main","path":"rooms/room_game_main/room_game_main.yy",},},
     {"id":{"name":"room_main_title_screen","path":"rooms/room_main_title_screen/room_main_title_screen.yy",},},
     {"id":{"name":"script_crafting","path":"scripts/script_crafting/script_crafting.yy",},},
+    {"id":{"name":"script_dialog","path":"scripts/script_dialog/script_dialog.yy",},},
     {"id":{"name":"script_draw_reset","path":"scripts/script_draw_reset/script_draw_reset.yy",},},
     {"id":{"name":"script_draw_set","path":"scripts/script_draw_set/script_draw_set.yy",},},
     {"id":{"name":"script_draw_text_align","path":"scripts/script_draw_text_align/script_draw_text_align.yy",},},
