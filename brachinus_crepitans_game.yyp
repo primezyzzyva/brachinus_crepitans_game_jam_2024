@@ -108,6 +108,7 @@
     {"id":{"name":"script_struct_from_sprite_index","path":"scripts/script_struct_from_sprite_index/script_struct_from_sprite_index.yy",},},
     {"id":{"name":"sequence_main_title","path":"sequences/sequence_main_title/sequence_main_title.yy",},},
     {"id":{"name":"sequence_transition_continue","path":"sequences/sequence_transition_continue/sequence_transition_continue.yy",},},
+    {"id":{"name":"sequence_transition_wall_of_text","path":"sequences/sequence_transition_wall_of_text/sequence_transition_wall_of_text.yy",},},
     {"id":{"name":"sound_heavy_crunch_pair","path":"sounds/sound_heavy_crunch_pair/sound_heavy_crunch_pair.yy",},},
     {"id":{"name":"sound_heavy_crunch","path":"sounds/sound_heavy_crunch/sound_heavy_crunch.yy",},},
     {"id":{"name":"BerryPlants","path":"sprites/BerryPlants/BerryPlants.yy",},},
