@@ -4,6 +4,7 @@
 
 is_showing_inventory = false;
 debug_inventory = true;
+debug_end_game_inventory = true;
 show_recipe_ingredients = false;
 
 selected = [];
@@ -103,9 +104,9 @@ inventory.recipe_add(quest_desert_relief.name, [water_droplet, mushroom_veiled_l
 // sweet mead -> very powerful animal pheromone -> neutral ending: summon a bigger fish (literally? a fox or ferret maybe)
 // parasite feed -> very cute little parasite -> bad ending: kill the chicken with a parsite
 // desert relief -> very
-var compost = struct_from_sprite_index(sprite_unknown, false);
-var pheromone = struct_from_sprite_index(sprite_unknown, false);
-var parasite = struct_from_sprite_index(sprite_unknown, false);
+var compost = struct_from_sprite_index(sprite_mushroom_mycelium, false, 999);
+var pheromone = struct_from_sprite_index(sprite_vial_urine, false, 999);
+var parasite = struct_from_sprite_index(sprite_mushroom_jelly, false, 999);
 
 
 // final win condition potions
@@ -123,7 +124,12 @@ inventory.recipe_add(perfume_for_lady_bogue.name, [flower_blue_petals, flower_pu
 
 
 
-
+if (debug_end_game_inventory)
+{
+	inventory.item_add_from_struct(compost);
+	inventory.item_add_from_struct(pheromone);
+	inventory.item_add_from_struct(parasite);
+}
 
 
 if (debug_inventory)
