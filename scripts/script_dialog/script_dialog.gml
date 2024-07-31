@@ -13,16 +13,21 @@ function build_npc(object_type, pos_x, pos_y, dialog){
 // This function contains a list of build_npc functions with which it populates the world
 function script_dialog(){
 	
+	global.npc_list = [];
+	
 	// Example of creating an NPC.
 	_old_pillbug_id = build_npc(object_pillbug_old, 31085, 11352, "I once rolled up a mountain top.");
+	// Example of pushing the NPC's id to a global resource.
+	array_push(global.npc_list, _old_pillbug_id);
 	// Example of instance append message.
 	array_push(_old_pillbug_id.dialog_message_list, "But that was a long time ago.");
 	
 	
 	// Mr. Stink
 	_mr_stink_id = build_npc(object_mr_stink, 35100, 5000, "Hail! Come hither!\nUse 'WASD' to move and press 'E' while next to me to talk.");
+	array_push(global.npc_list, _mr_stink_id);
 	// Example of instance append message.
-	array_push(_mr_stink_id.dialog_message_list, "Good! It is a pleasure to make your acquaintance Sir Bombardier. Congratulations on your knighthood.");
+	_mr_stink_id = build_npc(object_mr_stink, 35100, 5000, string("Hail! Come hither!\nUse '{0}{1}{2}{3}' to move and press '{4}' while next to me to talk.", global.up1, global.left1, global.down1, global.left1, global.interact));
 	array_push(_mr_stink_id.dialog_message_list, "But knighthood is more than fighting battles and attending court.");
 	array_push(_mr_stink_id.dialog_message_list, "You are now a vassal of Lady Bogue. A representative of her Ladyship to the swarms!");
 	array_push(_mr_stink_id.dialog_message_list, "And... an ambassador to her enemies.");
@@ -63,5 +68,36 @@ function script_dialog(){
 	array_push(_mr_stink_id.dialog_message_list, " ");
 	array_push(_mr_stink_id.dialog_message_list, "I will.");
 	array_push(_mr_stink_id.dialog_message_list, " ");
+	
+	// Lady Bogue
+	_lady_bogue_id = build_npc(object_ladybogue, 34600, 2750, "My loyal alchemist, have you yet found a potion which can translate my words for the shadow to understand?");
+	array_push(global.npc_list, _lady_bogue_id);
+	// Example of instance append message.
+	array_push(_lady_bogue_id.dialog_message_list, "No? Never fear, I have full confidence that you will succeed and we will save the land.");
+	array_push(_lady_bogue_id.dialog_message_list, " ");
+	
+	// Walker the Water Strider
+	_walker_water_strider_id = build_npc(object_waterstrider, 26250, 10750, "Hey there pardner. What can I do you for?");
+	array_push(global.npc_list, _lady_bogue_id);
+	// Example of instance append message.
+	array_push(_walker_water_strider_id.dialog_message_list, "Trying to take care of the shadow huh?");
+	array_push(_walker_water_strider_id.dialog_message_list, "That's a mighty nobel task. Might be able to help you with that.");
+	array_push(_walker_water_strider_id.dialog_message_list, "See we got some of these here wriggling worms along the river bank.");
+	array_push(_walker_water_strider_id.dialog_message_list, "Not the most complex creatures you've ever come across. Certainly simpler than you or I.");
+	array_push(_walker_water_strider_id.dialog_message_list, "All they do is eat, grow and reproduce. Nothing really keeps them down or deters them from their essentials of living.");
+	array_push(_walker_water_strider_id.dialog_message_list, " ");
+	array_push(_walker_water_strider_id.dialog_message_list, "Imagine if some got inside of you.");
+	array_push(_walker_water_strider_id.dialog_message_list, "Imagine if some got inside of the shadow...");
+	array_push(_walker_water_strider_id.dialog_message_list, "They'd just keep on doing their thing. Until they ate it alive!");
+	array_push(_walker_water_strider_id.dialog_message_list, "You might have to make them a little stronger, a little more e.x.c.i.t.e.d.");
+	array_push(_walker_water_strider_id.dialog_message_list, "But I think that would end it.");
+	array_push(_walker_water_strider_id.dialog_message_list, "Does this notion sicken a bug of your status.");
+	array_push(_walker_water_strider_id.dialog_message_list, "Just think on it...");
+	array_push(_walker_water_strider_id.dialog_message_list, " ");
+	array_push(_walker_water_strider_id.dialog_message_list, " ");
+	
+	
+	
+	
 	
 }
