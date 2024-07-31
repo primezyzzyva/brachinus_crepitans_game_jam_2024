@@ -3,7 +3,7 @@
 
 
 if (global.game_won and !_game_won_hit) {
-	show_debug_message("You win!");
+	//show_debug_message("You win!");
 	_game_won_hit = true;
 	room_goto(room_main_title_screen);
 	
