@@ -4,6 +4,7 @@
 debug = false;
 can_collect = false;
 
+tilemap_get_tileset()
 switch floor(random_range(0, 20))
 {
 	case 0: sprite_index = sprite_mushroom_agaric_gilled_solid; break;

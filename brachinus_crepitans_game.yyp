@@ -66,6 +66,7 @@
     {"id":{"name":"font_inventory_tutorial","path":"fonts/font_inventory_tutorial/font_inventory_tutorial.yy",},},
     {"id":{"name":"npc_base","path":"objects/npc_base/npc_base.yy",},},
     {"id":{"name":"object_ant","path":"objects/object_ant/object_ant.yy",},},
+    {"id":{"name":"object_biome","path":"objects/object_biome/object_biome.yy",},},
     {"id":{"name":"object_brachinus_crepitans","path":"objects/object_brachinus_crepitans/object_brachinus_crepitans.yy",},},
     {"id":{"name":"object_camera","path":"objects/object_camera/object_camera.yy",},},
     {"id":{"name":"object_collision","path":"objects/object_collision/object_collision.yy",},},
