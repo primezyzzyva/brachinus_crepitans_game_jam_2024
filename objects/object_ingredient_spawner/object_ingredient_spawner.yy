@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"object_grass_tunnel",
+  "%Name":"object_ingredient_spawner",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"object_grass_tunnel",
+  "name":"object_ingredient_spawner",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"interactable",
+    "path":"folders/Objects/interactable.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sprite_tunnel_grass",
-    "path":"sprites/sprite_tunnel_grass/sprite_tunnel_grass.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
