@@ -5,6 +5,7 @@ global.paused = false;
 
 // game won?
 global.game_won = false;
+_game_won_hit = false;
 
 // friendliness
 global.friends_with_ants = false;
