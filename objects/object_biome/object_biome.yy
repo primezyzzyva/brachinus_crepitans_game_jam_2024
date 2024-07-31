@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"object_biome",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"object_biome",
   "overriddenProperties":[],
@@ -27,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sprite_poop_bug",
+    "path":"sprites/sprite_poop_bug/sprite_poop_bug.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

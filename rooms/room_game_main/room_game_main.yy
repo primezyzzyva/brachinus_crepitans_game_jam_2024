@@ -51,6 +51,7 @@
     {"name":"inst_E91403C","path":"rooms/room_game_main/room_game_main.yy",},
     {"name":"inst_3F029A0B","path":"rooms/room_game_main/room_game_main.yy",},
     {"name":"inst_37454F81","path":"rooms/room_game_main/room_game_main.yy",},
+    {"name":"inst_72B4F38B","path":"rooms/room_game_main/room_game_main.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -100,6 +101,7 @@
         {"$GMRInstance":"v1","%Name":"inst_E91403C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_E91403C","objectId":{"name":"object_gravel_tunnel","path":"objects/object_gravel_tunnel/object_gravel_tunnel.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5646.0,"y":26593.0,},
         {"$GMRInstance":"v1","%Name":"inst_3F029A0B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3F029A0B","objectId":{"name":"object_mud_tunnel","path":"objects/object_mud_tunnel/object_mud_tunnel.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":63988.0,"y":3799.0,},
         {"$GMRInstance":"v1","%Name":"inst_37454F81","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_37454F81","objectId":{"name":"object_water_tunnel","path":"objects/object_water_tunnel/object_water_tunnel.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":79044.0,"y":11397.0,},
+        {"$GMRInstance":"v1","%Name":"inst_72B4F38B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_72B4F38B","objectId":{"name":"object_grass_tunnel","path":"objects/object_grass_tunnel/object_grass_tunnel.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":35128.0,"y":4707.5,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_chicken2","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_chicken2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":1920,"SerialiseWidth":6240,"TileCompressedData":[
           -175060,-2147483648,78,7681,7682,7683,7684,7685,7686,7687,7688,7689,7690,7691,7692,7693,7694,7695,7696,
