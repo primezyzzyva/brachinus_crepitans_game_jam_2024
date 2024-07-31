@@ -10,6 +10,27 @@ function build_npc(object_type, pos_x, pos_y, dialog){
 	
 }
 
+// A function which clears out the dialogs for a particular npc
+function reset_npc_dialog(npc_id){
+	while array_length(npc_id.dialog_message_list) > 0 {
+		array_pop(npc_id.dialog_message_list);
+	}
+	return;
+}
+
+// A function that allows you to add or append dialogs to NPCs without having to create them.
+function add_new_npc_dialog(npc_id, overwrite_old_dialog, new_dialog){
+	
+	if overwrite_old_dialog {
+		reset_npc_dialog(npc_id);
+	}
+	
+	array_push(npc_id.dialog_message_list, new_dialog);
+	
+	return npc_id;
+	
+}
+
 // This function contains a list of build_npc functions with which it populates the world
 function script_dialog(){
 	
@@ -24,10 +45,10 @@ function script_dialog(){
 	
 	
 	// Mr. Stink
-	_mr_stink_id = build_npc(object_mr_stink, 35100, 5000, "Hail! Come hither!\nUse 'WASD' to move and press 'E' while next to me to talk.");
+	_mr_stink_id = build_npc(object_mr_stink, 35100, 5000, string("Hail! Come hither!\nUse '{0}{1}{2}{3}' to move and press '{4}' while next to me to talk.", global.up1, global.left1, global.down1, global.left1, global.interact));
 	array_push(global.npc_list, _mr_stink_id);
 	// Example of instance append message.
-	_mr_stink_id = build_npc(object_mr_stink, 35100, 5000, string("Hail! Come hither!\nUse '{0}{1}{2}{3}' to move and press '{4}' while next to me to talk.", global.up1, global.left1, global.down1, global.left1, global.interact));
+	//_mr_stink_id = build_npc(object_mr_stink, 35100, 5000, string("Hail! Come hither!\nUse '{0}{1}{2}{3}' to move and press '{4}' while next to me to talk.", global.up1, global.left1, global.down1, global.left1, global.interact));
 	array_push(_mr_stink_id.dialog_message_list, "But knighthood is more than fighting battles and attending court.");
 	array_push(_mr_stink_id.dialog_message_list, "You are now a vassal of Lady Bogue. A representative of her Ladyship to the swarms!");
 	array_push(_mr_stink_id.dialog_message_list, "And... an ambassador to her enemies.");
@@ -78,7 +99,7 @@ function script_dialog(){
 	
 	// Walker the Water Strider
 	_walker_water_strider_id = build_npc(object_waterstrider, 26250, 10750, "Hey there pardner. What can I do you for?");
-	array_push(global.npc_list, _lady_bogue_id);
+	array_push(global.npc_list, _walker_water_strider_id);
 	// Example of instance append message.
 	array_push(_walker_water_strider_id.dialog_message_list, "Trying to take care of the shadow huh?");
 	array_push(_walker_water_strider_id.dialog_message_list, "That's a mighty nobel task. Might be able to help you with that.");
@@ -96,8 +117,29 @@ function script_dialog(){
 	array_push(_walker_water_strider_id.dialog_message_list, " ");
 	array_push(_walker_water_strider_id.dialog_message_list, " ");
 	
+	// Andy the ant
+	_andy_ant_id = build_npc(object_ant, 36050, 4550, "...");
+	array_push(global.npc_list, _andy_ant_id);
+	// Example of instance append message.
+	// array_push(_walker_water_strider_id.dialog_message_list, "Trying to take care of the shadow huh?");
 	
 	
 	
 	
+	
+}
+
+function unlock_ant_dialog() {
+	for (var i = 0; i < array_length(global.npc_list); i += 1) {
+		if (global.npc_list[i].object_index == object_ant) { 
+			reset_npc_dialog(global.npc_list[i]);
+			array_push(global.npc_list[i].dialog_message_list, "Praise the land!");
+			array_push(global.npc_list[i].dialog_message_list, "Treasure the earth!");
+			array_push(global.npc_list[i].dialog_message_list, "A curse upon all who despoil it!");
+			array_push(global.npc_list[i].dialog_message_list, "Let they be chased by those that rip and tear. Gnash and snarl.");
+			array_push(global.npc_list[i].dialog_message_list, "Let this chant rise until long into the night.");
+			array_push(global.npc_list[i].dialog_message_list, "We chant the items that bring out this ancient revenger!");
+			array_push(global.npc_list[i].dialog_message_list, "Potent Pheromone, Ant Antenna, Mud Wasp Wing, Small Twig, Water Strider Leg!");
+		}
+	}
 }
