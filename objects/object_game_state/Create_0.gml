@@ -3,6 +3,9 @@
 
 global.paused = false;
 
+// game won?
+global.game_won = false;
+
 // friendliness
 global.friends_with_ants = false;
 global.friends_with__pill_bugs = false;

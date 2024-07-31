@@ -96,6 +96,7 @@ function Inventory2() constructor
 			case sprite_vial_red_cylinder: global.friends_with_water_striders = true; break;
 			case sprite_vial_yellow_cylinder: global.friends_with_wasps = true; break;
 			case sprite_vial_purple_cylinder: global.friends_with_scorpians = true; break;
+			case sprite_vial_yellow_round_long: global.game_won = true; break;
 		}
 				
 		item_subtract(name_from_sprite_index(_sprite), 1);

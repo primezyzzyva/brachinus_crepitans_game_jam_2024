@@ -45,7 +45,7 @@ function script_dialog(){
 	
 	
 	// Mr. Stink
-	_mr_stink_id = build_npc(object_mr_stink, 35100, 5000, string("Hail! Come hither!\nUse '{0}{1}{2}{3}' to move and press '{4}' while next to me to talk.", global.up1, global.left1, global.down1, global.left1, global.interact));
+	_mr_stink_id = build_npc(object_mr_stink, 35100, 5000, string("Hail! Come hither!\nUse '{0}{1}{2}{3}' to move and press '{4}' while next to me to talk.", global.up1, global.left1, global.down1, global.right1, global.interact));
 	array_push(global.npc_list, _mr_stink_id);
 	// Example of instance append message.
 	//_mr_stink_id = build_npc(object_mr_stink, 35100, 5000, string("Hail! Come hither!\nUse '{0}{1}{2}{3}' to move and press '{4}' while next to me to talk.", global.up1, global.left1, global.down1, global.left1, global.interact));
