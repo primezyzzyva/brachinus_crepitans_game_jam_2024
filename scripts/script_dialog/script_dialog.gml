@@ -45,10 +45,9 @@ function script_dialog(){
 	
 	
 	// Mr. Stink
-	_mr_stink_id = build_npc(object_mr_stink, 35100, 5000, string("Hail! Come hither!\nUse '{0}{1}{2}{3}' to move and press '{4}' while next to me to talk.", global.up1, global.left1, global.down1, global.right1, global.interact));
+	_mr_stink_id = build_npc(object_mr_stink, 34800, 5000, string("Hail! Come hither!\nUse '{0}{1}{2}{3}' to move and press '{4}' while next to me to talk.", global.up1, global.left1, global.down1, global.right1, global.interact));
 	array_push(global.npc_list, _mr_stink_id);
 	// Example of instance append message.
-	//_mr_stink_id = build_npc(object_mr_stink, 35100, 5000, string("Hail! Come hither!\nUse '{0}{1}{2}{3}' to move and press '{4}' while next to me to talk.", global.up1, global.left1, global.down1, global.left1, global.interact));
 	array_push(_mr_stink_id.dialog_message_list, "But knighthood is more than fighting battles and attending court.");
 	array_push(_mr_stink_id.dialog_message_list, "You are now a vassal of Lady Bogue. A representative of her Ladyship to the swarms!");
 	array_push(_mr_stink_id.dialog_message_list, "And... an ambassador to her enemies.");
@@ -65,8 +64,9 @@ function script_dialog(){
 	array_push(_mr_stink_id.dialog_message_list, "Let's prepare by crafting a potion which will let you speak with the local ants.");
 	array_push(_mr_stink_id.dialog_message_list, "For this, you will need the following ingredients, which as a skilled alchemist, I am sure you already have:");
 	array_push(_mr_stink_id.dialog_message_list, "An earth tongue mushroom, \na bit of grass, \nsome honey, \na pair of white flower petals, \nand a bit of the species you want to talk to.");
-	array_push(_mr_stink_id.dialog_message_list, "Press 'I' to open your inventory and craft your recipe.");
-	array_push(_mr_stink_id.dialog_message_list, "To consume your potion select it from within your inventory and use it.");
+	array_push(_mr_stink_id.dialog_message_list, "Press 'I' to open your inventory and craft your recipe. The order ingredients are selected in matters.");
+	array_push(_mr_stink_id.dialog_message_list, "Again, the ingredients are: An earth tongue mushroom, \na bit of grass, \nsome honey, \na pair of white flower petals, \nand a bit of the species you want to talk to.");
+	array_push(_mr_stink_id.dialog_message_list, string("To consume your potion, select it from within your inventory and press '{0}' use it.", global.interact));
 	array_push(_mr_stink_id.dialog_message_list, "Ha ha! I can see from your reaction that tingles a bit. Don't worry, it will fade.");
 	array_push(_mr_stink_id.dialog_message_list, "You can now talk to any ants you meet in your journey.");
 	array_push(_mr_stink_id.dialog_message_list, "When you find our salvation, return to Lady Bogue in the north-east and present it to her.");
@@ -118,7 +118,7 @@ function script_dialog(){
 	array_push(_walker_water_strider_id.dialog_message_list, " ");
 	
 	// Andy the ant
-	_andy_ant_id = build_npc(object_ant, 36050, 4550, "...");
+	_andy_ant_id = build_npc(object_ant, 36050, 4450, "...");
 	array_push(global.npc_list, _andy_ant_id);
 	// Example of instance append message.
 	// array_push(_walker_water_strider_id.dialog_message_list, "Trying to take care of the shadow huh?");
