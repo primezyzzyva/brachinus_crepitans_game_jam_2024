@@ -9,13 +9,12 @@ if (distance_to_object(object_brachinus_crepitans) < 5 * room_get_viewport(room_
 		for (var index = 0; index < quantity; index++)
 		{
 			var coordinates = spawner.get_random_biome_coordinates(x, y);
-			show_debug_message("x: {0}, y: {1}", coordinates[0], coordinates[1]);
 			instance_create_layer(coordinates[0], coordinates[1], "Instances", object_ingredient);
 		}
 	}
 }
 	
-if keyboard_check_released(ord("K"))
+if keyboard_check_released(ord("P"))
 {
 	show_debug_message(instance_count);
 }

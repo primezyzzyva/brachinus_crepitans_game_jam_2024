@@ -73,9 +73,12 @@ function ingredient_spawner() constructor
 		//var biome_y = [[0, 3840], [3841, 7680], [7681, 11520], [11521, 15360],[ 15361, 19200], [19201, 23040], [23041, 26880], [26881, 30720]];
 		//var row = floor(_room_height / _y_coordinate); //give row of 2d array
 		//var random_y_coordinate = random_range(biome_y[column][0], biome_x[column][1]);
-		var far_away = 5000;
+		var far_away = 20000;
 		var random_x_coordinate = random_range(object_brachinus_crepitans.x - far_away, object_brachinus_crepitans.x + far_away)
-		var random_y_coordinate = random_range(object_brachinus_crepitans.y - far_away, object_brachinus_crepitans.yx + far_away)
+		var random_y_coordinate = random_range(object_brachinus_crepitans.y - far_away, object_brachinus_crepitans.y + far_away)
+		
+		random_x_coordinate = clamp(random_x_coordinate, 300, 99840 - 300)
+		random_y_coordinate = clamp(random_y_coordinate, 300, 30720 - 300)
 		
 		return [random_x_coordinate, random_y_coordinate];
 	}
