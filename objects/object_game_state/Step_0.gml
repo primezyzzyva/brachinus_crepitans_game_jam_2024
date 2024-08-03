@@ -13,3 +13,8 @@ if (!_has_activated_ant_dialog and global.friends_with_ants) {
 	unlock_ant_dialog();
 	_has_activated_ant_dialog = true;
 }
+
+if (!_has_activated_scorpion_dialog and global.friends_with_scorpions) {
+	unlock_scorpion_dialog();
+	_has_activated_scorpion_dialog = true;
+}

@@ -123,6 +123,10 @@ function script_dialog(){
 	// Example of instance append message.
 	// array_push(_walker_water_strider_id.dialog_message_list, "Trying to take care of the shadow huh?");
 	
+	// Seawell the scorpion
+	_seawell_scorpion_id = build_npc(object_scorpion, 29246, 11321, "...");
+	array_push(global.npc_list, _seawell_scorpion_id);
+	//array_push(_seawell_scorpion_id.dialog_message_list, string("{0}", mushroom_earth_tongue.name));
 	
 	
 	
@@ -140,6 +144,27 @@ function unlock_ant_dialog() {
 			array_push(global.npc_list[i].dialog_message_list, "Let this chant rise until long into the night.");
 			array_push(global.npc_list[i].dialog_message_list, "We chant the items that bring out this ancient revenger!");
 			array_push(global.npc_list[i].dialog_message_list, "Potent Pheromone, Ant Antenna, Mud Wasp Wing, Small Twig, Water Strider Leg!");
+			//array_push(global.npc_list[i].dialog_message_list, string("{0}, Ant Antenna, Mud Wasp Wing, Small Twig, Water Strider Leg!", dialog_message_list.pheromone.name));
+			
+		}
+	}
+}
+
+function unlock_scorpion_dialog() {
+	for (var i = 0; i < array_length(global.npc_list); i += 1) {
+		if (global.npc_list[i].object_index == object_scorpion) { 
+			reset_npc_dialog(global.npc_list[i]);
+			array_push(global.npc_list[i].dialog_message_list, "Ah gah gagak kaguk gakgaah");
+			array_push(global.npc_list[i].dialog_message_list, "Want you to dance do you?");
+			array_push(global.npc_list[i].dialog_message_list, "Fine by me be it!");
+			array_push(global.npc_list[i].dialog_message_list, "Get down! Get jiggy?");
+			array_push(global.npc_list[i].dialog_message_list, "Show me your coolest move.");
+			array_push(global.npc_list[i].dialog_message_list, " ");
+			array_push(global.npc_list[i].dialog_message_list, "DUDE!");
+			array_push(global.npc_list[i].dialog_message_list, "That's out of this world that is my bug.");
+			array_push(global.npc_list[i].dialog_message_list, "Dance on!");
+			array_push(global.npc_list[i].dialog_message_list, " ");
+			
 		}
 	}
 }

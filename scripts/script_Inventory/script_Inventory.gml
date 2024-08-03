@@ -95,7 +95,7 @@ function Inventory2() constructor
 			case sprite_vial_blue_cylinder: global.friends_with_pill_bugs = true; break;
 			case sprite_vial_red_cylinder: global.friends_with_water_striders = true; break;
 			case sprite_vial_yellow_cylinder: global.friends_with_wasps = true; break;
-			case sprite_vial_purple_cylinder: global.friends_with_scorpians = true; break;
+			case sprite_vial_purple_cylinder: global.friends_with_scorpions = true; break;
 			case sprite_vial_yellow_round_long: global.game_won = true; break;
 		}
 				
