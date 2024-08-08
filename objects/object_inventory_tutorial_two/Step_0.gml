@@ -12,3 +12,7 @@ if (keyboard_check_released(ord(global.inventory1)) or (keyboard_check_released(
 	global.paused = ! global.paused;
 }
 
+if (keyboard_check_released(ord(global.toggle_mouse)))
+{
+	global.mouse_mode = ! global.mouse_mode;
+}

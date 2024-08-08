@@ -106,12 +106,14 @@ function Recipe(): Inventory2() constructor
 			}
 		}
 		
-		// made it through all the recipes without finding a match. Shame about your ingredients
-		for (var i = 0; i < array_length(_ingredient_list); i ++)
+		if (!crafted)
 		{
-		    item_subtract(_ingredient_list[i].name, 1);
+			// made it through all the recipes without finding a match. Shame about your ingredients
+			for (var i = 0; i < array_length(_ingredient_list); i ++)
+			{
+			    item_subtract(_ingredient_list[i].name, 1);
+			}
 		}
-		
 		
 		return crafted;
 	}

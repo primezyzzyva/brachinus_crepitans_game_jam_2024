@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-debug = true;
+debug = false;
 can_collect = false;
 
 ingredients_list_to_use = object_ingredient_spawner.spawner.spawn_ingredient_by_biome(x, y);

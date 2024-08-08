@@ -64,7 +64,7 @@ function ingredient_spawner() constructor
 		return _biomes[row][column];
 	}
 	
-	get_random_biome_coordinates = function(_x_coordinate, _y_coordinate)
+	get_random_biome_coordinates = function(_x_coordinate, _y_coordinate, _distance_from_player = 20000)
 	{
 		//var biome_x = [[0, 12480], [12481, 24960], [24961, 37440], [37441, 49920], [49921, 62400], [62401, 74880], [74881, 87360], [87361, 99840]];
 		//var column = floor(_room_width / _x_coordinate); // give col of 2d array
@@ -73,7 +73,7 @@ function ingredient_spawner() constructor
 		//var biome_y = [[0, 3840], [3841, 7680], [7681, 11520], [11521, 15360],[ 15361, 19200], [19201, 23040], [23041, 26880], [26881, 30720]];
 		//var row = floor(_room_height / _y_coordinate); //give row of 2d array
 		//var random_y_coordinate = random_range(biome_y[column][0], biome_x[column][1]);
-		var far_away = 20000;
+		var far_away = _distance_from_player;
 		var random_x_coordinate = random_range(object_brachinus_crepitans.x - far_away, object_brachinus_crepitans.x + far_away)
 		var random_y_coordinate = random_range(object_brachinus_crepitans.y - far_away, object_brachinus_crepitans.y + far_away)
 		

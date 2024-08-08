@@ -2,12 +2,14 @@
 // You can write your code in this editor
 
 global.paused = false;
+global.mouse_mode = true;
 
 global.craft = "C";
 global.interact = "E";
 global.pause = "P";
 global.open_recipe = "R";
 
+global.toggle_mouse = "M";
 
 global.up1 = "W";
 global.left1 = "A";
