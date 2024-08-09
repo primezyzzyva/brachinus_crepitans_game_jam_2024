@@ -1,2 +1,0 @@
-/// @description Proceed to gameplay
-

@@ -6,6 +6,8 @@ draw_self();  //Ensure that the sprite still gets drawn
 // prompt the player when close to the object
 if (distance_to_object(object_brachinus_crepitans) < 48)
 {
+	image_speed = 1;
+	
 	var interact_string = string("Press '{0}' to interact", global.interact);
 	_max_width_of_dialog = string_width(interact_string)
 	_max_height_of_dialog = string_height(interact_string)

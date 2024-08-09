@@ -32,5 +32,5 @@
     "path":"sprites/spite_collision_boundary/spite_collision_boundary.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
